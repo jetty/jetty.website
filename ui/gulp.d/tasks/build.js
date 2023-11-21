@@ -4,7 +4,8 @@ const autoprefixer = require('autoprefixer')
 const browserify = require('browserify')
 const concat = require('gulp-concat')
 const cssnano = require('cssnano')
-const fs = require('fs-extra')
+const fs = require('fs')
+const { promises: fsp } = fs
 const imagemin = require('gulp-imagemin')
 const merge = require('merge-stream')
 const ospath = require('path')
@@ -13,7 +14,7 @@ const postcss = require('gulp-postcss')
 const postcssCalc = require('postcss-calc')
 const postcssImport = require('postcss-import')
 const postcssUrl = require('postcss-url')
-const postcssVar = require('postcss-custom-properties')
+const postcssVars = require('postcss-custom-properties')
 const { Transform } = require('stream')
 const map = (transform) => new Transform({ objectMode: true, transform })
 const through = () => map((file, enc, next) => next(null, file))
@@ -29,7 +30,7 @@ module.exports = (src, dest, preview) => () => {
       Promise.all(
         messages
           .reduce((accum, { file: depPath, type }) => (type === 'dependency' ? accum.concat(depPath) : accum), [])
-          .map((importedPath) => fs.stat(importedPath).then(({ mtime }) => mtime))
+          .map((importedPath) => fsp.stat(importedPath).then(({ mtime }) => mtime))
       ).then((mtimes) => {
         const newestMtime = mtimes.reduce((max, curr) => (!max || curr > max ? curr : max), file.stat.mtime)
         if (newestMtime > file.stat.mtime) file.stat.mtimeMs = +(file.stat.mtime = newestMtime)
@@ -38,23 +39,26 @@ module.exports = (src, dest, preview) => () => {
       {
         filter: (asset) => new RegExp('^[~][^/]*(?:font|typeface)[^/]*/.*/files/.+[.](?:ttf|woff2?)$').test(asset.url),
         url: (asset) => {
-          const relpath = asset.pathname.substr(1)
+          const relpath = asset.pathname.slice(1)
           const abspath = require.resolve(relpath)
           const basename = ospath.basename(abspath)
           const destpath = ospath.join(dest, 'font', basename)
-          if (!fs.pathExistsSync(destpath)) fs.copySync(abspath, destpath)
+          if (!fs.existsSync(destpath)) fs.cpSync(abspath, destpath, { recursive: true })
           return path.join('..', 'font', basename)
         },
       },
     ]),
-    postcssVar({ preserve: preview }),
-    // NOTE to make vars.css available to all top-level stylesheets, use the next line in place of the previous one
-    //postcssVar({ importFrom: path.join(src, 'css', 'vars.css'), preserve: preview }),
-    preview ? postcssCalc : () => {}, // cssnano already applies postcssCalc
+    // NOTE importFrom makes vars available to all top-level stylesheets without having to redeclare the variables
+    // use preserve: false to resolve var() declarations (this option is broken for postcss-custom-properties >= 12.0)
+    postcssVars({ disableDeprecationNotice: true, importFrom: path.join(src, 'css', 'vars.css'), preserve: true }),
+    preview ? postcssCalc : () => {},
     autoprefixer,
     preview
       ? () => {}
-      : (css, result) => cssnano({ preset: 'default' })(css, result).then(() => postcssPseudoElementFixer(css, result)),
+      : (css, result) =>
+        cssnano()
+          .process(css, result.opts)
+          .then(() => postcssPseudoElementFixer(css, result)),
   ]
 
   return merge(
@@ -84,7 +88,7 @@ module.exports = (src, dest, preview) => () => {
         : imagemin(
           [
             imagemin.gifsicle(),
-            imagemin.jpegtran(),
+            imagemin.mozjpeg(),
             imagemin.optipng(),
             imagemin.svgo({
               plugins: [
@@ -111,7 +115,7 @@ function bundle ({ base: basedir, ext: bundleExt = '.bundle.js' }) {
       browserify(file.relative, { basedir, detectGlobals: false })
         .plugin('browser-pack-flat/plugin')
         .on('file', (bundledPath) => {
-          if (bundledPath !== bundlePath) mtimePromises.push(fs.stat(bundledPath).then(({ mtime }) => mtime))
+          if (bundledPath !== bundlePath) mtimePromises.push(fsp.stat(bundledPath).then(({ mtime }) => mtime))
         })
         .bundle((bundleError, bundleBuffer) =>
           Promise.all(mtimePromises).then((mtimes) => {
@@ -123,7 +127,7 @@ function bundle ({ base: basedir, ext: bundleExt = '.bundle.js' }) {
         )
       return
     }
-    fs.readFile(file.path, 'UTF-8').then((contents) => {
+    fsp.readFile(file.path, 'UTF-8').then((contents) => {
       next(null, Object.assign(file, { contents: Buffer.from(contents) }))
     })
   })

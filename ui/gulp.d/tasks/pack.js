@@ -1,8 +1,8 @@
 'use strict'
 
-const vfs = require('vinyl-fs')
-const zip = require('gulp-vinyl-zip')
 const path = require('path')
+const vfs = require('vinyl-fs')
+const zip = require('@vscode/gulp-vinyl-zip')
 
 module.exports = (src, dest, bundleName, onFinish) => () =>
   vfs

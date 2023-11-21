@@ -1,5 +1,10 @@
 'use strict'
 
+const pkg = require('./package.json')
+const [owner, repo] = (process.env.GITHUB_REPOSITORY || new URL(pkg.repository.url).pathname.slice(1)).split('/')
+const { directory: dir } = pkg.repository
+const env = process.env
+
 const { parallel, series, watch } = require('gulp')
 const createTask = require('./gulp.d/lib/create-task')
 const exportTasks = require('./gulp.d/lib/export-tasks')
@@ -11,7 +16,7 @@ const previewSrcDir = 'preview-src'
 const previewDestDir = 'public'
 const srcDir = 'src'
 const destDir = `${previewDestDir}/_`
-const { reload: livereload } = process.env.LIVERELOAD === 'true' ? require('gulp-connect') : {}
+const { reload: livereload } = env.LIVERELOAD === 'true' ? require('gulp-connect') : {}
 const serverConfig = { host: '0.0.0.0', port: 5252, livereload }
 
 const task = require('./gulp.d/tasks')
@@ -73,7 +78,7 @@ const bundlePackTask = createTask({
     destDir,
     buildDir,
     bundleName,
-    (bundlePath) => !process.env.CI && log(`Antora option: --ui-bundle-url=${bundlePath}`)
+    (bundlePath) => !env.CI && log(`Antora option: --ui-bundle-url=${bundlePath}`)
   ),
 })
 
@@ -87,6 +92,17 @@ const packTask = createTask({
   name: 'pack',
   desc: '(deprecated; use bundle instead)',
   call: series(bundleTask),
+})
+
+const releasePublishTask = createTask({
+  name: 'release:publish',
+  call: task.release(buildDir, bundleName, owner, repo, dir, env.GITHUB_REF, env.GITHUB_API_TOKEN, false),
+})
+
+const releaseTask = createTask({
+  name: 'release',
+  desc: 'Bundle the UI and publish it to GitHub by attaching it to a new tag',
+  call: series(bundleTask, releasePublishTask),
 })
 
 const buildPreviewPagesTask = createTask({
@@ -119,6 +135,7 @@ module.exports = exportTasks(
   buildTask,
   bundleTask,
   bundlePackTask,
+  releaseTask,
   previewTask,
   previewBuildTask,
   packTask

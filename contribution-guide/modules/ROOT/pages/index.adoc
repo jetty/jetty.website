@@ -1,0 +1,5 @@
+= Contribution Guide
+
+== Introduction
+
+The Eclipse Jetty Contribution Guide targets developers and writers who want to make contributions to the Jetty project by contributing code, writing documentation, or engaging in the larger community.

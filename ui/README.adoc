@@ -1,0 +1,26 @@
+= Jetty Website and Documentation UI
+:url-antora: https://antora.org
+:url-antora-default-ui: https://gitlab.com/antora/antora-ui-default
+:url-jetty: https://eclipse.dev/jetty
+:current-release: ui-prod-latest
+
+This project produces the UI for the Jetty website and documentation.
+The UI consists of both the visual theme and the user interactions for the site.
+
+The UI bundle produced from this project is designed to be used with Antora.
+The bundle includes the HTML templates (layouts, partials, and helpers), CSS, JavaScript, fonts, and site-wide images.
+The rest of the material for the site is provided by various content repositories.
+
+== Copyright and License
+
+=== Software
+
+This project is a derivative of the {url-antora-default-ui}[Antora default UI].
+The software assets in this repository (Gulp build script and tasks, web JavaScript files, Handlebars templates and JavaScript helpers,     ↳ common CSS, utility icons, etc.) come from the {url-antora}[Antora project].
+As such, use of the software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0]   ↳ (MPL-2.0).
+See link:LICENSE[] to find the full license text.
+
+=== Branding, Design, and Content
+
+Copyright (C) {url-jetty}[Eclipse Jetty] 2023.
+All rights reserved.

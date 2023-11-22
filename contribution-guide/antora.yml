@@ -1,0 +1,5 @@
+name: contribution-guide
+version: ~
+title: Contribution Guide
+nav:
+- modules/ROOT/nav.adoc

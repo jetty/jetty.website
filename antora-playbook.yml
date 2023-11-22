@@ -1,0 +1,24 @@
+# npx antora antora-playbook.yml
+site:
+  title: Eclipse Jetty
+  url: https://jetty.org
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_paths: [home, contribution-guide]
+  - url: https://github.com/opendevise/jetty.project
+    branches: jetty-12.0.x-for-antora
+    start_path: documentation/jetty-docs
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+ui:
+  bundle:
+    url: https://github.com/opendevise/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
+    snapshot: true
+output:
+  dir: ./_site

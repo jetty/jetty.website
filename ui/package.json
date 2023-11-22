@@ -1,0 +1,59 @@
+{
+  "name": "jetty-website-ui",
+  "description": "Produces the UI bundle for jetty.org",
+  "homepage": "https://eclipse.dev/jetty",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jetty/jetty.website",
+    "directory": "ui"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@asciidoctor/core": "~2.2",
+    "@fontsource/roboto": "~5.0",
+    "@fontsource/roboto-mono": "~5.0",
+    "@octokit/rest": "~19.0",
+    "@vscode/gulp-vinyl-zip": "~2.5",
+    "autoprefixer": "~10.4",
+    "browser-pack-flat": "~3.5",
+    "browserify": "~17.0",
+    "core-js": "~3.33",
+    "cssnano": "~6.0",
+    "eslint": "~6.8",
+    "eslint-config-standard": "~14.1",
+    "eslint-plugin-import": "~2.22",
+    "eslint-plugin-node": "~11.1",
+    "eslint-plugin-promise": "~4.2",
+    "eslint-plugin-standard": "~4.0",
+    "fancy-log": "~2.0",
+    "gulp": "~4.0",
+    "gulp-concat": "~2.6",
+    "gulp-connect": "~5.7",
+    "gulp-eslint": "~6.0",
+    "gulp-imagemin": "~7.1",
+    "gulp-postcss": "~9.0",
+    "gulp-stylelint": "~13.0",
+    "gulp-uglify": "~3.0",
+    "handlebars": "~4.7",
+    "highlight.js": "9.18.3",
+    "js-yaml": "~4.1",
+    "merge-stream": "~2.0",
+    "postcss": "~8.4",
+    "postcss-calc": "~9.0",
+    "postcss-custom-properties": "~11.0",
+    "postcss-import": "~15.1",
+    "postcss-url": "~10.1",
+    "prettier-eslint": "~12.0",
+    "require-directory": "~2.1",
+    "require-from-string": "~2.0",
+    "stylelint": "~13.13",
+    "stylelint-config-standard": "~22.0",
+    "vinyl-fs": "~3.0"
+  }
+}

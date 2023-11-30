@@ -2,7 +2,7 @@
 :url-antora: https://antora.org
 :url-antora-default-ui: https://gitlab.com/antora/antora-ui-default
 :url-jetty: https://eclipse.dev/jetty
-:current-release: ui-prod-latest
+:current-release: ui-prod-5
 
 This project produces the UI for the Jetty website and documentation.
 The UI consists of both the visual theme and the user interactions for the site.

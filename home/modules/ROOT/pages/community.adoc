@@ -1,0 +1,3 @@
+= Community
+
+If you'd like to be involved in the Jetty project, there are a number of ways you can participate. 

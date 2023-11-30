@@ -1,1 +1,5 @@
-= jetty.website
+This repository is for the development of the new jetty.org website. It will eventually be contributed and moved to github.com/jetty/website.git or a similarly named repo.
+
+Currently renders to:
+
+* https://webtide.github.io/jetty.website/

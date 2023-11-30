@@ -18,29 +18,11 @@
           </div>
         </div>
         {{/if}}
-        <a class="navbar-item" href="#">Documentation</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Support</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">Commercial</a>
-            <a class="navbar-item" href="#">Open Source</a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">Related Links</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="#">About</a>
-            <a class="navbar-item" href="#">Tools</a>
-            <a class="navbar-item" href="#">Contribute</a>
-            <a class="navbar-item" href="#">Source Code</a>
-            <a class="navbar-item" href="#">Enter Bug</a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <span class="control">
-            <a class="button is-primary" href="#">Download</a>
-          </span>
-        </div>
+        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::documentation.adoc')}}}">Documentation</a>
+        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::support.adoc')}}}">Support</a>
+        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::community.adoc')}}}">Community</a>
+        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::security.adoc')}}}">Security</a>
+        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::download.adoc')}}}">Download</a>
       </div>
     </div>
   </nav>

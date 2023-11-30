@@ -1,0 +1,116 @@
+.card-section::after {
+  content: "";
+  background-image: var(--card-icon);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-section .sectionbody,
+.card-section {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 230px); */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-section-2col .sectionbody,
+.card-section-2col {
+  grid-template-columns: repeat(auto-fill, minmax(calc(max(50% - 0.5rem, 250px)), 1fr));
+}
+
+.card-section .sectionbody > :not(.card),
+.card-section > :not(.card) {
+  grid-column: 1/-1;
+}
+
+.card {
+  max-height: 15rem;
+  height: 15rem;
+}
+
+.card .content,
+.card .paragraph,
+.card p {
+  display: inline;
+}
+
+.card-title,
+.card-body {
+  display: block;
+}
+
+.card a {
+  border-radius: var(--border-radius);
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: normal;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.2rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card a .card-title {
+  font-family: var(--heading);
+  font-weight: var(--weight-bold);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card a .card-body {
+  hyphens: initial;
+}
+
+.card a .card-content-overflow {
+  --max-lines: 5;
+
+  max-height: calc(1.4rem * var(--max-lines));
+  overflow: hidden;
+}
+
+.card-index a {
+  border: 2px solid var(--color-card-border);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card-index a .card-title {
+  font-size: 1.2em;
+  text-align: center;
+  hyphens: initial;
+}
+
+.card-index a::before {
+  transition: all 0.2s, transform 0.2s;
+  transform: translateY(0);
+  position: relative;
+  box-shadow: none;
+  top: 0;
+}
+
+.card-index a:hover {
+  border: 2px solid var(--color-net-id);
+  background-color: var(--color-net-id);
+  color: var(--color-focused);
+  transform: translateY(-3px);
+  top: -3px;
+  box-shadow: 0 10px 20px 0 var(--color-card-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-secondary a {
+  border: solid 1px #e9e9ed;
+  color: var(--color-text-light);
+}
+
+.card-secondary a:hover {
+  border-color: #dfdfe0;
+}

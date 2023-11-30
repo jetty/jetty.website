@@ -1,0 +1,7 @@
+.card {
+    --color-card-border: orange;
+    --color-focused: white;
+    --color-card-shadow: orange;
+    --color-text-light: orange;
+    --color-net-id: orange;
+}

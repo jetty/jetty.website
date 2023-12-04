@@ -1,5 +1,7 @@
 <div class="toolbar" role="navigation">
+{{#if (and page.component (ne page.component.name 'ROOT'))}}
 {{> nav-toggle}}
+{{/if}}
   {{#with site.homeUrl}}
   <a href="{{{relativize this}}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
   {{/with}}

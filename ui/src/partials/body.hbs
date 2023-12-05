@@ -1,4 +1,6 @@
 <div class="body">
+{{#if (and page.component (ne page.component.name 'ROOT'))}}
 {{> nav}}
+{{/if}}
 {{> main}}
 </div>

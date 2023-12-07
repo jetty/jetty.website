@@ -7,6 +7,7 @@
   --color-smoke-70: #f0f0f0;
   --color-smoke-90: #e1e1e1;
   --color-gray-10: #c1c1c1;
+  --color-gray-15: #bababa;
   --color-gray-30: #9c9c9c;
   --color-gray-40: #8e8e8e;
   --color-gray-50: #808080;
@@ -118,9 +119,9 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-smoke-90);
-  --footer-font-color: var(--color-gray-70);
-  --footer-link-font-color: var(--color-jet-80);
+  --footer-background: var(--color-jet-80);
+  --footer-font-color: var(--color-gray-15);
+  --footer-link-font-color: var(--color-white);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);

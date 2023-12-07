@@ -2,3 +2,21 @@
 /_site/
 /node_modules/
 /package-lock.json
+
+# eclipse
+.classpath
+.project
+.settings
+.checkstyle
+
+# intellij / android studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Mac filesystem dust
+.DS_Store
+
+# merge tooling
+*.orig

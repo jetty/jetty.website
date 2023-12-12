@@ -1,4 +1,7 @@
 # npx antora antora-playbook.yml
+antora:
+  extensions:
+  - ./lib/component-url-prefix-extension.js
 site:
   title: Eclipse Jetty
   url: https://jetty.org

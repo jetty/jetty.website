@@ -6,3 +6,24 @@ It will eventually be contributed and moved to https://github.com/jetty/website.
 The staged site is available at the following URL:
 
 * https://webtide.github.io/jetty.website/
+
+
+=== Quickstart
+
+This repository contains both the UI for the jetty.org website, but also a number of components for the website itself. The playbook that brings everything together is in the base directory. To generate the site you will run the Playbook instructions below. However, you need to install things first.
+
+Start here: https://docs.antora.org/antora/latest/install-and-run-quickstart/
+
+==== UI (from https://docs.antora.org/antora-ui-default/set-up-project/)
+
+Remember, the UI we are building is in the `ui` directory, no need to checkout the default one, just do these instructions in the `ui` directory.
+
+Start here: https://docs.antora.org/antora-ui-default/set-up-project/
+
+Note the commandline that is output when running `npx gulp bundle`, it is used to generate the playbook.
+
+==== Playbook
+
+Once the UI bundle has been created, build the site as described here: https://docs.antora.org/antora/latest/run-antora/#run-antora
+
+If it is successful, the local static html file to load will be output to the commandline.

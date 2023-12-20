@@ -1,4 +1,7 @@
 antoraVersion: '1.0.0'
+asciidoc:
+  extensions:
+  - ./../lib/feed-block-macro.js
 site:
   url: http://localhost:5252
   title: Eclipse Jetty

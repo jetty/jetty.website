@@ -26,7 +26,9 @@ module.exports =
       ])
         .then(([baseUiModel, { layouts }]) => {
           const extensions = ((baseUiModel.asciidoc || {}).extensions || []).map((request) => {
-            ASCIIDOC_ATTRIBUTES[request.replace(/^@|\.js$/, '').replace(/[/]/g, '-') + '-loaded'] = ''
+            const slug = (request.startsWith('./') ? path.basename(request) : request).replace(/^@|\.js$/, '')
+            ASCIIDOC_ATTRIBUTES[slug.replace(/[/]/g, '-') + '-loaded'] = ''
+            if (request.startsWith('./')) request = require.resolve(request, { paths: [process.cwd()] })
             const extension = require(request)
             extension.register.call(Asciidoctor.Extensions)
             return extension

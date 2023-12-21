@@ -19,6 +19,8 @@ asciidoc:
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
+  extensions:
+  - ./lib/feed-block-macro.js
 ui:
   bundle:
     url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip

@@ -144,4 +144,11 @@
   --z-index-toolbar: 2;
   --z-index-page-version-menu: 3;
   --z-index-navbar: 4;
+
+  /* webtide blogs */
+  --color-card-shadow: orange;
+  --color-focused: blue;
+  --color-net-id: orange;
+  --color-text-light: white;
+  --color-card-border: black;
 }

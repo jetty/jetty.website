@@ -1,4 +1,7 @@
 <script id="site-script" src="{{{uiRootPath}}}/js/site.js" data-ui-root-path="{{{uiRootPath}}}"></script>
+{{#unless (eq page.attributes.has-feeds undefined)}}
+{{> feeds}}
+{{/unless}}
 <script async src="{{{uiRootPath}}}/js/vendor/highlight.js"></script>
 {{#if env.SITE_SEARCH_PROVIDER}}
 {{> search-scripts}}

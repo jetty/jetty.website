@@ -1,4 +1,5 @@
 = The Eclipse Jetty Project
+:noindex:
 
 Jetty provides a web server and servlet container, additionally providing support for HTTP/2, WebSocket, OSGi, JMX, JNDI, JAAS and many other integrations.
 These components are open source and are freely available for commercial use and distribution.

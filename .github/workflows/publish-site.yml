@@ -28,6 +28,11 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+    - name: Install Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '21'
     - name: Generate Site
       run: npx -y --package antora --package @antora/collector-extension --package @antora/lunr-extension --package asciidoctor-kroki antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --html-url-extension-style=indexify antora-playbook.yml
     - name: Upload Artifact

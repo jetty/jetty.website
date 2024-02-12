@@ -28,6 +28,9 @@ asciidoc:
     page-pagination: ''
   extensions:
   - ./lib/feed-block-macro.js
+  - ./lib/jetty-block.js
+  - ./lib/skip-include-processor.js
+  - ./lib/absolute-path-include-processor.js
 ui:
   bundle:
     url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip

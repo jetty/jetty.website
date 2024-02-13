@@ -31,8 +31,9 @@ jobs:
     - name: Install Java
       uses: actions/setup-java@v4
       with:
-        distribution: 'temurin'
+        distribution: temurin
         java-version: '21'
+        cache: maven
     - name: Generate Site
       env:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it

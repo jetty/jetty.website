@@ -37,6 +37,13 @@ jobs:
       uses: stCarolas/setup-maven@v5
       with:
         maven-version: 3.9.6
+    - name: Cache Maven repository
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-maven-${{ hashFiles('antora-playbook.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
     - name: Generate Site
       env:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it

@@ -43,6 +43,8 @@ Many documentation resources are available, including an operations guide and a 
 .Jetty Blogs
 feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
 
+The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm, boasts not only a robust codebase but also a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
+
 == About Jetty
 === Where has Jetty called home?
 The Jetty project has found its home in many places over the last 20+ years.

@@ -1,4 +1,5 @@
 = The Eclipse Jetty Project
+:noindex:
 
 image::jetty-logo.svg[]
 
@@ -31,16 +32,16 @@ Eclipse Jetty provides a highly scalable and memory efficient web server and ser
 
 
 
-
 == Where is Jetty used?
 Jetty is used in a wide variety of projects and products, both in development and production and has been for over 20 years. You can see more about products [Powered by Jetty]() and even have your project listed as well. Jetty has long been loved by developers due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion dollar companies, lurks in many cloud services and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places that Jetty has appeared.
 
 Many documentation resources are available, including an operations guide and a programmers guides, all accessible from the [Documentation]() page.
 
-[#wtb-id]
 == Jetty Blogs
-
 The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm, boasts not only a robust codebase but also a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
+
+.Jetty Blogs
+feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
 
 == About Jetty
 === Where has Jetty called home?
@@ -69,5 +70,3 @@ The role of leading the development of Jetty was taken over in 2006 by Webtide L
 
 ==== Mort Bay
 The Java HTTP server that became Jetty was originally developed in 1995 by Greg Wilkins of Mort Bay Consulting as part of an issue tracking application. Versions 1.x through to 6.1.x of Jetty were developed under org.mortbay packaging and Mort Bay still holds the major part of the copyright on the Jetty code base. Mort Bay directly hosted the jetty project until version 3.x and was the prime sponsor of development until 6.x.
-
-

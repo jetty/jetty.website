@@ -1,0 +1,8 @@
+= Home
+// page-has-feeds is automatically set by the feed block macro when used with Antora; must be set manually in the UI preview
+:page-has-feeds:
+
+== Blog Entries
+
+.Jetty Blogs
+feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]

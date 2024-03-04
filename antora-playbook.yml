@@ -1,4 +1,18 @@
-# npx antora antora-playbook.yml
+# to build site, use:
+#
+#  npx antora antora-playbook.yml
+#
+# to also activate the diagram generator (Kroki), use:
+#
+# npx --package antora --package asciidoctor-kroki antora antora-playbook.yml
+#
+# to build with the run jetty integration, use:
+#
+# npx --package antora --package @antora/collector-extension antora --extension @antora/collector-extension antora-playbook.yml
+antora:
+  extensions:
+  - ./lib/register-asciidoctor-kroki-extension.js
+  - ./lib/component-url-prefix-extension.js
 site:
   title: Eclipse Jetty
   url: https://jetty.org
@@ -9,13 +23,18 @@ content:
     start_paths: [home, docs-home, contribution-guide]
   - url: https://github.com/opendevise/jetty.project
     branches: jetty-12.0.x-for-antora
-    start_path: documentation/jetty-docs
+    start_path: documentation/jetty
 asciidoc:
   attributes:
     experimental: ''
     idprefix: ''
     idseparator: '-'
     page-pagination: ''
+  extensions:
+  - ./lib/feed-block-macro.js
+  - ./lib/jetty-block.js
+  - ./lib/skip-include-processor.js
+  - ./lib/absolute-path-include-processor.js
 ui:
   bundle:
     url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip

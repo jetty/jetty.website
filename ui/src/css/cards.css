@@ -1,0 +1,65 @@
+.card-entries {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 230px); */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-block {
+  max-height: 15rem;
+  height: 15rem;
+  hyphens: initial;
+}
+
+.card-block .card-link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.2rem;
+  height: 100%;
+  width: 100%;
+  border: 1.5px solid var(--color-card-border);
+  border-radius: 0.25em;
+  position: relative;
+}
+
+.card-block .card-link::before {
+  transition: all 0.2s, transform 0.2s;
+  transform: translateY(0);
+  position: relative;
+  box-shadow: none;
+  top: 0;
+}
+
+.card-block .card-link:hover {
+  border: 2px solid var(--color-net-id);
+  background-color: var(--color-net-id);
+  color: var(--color-focused);
+  transform: translateY(-3px);
+  top: -3px;
+  box-shadow: 0 10px 20px 0 var(--color-card-shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-block .card-title {
+  font-size: calc(20 / var(--rem-base) * 1rem);
+  line-height: 1.4;
+  text-align: center;
+  overflow: hidden;
+  font-weight: var(--body-font-weight-bold);
+}
+
+.card-block .card-content p {
+  font-size: calc(16 / var(--rem-base) * 1rem);
+  line-height: 1.3;
+}
+
+.card-block .overflow {
+  --max-lines: 5;
+
+  max-height: calc(1.4rem * var(--max-lines));
+  overflow: hidden;
+}

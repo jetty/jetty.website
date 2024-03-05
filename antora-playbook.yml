@@ -1,14 +1,18 @@
-# to build site, use:
+# to build site quickly, use:
 #
 #  npx antora antora-playbook.yml
 #
-# to also activate the diagram generator (Kroki), use:
+# to activate the diagram generator (Kroki), use:
 #
-# npx --package antora --package asciidoctor-kroki antora antora-playbook.yml
+#  npx --package antora --package asciidoctor-kroki antora antora-playbook.yml
 #
-# to build with the run jetty integration, use:
+# to run the full production build, start by installing all the required dependencies:
 #
-# npx --package antora --package @antora/collector-extension antora --extension @antora/collector-extension antora-playbook.yml
+#  npm i --package-lock=false
+#
+# then use:
+#
+#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --extension @antora/collector-extension --extension @antora/lunr-extension antora-playbook.yml
 antora:
   extensions:
   - ./lib/register-asciidoctor-kroki-extension.js

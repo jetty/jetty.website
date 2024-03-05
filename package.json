@@ -1,0 +1,16 @@
+{
+  "name": "jetty-website",
+  "description": "The Antora playbook repository for the Eclipse Jetty website.",
+  "private": true,
+  "devDependencies": {
+    "antora": "latest",
+    "@antora/collector-extension": "latest",
+    "@antora/lunr-extension": "latest",
+    "asciidoctor-kroki": "latest"
+  },
+  "overrides": {
+    "vinyl-fs": {
+      "glob-stream": "~7.0"
+    }
+  }
+}

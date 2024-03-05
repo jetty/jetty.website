@@ -1,5 +1,8 @@
-This repository is for the development of the new jetty.org website. It will eventually be contributed and moved to github.com/jetty/website.git or a similarly named repo.
+= Eclipse Jetty Website Playbook
 
-Currently renders to:
+This repository is for the development of the new jetty.org website.
+It will eventually be contributed and moved to https://github.com/jetty/website.git or a similarly named repo.
+
+The staged site is available at the following URL:
 
 * https://webtide.github.io/jetty.website/

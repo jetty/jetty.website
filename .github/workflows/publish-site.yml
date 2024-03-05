@@ -49,7 +49,7 @@ jobs:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it
         ANTORA_CACHE_DIR: ${{ github.workspace }}/.cache/antora
       run: |
-        npm --audit=false --fund=false --omit=false --package-lock=false i
+        npm --audit=false --fund=false --omit=optional --package-lock=false i
         npx --offline antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --html-url-extension-style=indexify --log-failure-level=error antora-playbook.yml
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3

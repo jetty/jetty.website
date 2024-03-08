@@ -50,7 +50,7 @@ jobs:
         ANTORA_CACHE_DIR: ${{ github.workspace }}/.cache/antora
       run: |
         npm --audit false --fund false --omit optional --package-lock false i
-        npx --offline antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --html-url-extension-style indexify --log-failure-level error antora-playbook.yml
+        npx --offline antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads-extension --html-url-extension-style indexify --log-failure-level error antora-playbook.yml
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
     - name: Deploy Artifact to GitHub Pages

@@ -28,7 +28,7 @@ January 1st, 2024 marks the end of community support for the Jetty 11 and older 
 
 == Version History
 
-[cols=1;1;1;1;1;1;1;3]
+[cols=1;1;1;1;1;1;1;3,grid=rows]
 |===
 |Version |Years |Home |Min{nbsp}JVM |Servlet |JSP |Status |Protocols
 

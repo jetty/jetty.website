@@ -27,7 +27,7 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
     - name: Install Java
       uses: actions/setup-java@v4
       with:
@@ -49,8 +49,8 @@ jobs:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it
         ANTORA_CACHE_DIR: ${{ github.workspace }}/.cache/antora
       run: |
-        npm --audit=false --fund=false --omit=optional --package-lock=false i
-        npx --offline antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --html-url-extension-style=indexify --log-failure-level=error antora-playbook.yml
+        npm --audit false --fund false --omit optional --package-lock false i
+        npx --offline antora --stacktrace --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --html-url-extension-style indexify --log-failure-level error antora-playbook.yml
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
     - name: Deploy Artifact to GitHub Pages

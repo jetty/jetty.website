@@ -1,4 +1,192 @@
 = Jetty Downloads
 
 The latest releases of Eclipse Jetty are listed below.
-You can find earlier releases in Maven Central.
+You can find earlier releases by browsing https://repo1.maven.org/maven2/org/eclipse/jetty[Maven Central].
+
+[%header,grid=rows]
+|===
+|Release 2+|Assets |Links
+ifdef::site-gen-antora[]
+
+include::partial$jetty-downloads.adoc[]
+endif::[]
+|===
+
+NOTE: Release notes can be found in the [.path]_VERSION.txt_ file included with the distribution and on the https://github.com/jetty/jetty.project/releases[GitHub Releases] page for the Jetty project.
+
+Release notes are also made available on the jetty-announce@eclipse.org mailing list.
+
+== What Version Do I Use?
+
+Jetty 12 is the only community supported versions of Jetty at this point in time, and has a great many improvements over previous releases.
+
+While many people continue to use older versions of Jetty like 11/10/9 for a variety of reasons, we recommend using Jetty 12
+
+Note that Jetty 12 is the only version that will receive support for the open source community, and represents the version of Jetty that we will actively maintain and improve over the next few years.
+
+January 1st, 2024 marks the end of community support for the Jetty 11 and older releases.
+
+== Version History
+
+[cols=1;1;1;1;1;1;1;3]
+|===
+|Version |Years |Home |Min{nbsp}JVM |Servlet |JSP |Status |Protocols
+
+|12
+|2023-
+|Eclipse
+|17 footnote:jpms[JPMS module support is optional.]
+|3.1 4.0 5.0 6.0
+|2.3 3.0 3.1
+|*Stable*
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI, *JakartaEE Namespace* footnote:jakarta[Due to Oracle's ownership of the "`Java`" trademark, usage of the javax.{asterisk} namespace has been restricted and the jakarta.{asterisk} namespace was adopted by the Eclipse Foundation.], JavaEE Namespace footnote:javaee[Only for Java EE 8 (Servlet 4.0, JSP 2.3) support, using the javax.{asterisk} namespace.]
+
+|11
+|2020-
+|Eclipse
+|11 footnote:jpms[]
+|5.0
+|3.0
+|*Stable https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI, *JakartaEE Namespace* footnote:jakarta[]
+
+|10
+|2020-
+|Eclipse
+|11 footnote:jpms[]
+|4.0
+|2.3
+|*Stable https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI
+
+|9.4
+|2016-
+|Eclipse
+|1.8
+|3.1
+|2.3
+|Stable https://github.com/jetty/jetty.project/issues/7958[(Notice)]
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI
+
+|9.3
+|2015-2020
+|Eclipse
+|1.8 footnote:jdk9[JDK9 and newer is not supported if using MultiRelease JAR Files, or Bytecode / Annotation scanning.]
+|3.1
+|2.3
+|Deprecated
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI
+
+|9.2
+|2014-2018
+|Eclipse
+|1.7 footnote:jdk9[]
+|3.1
+|2.3
+|Deprecated
+|HTTP/1.1 (RFC 2616), javax.websocket, SPDY v3
+
+|9.1
+|2013-2014
+|Eclipse
+|1.7 footnote:jdk9[]
+|3.1
+|2.3
+|Deprecated
+|HTTP/1.1 (RFC 2616)
+
+|9.0
+|2013-2013
+|Eclipse
+|1.7 footnote:jdk9[]
+|3.1-beta
+|2.3
+|Deprecated
+|HTTP/1.1 (RFC 2616)
+
+|8
+|2009-2014
+|Eclipse / Codehaus
+|1.6 footnote:jdk9[]
+|3.0
+|2.2
+|Venerable
+|HTTP/1.1 (RFC 2616), WebSocket RFC 6455, SPDY v3
+
+|7
+|2008-2014
+|Eclipse / Codehaus
+|1.5
+|2.5
+|2.1
+|Venerable
+|HTTP/1.1 (RFC 2616), WebSocket RFC 6455, SPDY v3
+
+|6
+|2006-2010
+|Codehaus
+|1.4-1.5
+|2.5
+|2.0
+|Antique
+|HTTP/1.1 (RFC 2616)
+
+|5
+|2003-2009
+|Sourceforge
+|1.2-1.5
+|2.4
+|2.0
+|Relic
+|HTTP/1.1 (RFC 2616)
+
+|4
+|2001-2006
+|Sourceforge
+|1.2, J2ME
+|2.3
+|1.2
+|Ancient
+|HTTP/1.1 (RFC 2616)
+
+|3
+|1999-2002
+|Sourceforge
+|1.2
+|2.2
+|1.1
+|Fossilized
+|HTTP/1.1 (RFC 2068)
+
+|2
+|1998-2000
+|Mortbay
+|1.1
+|2.1
+|1.0
+|Legendary
+|HTTP/1.0 (RFC 1945)
+
+|1
+|1995-1998
+|Mortbay
+|1.0
+|-
+|-
+|Mythical
+|HTTP/1.0 (RFC 1945)
+|===
+
+== Prior Versions
+
+//The most recent versions of prior Jetty releases can be found here, with their associated documentation.
+
+The canonical repository for Jetty is Maven Central.
+//All releases are always available there first and this download page may lag a bit update wise as post release resources are put into place.
+You can browse for all Jetty releases https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution[here].
+
+== Jetty P2 Provisioning
+
+This provisioning address is not for general use and are provided strictly for OSGI users.
+
+* Composite Jetty 9 P2 Provisioning: http://download.eclipse.org/jetty/updates/jetty-bundles-9.x

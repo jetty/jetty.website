@@ -8,15 +8,19 @@
 #
 # to run the full production build, start by installing all the required dependencies:
 #
-#  npm i --package-lock=false
+#  npm i --package-lock false
 #
 # then use:
 #
-#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --extension @antora/collector-extension --extension @antora/lunr-extension antora-playbook.yml
+#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads-extension antora-playbook.yml
 antora:
   extensions:
   - ./lib/register-asciidoctor-kroki-extension.js
   - ./lib/component-url-prefix-extension.js
+  - id: jetty-downloads-extension
+    require: ./lib/jetty-downloads-extension.js
+    enabled: false
+    last_eol_version: 11
 site:
   title: Eclipse Jetty
   url: https://jetty.org

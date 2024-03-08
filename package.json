@@ -6,7 +6,8 @@
     "antora": "latest",
     "@antora/collector-extension": "latest",
     "@antora/lunr-extension": "latest",
-    "asciidoctor-kroki": "latest"
+    "asciidoctor-kroki": "latest",
+    "@octokit/rest": "~20.0"
   },
   "overrides": {
     "vinyl-fs": {

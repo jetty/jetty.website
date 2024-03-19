@@ -1,8 +1,8 @@
-# to build site quickly, use:
+# to build site quickly, run:
 #
 #  npx antora antora-playbook.yml
 #
-# to activate the diagram generator (Kroki), use:
+# to activate the diagram generator (Kroki), run:
 #
 #  npx --package antora --package asciidoctor-kroki antora antora-playbook.yml
 #
@@ -10,7 +10,7 @@
 #
 #  npm i --package-lock false
 #
-# then use:
+# then run:
 #
 #  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads-extension antora-playbook.yml
 antora:

@@ -4,39 +4,33 @@
 
 == Commercial Support
 
-Professional support is available for the open source releases of the Eclipse Jetty project through [Webtide](https://webtide.com). Webtide fully funds the ongoing development of the open source project through services and support with members of the Jetty community.
+Professional support is available for the Eclipse Jetty open source project through [Webtide](https://webtide.com). Webtide fully funds the ongoing development of the open source project through services and support with members of the Jetty community. As 100% developer owned and operated, working with Webtide directly supports Jetty.
 
 == Open Source Support
 
-Mailing Lists
+=== Mailing Lists
 Mailing lists are a wonderful way to interact with the community at large and for a certain class of issue have the best chances of achieving resolution. There are a number of mailing lists available within the Jetty project. A good rule of thumb when choosing between the developer and user lists is to ask yourself who the audience is. If your question is broadly interesting to the community, use the users list, and if narrowly focused on Jetty internals or minutiae, then the dev list might be a better option.
 
-Jetty Developers List
+==== Jetty Developers List
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-dev
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-dev/
 
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-dev
+==== Jetty Users List
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-users
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-users/
 
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-dev/
+==== Jetty Announcements List
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-announce
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
 
-Jetty Users List
-
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-users
-
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-users/
-
-Jetty Announcements List
-
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-announce
-
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
-
-StackOverflow
+=== StackOverflow
 From a simple support perspective it is hard to beat [StackOverflow](http://stackoverflow.com/) for interacting with a Jetty community. Numerous users have asked and had answered their questions on the platform by other users and developers alike.
 
 Check out the general [Jetty](https://stackoverflow.com/questions/tagged/jetty) tag!
 
 The [Embedded-Jetty](https://stackoverflow.com/questions/tagged/embedded-jetty) tag is also popular for questions on Jetty internals.
 
-Github: Issues and Features
+=== Github: Issues and Features
 While not necessarily a support channel for solving a specific user problem, the issue tracker for Eclipse Jetty is a great location for addressing issues or suggesting features you want to see (or ideally contribute) in Jetty.
 
 When you file a Github Issue in the Eclipse Jetty project there are a number of labels available and we encourage to you use them appropriately.

@@ -6,6 +6,8 @@
 
 Professional support is available for the open-source releases of the Eclipse Jetty project through [Webtide](https://webtide.com). Webtide fully funds the ongoing development of the open-source project through services and support from members of the Jetty community. As 100% developer-owned and operated, working with Webtide is the best way to support and ensure the future of the open-source Jetty project.
 
+[Book an appointment now!](https://webtide.com/schedule)
+
 == Open Source Support
 
 Mailing Lists

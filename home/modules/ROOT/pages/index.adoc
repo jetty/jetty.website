@@ -3,7 +3,7 @@
 
 image::jetty-logo.svg[]
 
-Eclipse Jetty provides a highly scalable and memory efficient web server and servlet container, additionally providing support for many protocols such as HTTP/3,2,1 and WebSocket. Furthermore the project provides integrations with many other technologies such as, OSGi, JMX, JNDI, JAAS and many others. These components are open source and are freely available for commercial use and distribution under both the EPL2 and Apache2 licenses.
+Eclipse Jetty provides a highly scalable and memory-efficient web server and servlet container, supporting many protocols such as HTTP/3,2,1 and WebSocket. Furthermore, the project offers integrations with many other technologies, such as OSGi, JMX, JNDI, JAAS, etc. These components are open source and are freely available for commercial use and distribution under both the EPL2 and Apache2 licenses.
 
 == Why you should use Jetty?
 
@@ -34,44 +34,44 @@ Eclipse Jetty provides a highly scalable and memory efficient web server and ser
 
 
 == Where is Jetty used?
-Jetty is used in a wide variety of projects and products, both in development and production and has been for over 20 years. You can see more about products [Powered by Jetty]() and even have your project listed as well. Jetty has long been loved by developers due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion dollar companies, lurks in many cloud services and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places that Jetty has appeared.
+Jetty has been used in various projects and products in development and production for over 20 years. You can see more about products [Powered by Jetty]() and even have your project listed. Developers have long loved Jetty due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion-dollar companies, lurks in many cloud services, and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places where Jetty has appeared.
 
-Many documentation resources are available, including an operations guide and a programmers guides, all accessible from the [Documentation]() page.
+Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the [Documentation]() page.
 
 == Blog Entries
 
 .Jetty Blogs
 feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
 
-The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm, boasts not only a robust codebase but also a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
+The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm boasts a robust codebase and a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
 
 == About Jetty
 === Where has Jetty called home?
 The Jetty project has found its home in many places over the last 20+ years.
 
 ==== Eclipse and Github
-In 2009, the Jetty project moved its core components to be a project of the Eclipse Foundation, in order to improve the IP processes and broaden the licensing and community of the project. As of Jetty 9 the project has fully moved to the Eclipse Foundation. Additionally, in 2016 the project moved the canonical source and issue repository to Github.
+In 2009, the Jetty project moved its core components to be a project of the Eclipse Foundation to improve the IP processes and broaden the licensing and community of the project. Beginning with Jetty 9, the project was moved to the Eclipse Foundation. Additionally, in 2016, the project moved the canonical source and issue repository to Github.
 
 ==== Codehaus
-In 2005, the jetty project moved to the The Codehaus for its hosting services and open source community. In 2009, after the core components of Jetty moved to Eclipse, the Jetty @ codehaus project continued to provide integrations, extensions and packaging of Jetty.
+In 2005, the jetty project moved to The Codehaus for its hosting services and open-source community. In 2009, after the core components of Jetty moved to Eclipse, the Jetty @ codehaus project continued to provide integrations, extensions, and packaging of Jetty.
 
 ==== Sourceforge
-From 2000 to 2005, the Jetty project was hosted at sourceforge.net where versions 3.x, 4.x and 5.x were produced.
+From 2000 to 2005, the Jetty project was hosted at sourceforge.net, where versions 3.x, 4.x and 5.x were produced.
 
-=== Who has funded development of Jetty?
-The development of the Jetty project has been fully funded over the years through close collaboration with a great many wonderful clients. Professional Support has been organized through the entities mentioned below over the years.
+=== Who has funded the development of Jetty?
+The development of the Jetty project has been fully funded over the years through close collaboration with many wonderful clients. Professional Support has been organized through the entities mentioned below over the years.
 
 ==== Webtide
-In 2015 the development of Jetty was once more taken over by Webtide when the developers split away from Intalio, taking full ownership of the company behind the open source project. Webtide now fully funds the ongoing development of the Jetty project through services and support on the open source releases of the Jetty project.
+In 2015, the development of Jetty was once more taken over by Webtide when the developers split away from Intalio, taking full ownership of the company behind the open-source project. Webtide is now 100% developer-owned and operated and fully funds the ongoing development of the Jetty project through services and support for the open-source releases of the Jetty project.
 
 ==== Intalio
-The role of the development of Jetty was taken over in 2009 by Intalio, Inc., who acquired both Webtide and Mort Bay. Intalio was a company that offered both products and services based on open source software and they employed many of the jetty developers and contributors in addition to other open source and closed source platforms.
+The role of the development of Jetty was taken over in 2009 by Intalio, Inc., who acquired both Webtide and Mort Bay. Intalio was a company that offered both products and services based on open-source software. They employed many jetty developers and contributors in addition to other open-source and closed-source platforms.
 
 ==== Webtide
-The role of leading the development of Jetty was taken over in 2006 by Webtide LLC, formed as a joint venture between Mort Bay and partners providing marketing, sales and strategic assistance to the open source project.
+The role of leading the development of Jetty was taken over in 2006 by Webtide LLC, formed as a joint venture between Mort Bay and partners providing marketing, sales, and strategic assistance to the open-source project.
 
 ==== Mort Bay
-The Java HTTP server that became Jetty was originally developed in 1995 by Greg Wilkins of Mort Bay Consulting as part of an issue tracking application. Versions 1.x through to 6.1.x of Jetty were developed under org.mortbay packaging and Mort Bay still holds the major part of the copyright on the Jetty code base. Mort Bay directly hosted the jetty project until version 3.x and was the prime sponsor of development until 6.x.
+The Java HTTP server that became Jetty was initially developed in 1995 by Greg Wilkins of Mort Bay Consulting as part of an issue-tracking application. Versions 1.x through to 6.1.x of Jetty were developed under org.mortbay packaging and Mort Bay still hold the central part of the copyright on the Jetty code base. Mort Bay directly hosted the jetty project until version 3.x and was the prime sponsor of development until 6.x.
 
 
 

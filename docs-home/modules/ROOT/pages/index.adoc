@@ -11,5 +11,19 @@ s|Jetty 12
 xref:12@jetty:programming-guide:index.adoc[]
 
 |https://eclipse.dev/jetty/javadoc/jetty-12/index.html?overview-summary.html[api] /
-https://github.com/eclipse/jetty.project/tree/jetty-12.0.3[source]
+https://github.com/eclipse/jetty.project/tree/jetty-12.0.x[source]
+
+s|Jetty 11
+|xref:11@jetty:operations-guide:index.adoc[] +
+xref:11@jetty:programming-guide:index.adoc[]
+
+|https://eclipse.dev/jetty/javadoc/jetty-11/index.html?overview-summary.html[api] /
+https://github.com/eclipse/jetty.project/tree/jetty-11.0.x[source]
+
+s|Jetty 10
+|xref:10@jetty:operations-guide:index.adoc[] +
+xref:10@jetty:programming-guide:index.adoc[]
+
+|https://eclipse.dev/jetty/javadoc/jetty-10/index.html?overview-summary.html[api] /
+https://github.com/eclipse/jetty.project/tree/jetty-10.0.x[source]
 |===

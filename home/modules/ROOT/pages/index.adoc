@@ -36,7 +36,7 @@ Eclipse Jetty provides a highly scalable and memory-efficient web server and ser
 == Where is Jetty used?
 Jetty has been used in various projects and products in development and production for over 20 years. You can see more about products [Powered by Jetty]() and even have your project listed. Developers have long loved Jetty due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion-dollar companies, lurks in many cloud services, and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places where Jetty has appeared.
 
-Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the [Documentation]() page.
+Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the link:docs/[Documentation] page.
 
 == Blog Entries
 

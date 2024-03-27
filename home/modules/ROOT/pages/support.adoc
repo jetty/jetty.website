@@ -10,35 +10,35 @@ link:https://webtide.com/schedule[Book an appointment now!]
 
 == Open Source Support
 
-Mailing Lists
+=== Mailing Lists
 Mailing lists are an excellent way to interact with the community and have the best chance of achieving a resolution for a particular class of issues. A few mailing lists are available for the Jetty project. When choosing between the developer and user lists, a good rule of thumb is to ask yourself who the audience is. If your question is broadly interesting to the community, you can just use the user's list. The dev list might be better if your question or comment is narrowly focused on Jetty internals or minutiae.
 
-Jetty Developers List
+==== Jetty Developers List
 
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-dev
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-dev
 
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-dev/
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-dev/
 
-Jetty Users List
+==== Jetty Users List
 
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-users
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-users
 
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-users/
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-users/
 
-Jetty Announcements List
+==== Jetty Announcements List
 
-Join - https://dev.eclipse.org/mailman/listinfo/jetty-announce
+* Join - https://dev.eclipse.org/mailman/listinfo/jetty-announce
 
-Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
+* Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
 
-StackOverflow
+=== StackOverflow
 From a simple support perspective, it is hard to beat [StackOverflow](http://stackoverflow.com/) when interacting with a Jetty community. Numerous users have asked and been answered on the platform by other users and developers alike.
 
 Check out the general link:https://stackoverflow.com/questions/tagged/jetty[jetty] tag!
 
 The link:https://stackoverflow.com/questions/tagged/embedded-jetty[embedded-jetty] tag is also popular for questions on Jetty internals.
 
-Github: Issues and Features
+=== Github: Issues and Features
 While not necessarily a support channel for solving a specific user problem, the issue tracker for Eclipse Jetty is a great location for addressing issues or suggesting features you want to see (or ideally contribute) in Jetty.
 
 When you file a GitHub Issue in the Eclipse Jetty project, several labels are available, and we would like to encourage you to use them appropriately.

@@ -12,17 +12,17 @@ include::partial$jetty-downloads.adoc[]
 endif::[]
 |===
 
-NOTE: Release notes can be found in the [.path]_VERSION.txt_ file included with the distribution and on the https://github.com/jetty/jetty.project/releases[GitHub Releases] page for the Jetty project.
+NOTE: Release notes are in the [.path]_VERSION.txt_ file included with the distribution and on the https://github.com/jetty/jetty.project/releases[GitHub Releases] page for the Jetty project.
 
 Release notes are also made available on the jetty-announce@eclipse.org mailing list.
 
 == What Version Do I Use?
 
-Jetty 12 is the only community supported versions of Jetty at this point in time, and has a great many improvements over previous releases.
+Jetty 12 is the only community-supported version of Jetty and has many improvements over previous releases.
 
 While many people continue to use older versions of Jetty like 11/10/9 for a variety of reasons, we recommend using Jetty 12
 
-Note that Jetty 12 is the only version that will receive support for the open source community, and represents the version of Jetty that we will actively maintain and improve over the next few years.
+Jetty 12 is the only version that will receive support to the open-source community. It represents the version of Jetty that we will actively maintain and improve over the next few years.
 
 January 1st, 2024 marks the end of community support for the Jetty 11 and older releases.
 
@@ -39,7 +39,7 @@ January 1st, 2024 marks the end of community support for the Jetty 11 and older 
 |3.1 4.0 5.0 6.0
 |2.3 3.0 3.1
 |*Stable*
-|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI, *JakartaEE Namespace* footnote:jakarta[Due to Oracle's ownership of the "`Java`" trademark, usage of the javax.{asterisk} namespace has been restricted and the jakarta.{asterisk} namespace was adopted by the Eclipse Foundation.], JavaEE Namespace footnote:javaee[Only for Java EE 8 (Servlet 4.0, JSP 2.3) support, using the javax.{asterisk} namespace.]
+|HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI, *JakartaEE Namespace* footnote:jakarta[Due to Oracle's ownership of the "`Java`" trademark, usage of the javax.{asterisk} namespace has been restricted, and the jakarta.{asterisk} namespace was adopted by the Eclipse Foundation.], JavaEE Namespace footnote:javaee[Only for Java EE 8 (Servlet 4.0, JSP 2.3) support, using the javax.{asterisk} namespace.]
 
 |11
 |2020-
@@ -179,14 +179,14 @@ January 1st, 2024 marks the end of community support for the Jetty 11 and older 
 
 == Prior Versions
 
-//The most recent versions of prior Jetty releases can be found here, with their associated documentation.
+//The most recent versions of prior Jetty releases, with their associated documentation, can be found here.
 
 The canonical repository for Jetty is Maven Central.
-//All releases are always available there first and this download page may lag a bit update wise as post release resources are put into place.
-You can browse for all Jetty releases https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution[here].
+//All releases are always available there first, and this download page may lag a bit update-wise as post-release resources are put into place.
+You can browse for all Jetty releases at https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution[here].
 
 == Jetty P2 Provisioning
 
-This provisioning address is not for general use and are provided strictly for OSGI users.
+This provisioning address is not for general use and is provided strictly for OSGI users.
 
 * Composite Jetty 9 P2 Provisioning: http://download.eclipse.org/jetty/updates/jetty-bundles-9.x

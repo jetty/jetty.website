@@ -1,5 +1,50 @@
 = Support
 
+
+
 == Commercial Support
 
+Professional support is available for the open-source releases of the Eclipse Jetty project through [Webtide](https://webtide.com). Webtide fully funds the ongoing development of the open-source project through services and support from members of the Jetty community. As 100% developer-owned and operated, working with Webtide is the best way to support and ensure the future of the open-source Jetty project.
+
+[Book an appointment now!](https://webtide.com/schedule)
+
 == Open Source Support
+
+Mailing Lists
+Mailing lists are an excellent way to interact with the community and have the best chance of achieving a resolution for a particular class of issues. A few mailing lists are available for the Jetty project. When choosing between the developer and user lists, a good rule of thumb is to ask yourself who the audience is. If your question is broadly interesting to the community, you can just use the user's list. The dev list might be better if your question or comment is narrowly focused on Jetty internals or minutiae.
+
+Jetty Developers List
+
+Join - https://dev.eclipse.org/mailman/listinfo/jetty-dev
+
+Archives - http://dev.eclipse.org/mhonarc/lists/jetty-dev/
+
+Jetty Users List
+
+Join - https://dev.eclipse.org/mailman/listinfo/jetty-users
+
+Archives - http://dev.eclipse.org/mhonarc/lists/jetty-users/
+
+Jetty Announcements List
+
+Join - https://dev.eclipse.org/mailman/listinfo/jetty-announce
+
+Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
+
+StackOverflow
+From a simple support perspective, it is hard to beat [StackOverflow](http://stackoverflow.com/) when interacting with a Jetty community. Numerous users have asked and been answered on the platform by other users and developers alike.
+
+Check out the general [Jetty](https://stackoverflow.com/questions/tagged/jetty) tag!
+
+The [Embedded-Jetty](https://stackoverflow.com/questions/tagged/embedded-jetty) tag is also popular for questions on Jetty internals.
+
+Github: Issues and Features
+While not necessarily a support channel for solving a specific user problem, the issue tracker for Eclipse Jetty is a great location for addressing issues or suggesting features you want to see (or ideally contribute) in Jetty.
+
+When you file a GitHub Issue in the Eclipse Jetty project, several labels are available, and we would like to encourage you to use them appropriately.
+
+[Issues at Github](http://github.com/eclipse/jetty.project)
+
+We have additionally identified and labeled many issues that may be appropriate for users of different levels of expertise who might want to contribute to Jetty but not have a specific goal or issue in mind.
+
+[Help Wanted](https://github.com/eclipse/jetty.project/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22)

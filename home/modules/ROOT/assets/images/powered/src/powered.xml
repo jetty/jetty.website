@@ -1,0 +1,2903 @@
+<items>
+    <item>
+        <link>https://www.1060research.com/
+        </link>
+        <image>1060.png
+        </image>
+        <title>1060 NetKernel</title>
+        <description>
+            A virtual Internet OS with an XML runtime. It offers a microkernel modular component architecture and
+            integrates a comprehensive set of XML technologies. It features an XML runtime, XML pipeline processes with
+            loops and exception handling, virtualized modular URI address spaces, and a dependency-based cache."
+        </description>
+    </item>
+    <item>
+        <link>https://www.abaxx.com/elements
+        </link>
+        <image>abaXX.gif
+        </image>
+        <title>abaXX</title>
+        <description>
+            abaXX elements is a full-fledged portal-building software including easy-to-use MVC support, a Portlet
+            framework, an event model, a Portlet deployment model, a Struts compatibility option, a tag library, a set
+            of web widgets (trees etc.), a ready-to-run 'vanilla' base portal, a rather amazing live web portal
+            configurator ('PortalBuilder'), and plenty of professional documentation. The developer licence is free.
+        </description>
+    </item>
+    <item>
+        <link>https://blogs.opensymphony.com/plightbo/2006/08/item_able_a_complete_java_w.html</link>
+        <title>Able</title>
+        <description>
+            item Able is a full Java-based web development stack designed to make web development painless. In a
+            sense, it is an attempt to bring together quality opensource tools in one cohesive stack, similar to what
+            Rails has done for Ruby, while also encouraging common practices I've used in software engineering for a
+            long time.
+        </description>
+    </item>
+    <item>
+        <link>https://activemq.apache.org/
+        </link>
+        <image>activemq.png
+        </image>
+        <title>ActiveMQ</title>
+        <description>
+            Apache ActiveMQ is the most popular and powerful open source Message Broker and Enterprise Integration
+            Patterns provider.
+        </description>
+    </item>
+    <item>
+        <link>https://www.adeptiabpm.com/
+        </link>
+        <image>adeptia.gif
+        </image>
+        <title>Adeptia</title>
+        <description>
+            Adeptia provides Business Process Management (BPM) and SOA-based integration technology to easily and
+            quickly automate business processes and data flows using industry-specific standards.
+        </description>
+    </item>
+    <item>
+        <link>https://aejaks.sourceforge.net/Aejaks_Home/index.html
+        </link>
+        <image>aejaks-logo.jpg
+        </image>
+        <title>Æjaks</title>
+        <description>
+            Æjaks combines the server-side Ajax windowing system Echo2 with the powerful simplicity of the Tcl langauge.
+            The result is a rich development environment in which to develop Ajax-based web applications, often with
+            much less code to write.
+        </description>
+    </item>
+    <item>
+        <link>https://apriority.dyndns.biz/aesplash.html
+        </link>
+        <image>AgilEntityLogo.png
+        </image>
+        <title>AgilEntity</title>
+        <description>
+            AgilEntity is a clustered java based framework that provides a platform for building extremely robust
+            distributed applications that are all managed using the Action Oriented Workflow paradigm.
+        </description>
+    </item>
+    <item>
+        <link>https://www.alibaba-inc.jp/
+        </link>
+        <image>alibaba_jp.gif
+        </image>
+        <title>Alibaba Japan</title>
+        <description>
+            Alibaba Japan uses Jetty as a dynamic gateway to translate https://www.alibaba.com into the Japanese
+            language.
+        </description>
+    </item>
+    <item>
+        <link>https://wiki.alfresco.com/wiki/Managing_Alfresco_Lifecyle_with_Maven
+        </link>
+        <image>alfresco-dev-logo.gif
+        </image>
+        <title>Alfresco</title>
+        <description>
+            This m2 archetype provides (with zero conf remote creation hosted in SourceSense mvn repositories) the
+            following features amongst others: property filtering,rapid prototyping, releasing, documentation site, LDAP
+            configuration samples, jetty embedded run, ant support.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jfrog.org/sites/artifactory/latest/index.html
+        </link>
+        <image>artifactory.png
+        </image>
+        <title>Artifactory</title>
+        <description>
+            Artifactory is a Maven2 proxy repository with advanced features. It is based on JCR (using JackRabbit as the
+            implementation), with a web UI based on Wicket, and embeded Jetty for quick start. All artifacts are stored
+            in an embedded Derby DB.
+        </description>
+    </item>
+    <item>
+        <link>https://atomic.catchpole.net/
+        </link>
+        <image>atomicobjects.gif
+        </image>
+        <title>Atomic</title>
+        <description>
+            Atomic is an object environment that creates a virtual space in which Java objects can be created, linked
+            and taught to relate to one another. Atomic uses technology found in neutral networks, databases and
+            distributed systems. Atomic can be used as a stand-alone server, with integrated web, console and 3D GUI
+            services. It can also be used as library within other products.
+        </description>
+    </item>
+    <item>
+        <link>https://www.bdm-systems.com/en/products.htm
+        </link>
+        <image>bluecube.png
+        </image>
+        <title>bluecube</title>
+        <description>
+            bluecube is the powerful business intelligence (bi) solution by bdm business data management. It includes
+            it’s own ETL and OLAP engine, connectors with predefined content, a very mighty cube builder and a
+            convinient MS Excel client.
+        </description>
+    </item>
+    <item>
+        <link>https://openbluedragon.org/
+        </link>
+        <image>bluedragon.png
+        </image>
+        <title>Open BlueDragon</title>
+        <description>
+            Open BlueDragon, was released as a GPLv3 open source item, on the 3rd of May 2008. Designed to capitalise
+            on the popularity of the Java CFML runtime engine, by bringing together a community of users and experts to
+            drive the future of CFML as a whole.
+        </description>
+    </item>
+    <item>
+        <link>https://www.blue-elephant-systems.com
+        </link>
+        <image>bes.jpg
+        </image>
+        <title>Blue Elephant Systems</title>
+        <description>
+            MIDAS Configurator is a web-based configuration and administration GUI for various network and system
+            management suites, eg. for HP OpenView Operations for UNIX. MIDAS allows you to browse and change the
+            complete configuration data by linking all related information together. Configuration items can be saved
+            transparently in a version control system. MIDAS is based on an enterprise service bus (esb) and runs on
+            HP-UX, Solaris, Linux and Windows Server operating systems.
+        </description>
+    </item>
+    <item>
+        <link>https://edocs.bea.com/wlibc/docs70/index.html
+        </link>
+        <image>bea.gif
+        </image>
+        <title>WebLogic Business Connect</title>
+        <description>
+            Business Connect, the lightweight trading partner software for BEA WebLogic Integration, enables businesses
+            to connect supply chains with demand chains, down to the smallest partners and suppliers.
+        </description>
+    </item>
+    <item>
+        <link>https://bombermine.com/
+        </link>
+        <image>bombermine.png
+        </image>
+        <title>BomberMine</title>
+        <description>
+            Bombermine game server is built upon jetty websocket handler.
+        </description>
+    </item>
+    <item>
+        <link>https://brainking.com
+        </link>
+        <image>brainking.jpg
+        </image>
+        <title>Brain King</title>
+        <description>
+            An online game server that plays chess, checkers, five in line reversi and other will-known games.
+            Get a BrainKing rateing calculated by your results.
+        </description>
+    </item>
+    <item>
+        <link>https://www.crunchysoftware.com/browsertunnel.htm
+        </link>
+        <image>browsertunnel.gif
+        </image>
+        <title>BrowserTunnel</title>
+        <description>
+            BrowserTunnel allows you to perform simple control of a remote PC via a standard web browser.
+        </description>
+    </item>
+    <item>
+        <link>https://sourceforge.net/items/bugkilla
+        </link>
+        <image>bugkilla.gif
+        </image>
+        <title>BugKilla</title>
+        <description>
+            Bugkilla is a set of java tools for the functional test of J2EE Web Applications. Specification and
+            execution of tests is automated for web front end and business logic layer. One goal of the item is to
+            integrate with existing open source frameworks and tools. Jetty is used in its proxy configuration to
+            capture http-communication as test procedures for the replay based tests.
+        </description>
+    </item>
+    <item>
+        <link>https://www.bug-track.com/
+        </link>
+        <image>BugTrackLogo.gif
+        </image>
+        <title>Bug Track</title>
+        <description>
+            For all development teams, who want the best Issue Tracking System, Bug-Track.com is a web based tracking
+            software that is highly customizable and easy to use. Unlike Open Source and Free software, our product is
+            easy to install and customize. Come in and try our free demo.
+        </description>
+    </item>
+    <item>
+        <link>https://jakarta.apache.org/cactus/index.html
+        </link>
+        <image>cactus.gif
+        </image>
+        <title>Cactus</title>
+        <description>
+            Cactus is a simple test framework for unit testing server-side java code (Servlets, EJBs, Tag Libs, Filters,
+            ...). The intent of Cactus is to lower the cost of writing tests for server-side code. It uses JUnit and
+            extends it. Cactus implements an in-container strategy.
+        </description>
+    </item>
+    <item>
+        <link>https://camel.apache.org/
+        </link>
+        <image>camel.png
+        </image>
+        <title>Apache Camel</title>
+        <description>
+            Apache Camel is a powerful open source integration framework based on known Enterprise Integration Patterns
+            with powerful Bean Integration. Camel lets you create the Enterprise Integration Patterns to implement
+            routing and mediation rules in either a Java based Domain Specific Language (or Fluent API), via Spring
+            based Xml Configuration files or via the Scala DSL. This means you get smart completion of routing rules in
+            your IDE whether in your Java, Scala or XML editor.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/p/castcluster/
+        </link>
+        <image>castcluster.png
+        </image>
+        <title>CastCluster</title>
+        <description>
+            CastCluster is an evolving item that aims to provide access to additional content on iTunes, Apple TV,
+            iPod or Random Podcast Viewer. The current sources of content are YouTube, Google Video, Revver, local disk
+            and RSS feeds.
+        </description>
+    </item>
+    <item>
+        <link>https://www.celerity-crm.nl/
+        </link>
+        <image>celerity.png
+        </image>
+        <title>Celerity CRM</title>
+        <description>
+            (Site in Dutch) Celerity CRM is an easy to use online relationship manager with different modules. The price
+            is based on a low monthly per user.
+        </description>
+    </item>
+    <item>
+        <link>https://www.chess.com/
+        </link>
+        <image>chesscom.png
+        </image>
+        <title>Chess.com</title>
+        <description>
+            Chess.com is the newest and fastest growing online chess community where members can play chess, learn, and
+            connect. Chess.com uses Jetty to power the next generation of live online chess servers.
+        </description>
+    </item>
+    <item>
+        <link>https://www.powersource.com.au/cine-intro.html
+        </link>
+        <image>cine-jetty-image.gif
+        </image>
+        <title><![CDATA[Cin&eacute;math&egrave;que]]></title>
+        <description>
+            <![CDATA[Cin&eacute;math&egrave;que is a comprehensive, integrated management and control solution for interactive
+            video on-demand in wide area residential, residential multi-dwelling, and hospitality environments.]]>
+        </description>
+    </item>
+    <item>
+        <link>https://www.cipango.org/
+        </link>
+        <image>cipango.png
+        </image>
+        <title>Cipango</title>
+        <description>
+            Cipango is a SIP Servlets extension to the popular Jetty HTTP Servlet engine. Cipango/Jetty is then a
+            convergent SIP/HTTP Application Server compliant with both SIP Servlets 1.1 and HTTP Servlets 2.5 standards.
+            It also features a Diameter extension to develop IMS applications.
+        </description>
+    </item>
+    <item>
+        <link>https://circumflex.ru/items/web/index.html
+        </link>
+        <image>circumflex.png
+        </image>
+        <title>Circumflex</title>
+        <description>
+            Circumflex Web Framework is a minimalistic DSL for quick and robust Web application development using Scala
+            programming language https://scala-lang.org.
+        </description>
+    </item>
+    <item>
+        <link>https://www.cisco.com/en/US/products/hw/routers/ps314/products_data_sheet09186a0080091f30.html
+        </link>
+        <image>cisco.gif
+        </image>
+        <title>Cisco Subscriber Edge Services Manager</title>
+        <description>
+            CNS SESM allows service providers and mobile operators to create branded web portals. These portals can be
+            used to promote value-added services, create customer loyalty, build a brand experience, differentiate
+            service offers, and increase customer satisfaction
+        </description>
+    </item>
+    <item>
+        <link>https://cocoon.apache.org
+        </link>
+        <image>cocoon.gif
+        </image>
+        <title>Cocoon</title>
+        <description>
+            Apache Cocoon is a web development framework built around the concepts of separation of concerns and
+            component-based web development. Cocoon implements these concepts around the notion of 'component
+            pipelines', each component on the pipeline specializing on a particular operation. This makes it possible to
+            use a Lego(tm)-like approach in building web solutions, hooking together components into pipelines without
+            any required programming. Cocoon is "web glue for your web application development needs". It is a glue that
+            keeps concerns separate and allows parallel evolution of all aspects of a web application, improving
+            development pace and reducing the chance of conflicts.
+        </description>
+    </item>
+    <item>
+        <link>https://www.collectionspace.org/
+        </link>
+        <image>collectionspace.png
+        </image>
+        <title>CollectionSpace</title>
+        <description>
+            CollectionSpace is an open-source collections management application that meets the needs of museums,
+            historical societies, and other collection-holding organizations. CollectionSpace is designed to be
+            configurable to each organization’s needs, serving as a gateway to digital and physical assets across an
+            institution. The software is freely distributed via open-source licensing, and an active developer community
+            ensures that CollectionSpace is continually improving.
+        </description>
+    </item>
+    <item>
+        <link>https://www.collettadicastelbianco.com
+        </link>
+        <image>colletta.jpg
+        </image>
+        <title>Colletta di Castelbianco</title>
+        <description>
+            Jetty is used to power the website of this telecommuters village in the
+            mountains behind the italian riviera. The site gives information about
+            the ancient stone village, it surroundings and provides a booking site
+            for short and long term accomodation.
+        </description>
+    </item>
+    <item>
+        <link>https://www.codestreet.com/
+        </link>
+        <image>codestreet.jpg
+        </image>
+        <title>CodeStreet</title>
+        <description>
+            ReplayService for JMS adds a third QoS to TIBCO EMS: historical. By storing and indexing message streams in
+            a high-performance data store, subsequent retrieval, search and statistics become a breeze. The Replay API
+            is an implementation of JMS 1.1 with replay additions such as 'rewindable destinations'.
+        </description>
+    </item>
+    <item>
+        <link>https://www.proiv.com/p4web/home/products/concertocd/index.xsp
+        </link>
+        <image>concerto.gif
+        </image>
+        <title>Concerto Universal</title>
+        <description>
+            Concerto provides a highly efficient and portable integrated Server side JavaScript development and
+            deployment environment which has a rich object model enabling rapid development of Web Applications. The
+            environment provides an application framework and is fully extensible via Java objects.
+        </description>
+    </item>
+    <item>
+        <link>https://www.sterlingcommerce.com
+        </link>
+        <image>stercomm.gif
+        </image>
+        <title>Connect:Enterprise</title>
+        <description>
+            A many-to-many secure file transfer solution for large B2B initiatives. It stores both incoming and outgoing
+            files in a secure data repository, and forwards them on demand. Connect:Enterprise supports multiple
+            communication protocols, both legacy and Internet, and provides robust protection from external threats.
+        </description>
+    </item>
+    <item>
+        <link>https://maven.apache.org/continuum
+        </link>
+        <image>continuum_logo.jpg
+        </image>
+        <title>Continuum</title>
+        <description>
+            Continuum is a continous integration server for building Java based items. It supports a wide range of
+            items: maven1, maven2, ant and shell scripts.
+        </description>
+    </item>
+    <item>
+        <link>https://www.phonetransact.com/
+        </link>
+        <image>phonetransact.png
+        </image>
+        <title>Credit Card Merchant Pro</title>
+        <description>
+            Credit Card Merchant Pro is an iPhone credit card processing application. The credit card terminal
+            notification server is powered by Jetty.
+        </description>
+    </item>
+    <item>
+        <link>https://www.drishti-soft.com/solutions/dacx_dialer.htm
+        </link>
+        <image>dacx.png
+        </image>
+        <title>DACX Dialer</title>
+        <description>
+            DACX Dialer is a full-featured and scalable dialing solution, to provide totally hassle free dialing at
+            reasonable hardware investment to call centers. DACX Dialer works with various technologies including SIP,
+            ISDN, IAX and incorporates features like multi-campaign support, predictive dialing, lead-churning,
+            extensive reporting, pluggable CRM support etc., which help our customers greatly enhance the productivity
+            of their agents. DACX predictive dialer uses an embedded Jetty server.
+        </description>
+    </item>
+    <item>
+        <link>https://cocoondev.org/daisy
+        </link>
+        <image>daisy_brown.png
+        </image>
+        <title>Daisy</title>
+        <description>
+            Daisy is a comprehensive content management application framework, consisting of a standalone repository
+            server accessible through HTTP/XML and a high-level (remote) Java API, and an extensive Daisy browsing and
+            editing DaisyWiki application. Daisy is licensed under the commercially-friendly Apache License 2.0.
+        </description>
+    </item>
+    <item>
+        <link>https://davenport.sourceforge.net/
+        </link>
+        <image>davenport.gif
+        </image>
+        <title>Davenport</title>
+        <description>
+            Davenport is a servlet which provides a WebDAV gateway to SMB shared resources. Typical usage would be to
+            provide
+            web-based read and write access to Windows shared drives. WebDAV clients, such as Windows' "Web Folders" can
+            copy
+            files to and from the shares over HTTP. Non-WebDAV-capable web browsers can also access the network,
+            downloading
+            files from shared folders in a seamless fashion. Users access shared resources using their Windows domain
+            usertitle
+            and password, so no account configuration is typically needed. When run over HTTPS, Davenport provides a
+            secure
+            means of accessing internal shared drives over the internet without requiring a VPN.
+        </description>
+    </item>
+    <item>
+        <link>https://www.dbsight.net/</link>
+        <title>DBSight</title>
+        <description>
+            DBSight aids the creation of a Lucene search index from databases with an administrative interface that
+            provides the
+            ability to tweak search rankings by attributes of the data. Results are formatted via customizable Velocity
+            templates. Because DBSight communicates directly with a database, it works with Java as well as non-Java
+            frameworks.
+            It has incremental-indexing, scheduler, and you can adjust your business needs. You can create a full-text
+            database
+            search service, and return results as HTML/XML/JSON. It uses Lucene directly in Java, but can be easily used
+            with
+            Ruby, PHP, or any existing database web application. Instead of worrying about Java-specific details, you
+            can think
+            about how users search the data, how to tweak the ranking by attributes, such as product price, or bug
+            priority. You
+            can easily index, re-index, incremental-index your data. And you can change the search very quickly and
+            cost-effectively. Here is a screencast demo showing how to generate a text search index for an existing
+            database
+            application, Creating a Lucene Database Search Index in 3 Minutes
+        </description>
+    </item>
+    <item>
+        <link>https://www.dieselpoint.com
+        </link>
+        <image>dieselpoint.gif
+        </image>
+        <title>Dieselpoint Search</title>
+        <description>
+            Dieselpoint Search (tm) is a full-featured search and navigation engine. Customers are currently
+            using it to search XML, documents, databases, catalogs, intranets, and OEM applications.
+            Supports 40 languages. Especially well-suited for searching XML.
+        </description>
+    </item>
+    <item>
+        <link>https://www.docsdb.com
+        </link>
+        <image>docsdb.gif
+        </image>
+        <title>DocsDB</title>
+        <description>
+            DocsDB/4 is the first document breakthrough since the invention of the
+            filing cabinet. It offers truly relational document management and workflow
+            through a web-based interface. Just like relational databases did two
+            decades ago, relational document management will lift the restrictions of
+            hierarchical structures like files and folders. DocsDB delivers flexible,
+            fast and robust storage, retrieval, routing, filing, archiving and purging
+            of large amounts of documents, whether on paper or electronic.
+        </description>
+    </item>
+    <item>
+        <link>https://www.sybase.com/products/development/easerver
+        </link>
+        <image>sybase-logo.gif
+        </image>
+        <title>EAServer</title>
+        <description>
+            Sybase EAServer offers enterprise-class reliability, performance and manageability in a flexible and
+            standards-based
+            environment. Leveraging a new modular architecture, EAServer supports custom deployments so that
+            applications use
+            only the server pieces that are required. The leading solution for distributed and web-enabled PowerBuilder
+            applications, EAServer allows existing applications to participate in J2EE 1.4 and Service-Oriented
+            Architectures
+            (SOA).
+        </description>
+    </item>
+    <item>
+        <link>https://www.ebineutrino.org/
+        </link>
+        <image>ebi.gif
+        </image>
+        <title>EBI Neutrino</title>
+        <description>
+            EBI Neutrino ERP / CRM EBI Neutrino is a Framework for Enterprise Resource Planing (ERP) and Customer
+            Relation
+            Mangement(CRM) software solution that combines power of distribution, inventory, E-Commerce, accounting and
+            workflow.
+        </description>
+    </item>
+    <item>
+        <link>https://www.eclipse.org
+        </link>
+        <image>eclipse.jpg
+        </image>
+        <title>Eclipse</title>
+        <description>
+            Eclipse[TM] is an open source community whose items are focused on building an open development platform
+            comprised of extensible frameworks, tools and runtimes for building, deploying and managing software across
+            the
+            lifecycle.
+        </description>
+    </item>
+    <item>
+        <link>https://www.alphaworks.ibm.com/tech/eclifox?open&amp;S_TACT=105AGX01&amp;S_CMP=LP
+        </link>
+        <image>eclifox.jpg
+        </image>
+        <title>Eclifox</title>
+        <description>
+            Eclifox is an Eclipse plug-in from IBM AlpahWorks that enables Gecko-based browsers, like Firefox, access to
+            the
+            Eclipse IDE.
+        </description>
+    </item>
+    <item>
+        <link>https://www.editme.com
+        </link>
+        <image>editme.jpg
+        </image>
+        <title>EditMe</title>
+        <description>
+            The hosted web site solution for wikis, blogs, content, and collaboration sites.
+        </description>
+    </item>
+    <item>
+        <link>https://www.encours.org/
+        </link>
+        <image>encours.png
+        </image>
+        <title>Encours</title>
+        <description>
+            Encours is a real-time interactive presentation system. The presentation slides are shared online. One or
+            more
+            lecturers control the slides and they can change the pages, and they are given a "laser" pointer to
+            highlight their
+            point. The audience can see the lecturer actions in real time and can ask questions to the lecturer if they
+            wish.
+            The lecturer can give slide control to specific audience members if necessary.
+        </description>
+    </item>
+    <item>
+        <link>https://www.eclipse.org/equinox/
+        </link>
+        <image>eclipse.jpg
+        </image>
+        <title>Equinox</title>
+        <description>
+            From a code point of view, Equinox is an implementation of the OSGi R4 core framework specification, a set
+            of
+            bundles that implement various optional OSGi services and other infrastructure for running OSGi-based
+            systems.
+            More generally, the goal of the Equinox item is to be a first class OSGi community and foster the vision
+            of
+            Eclipse as a landscape of bundles. As part of this, it is responsible for developing and delivering the OSGi
+            framework implementation used for all of Eclipse.
+            Equinox provides org.eclipse.equinox.http.jetty, an implementation of the OSGi HttpService using Jetty as
+            the
+            underlying engine.
+        </description>
+    </item>
+    <item>
+        <link>https://www.eucalyptus.com/
+        </link>
+        <image>eucalyptus.png
+        </image>
+        <title>Eucalyptus</title>
+        <description>
+            Eucalyptus Systems provides IT organizations in enterprises, government agencies and Web and mobile
+            businesses with
+            the most widely deployed cloud software platform for on-premise Infrastructure-as-a-Service (IaaS).
+            Eucalyptus is
+            specifically designed for enterprise cloud use, and the software platform is uniquely suited for private
+            cloud or
+            hybrid cloud computing. Built as an open source cloud product, Eucalyptus supports the industry-standard
+            Amazon Web
+            Services (AWS) cloud APIs, as well as all major virtualization platforms including Xen, KVM and VMware
+            vSphere, ESX
+            and ESXi.
+        </description>
+    </item>
+    <item>
+        <link>https://evrythng.com/
+        </link>
+        <image>evrythng.png
+        </image>
+        <title>EVRYTHNG</title>
+        <description>
+            The EVRYTHNG Engine provides high scale, industrial technology to create and serve millions of Active
+            Digital
+            Identities&#8482; for a company's products and other objects. These unique online profiles create a
+            persistent,
+            unique digital presence for any physical object on the Web. Think of a Facebook for Things&#8482; where
+            individual
+            objects, just like people on social networks, have their own unique digital profiles that enable
+            communications,
+            apps and services.
+        </description>
+    </item>
+    <item>
+        <link>https://exist-db.org
+        </link>
+        <image>exist.gif
+        </image>
+        <title>Exist DB</title>
+        <description>
+            eXist is an Open Source native XML database featuring efficient, index-based XPath query processing,
+            extensions for
+            keyword search and tight integration with existing XML development tools.
+        </description>
+    </item>
+    <item>
+        <link>https://fabulously40.com/
+        </link>
+        <image>fab40.jpg
+        </image>
+        <title>Fabulously40</title>
+        <description>
+            The social network for women in their 40's and up.
+        </description>
+    </item>
+    <item>
+        <link>https://felix.apache.org/site/index.html
+        </link>
+        <image>apache-felix-small.png
+        </image>
+        <title>Apache Felix</title>
+        <description>
+            Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and
+            standard services, as well as providing and supporting other interesting OSGi-related technologies. The
+            ultimate
+            goal is to provide a completely compliant implementation of the OSGi framework and standard services and to
+            support
+            a community around this technology. Felix currently implements a large portion of the OSGi release 4
+            specification,
+            but additional work is necessary for full compliance. Despite this fact, the OSGi framework functionality
+            provided
+            by Felix is very stable.
+        </description>
+    </item>
+    <item>
+        <link>https://www.fiorano.com/products/fmq/overview.htm
+        </link>
+        <image>fmq5_logo.gif
+        </image>
+        <title>FioranoMQ</title>
+        <description>
+            FioranoMQ 6 is the most scalable, secure, and fastest Java Messaging Server for organizations building a new
+            breed
+            of massively scalable, high-performance and reliable, distributed computing solutions.
+        </description>
+    </item>
+    <item>
+        <link>https://www.cenqua.com/fisheye
+        </link>
+        <image>fisheye_logo_small.gif
+        </image>
+        <title>FishEye</title>
+        <description>
+            Your source code repository contains an abundance of valuable information. This is not always easy to
+            extract,
+            comprehend and keep up to date. FishEye painlessly opens up your repository and helps you get the
+            perspective you
+            need to better understand the changes you are making to your source.
+        </description>
+    </item>
+    <item>
+        <link>https://www.flexraid.com/
+        </link>
+        <image>FlexRAID-Logo.png
+        </image>
+        <title>FlexRAID</title>
+        <description>
+            FlexRAID products are flexible and innovative and allow users to unify &amp; organize their data. Protection
+            &amp;
+            recovery
+            from disk failures! Whether one chooses Transparent RAID &#0153; or RAID over File System, FlexRAID products
+            allow
+            users to transform a common PC with an existing operating system into a protected Network Attached Storage
+            (NAS)
+            appliance or a Hybrid Storage System (HSS), which is accessed both locally and remotely. All FlexRAID
+            products are
+            non-intrusive in that one can uninstall the software at any time and regain complete control of his/her
+            disks and
+            data without ever needing to do a data migration.
+        </description>
+    </item>
+    <item>
+        <link>https://www.funnelback.com/
+        </link>
+        <image>funnelback.png
+        </image>
+        <title>Funnelback</title>
+        <description>
+            Funnelback Internet &amp; enterprise search has the capability to search entire enterprises including
+            websites,
+            shared
+            drives, business applications and databases. It also has advanced access controls, and can be deployed as a
+            Software
+            as a Service search solution, or behind the firewall on in-house servers.
+        </description>
+    </item>
+    <item>
+        <link>https://www.logicblaze.com
+        </link>
+        <image>logo_fuse.gif
+        </image>
+        <title>Fuse</title>
+        <description>
+            LogicBlaze FUSE is the SOA runtime platform provided as an open source distribution. Combining leading
+            technologies
+            for enterprise messaging and services in an integrated, manageable framework, LogicBlaze FUSE delivers a
+            comprehensive solution for SOA runtime with reliability, scalability, high performance, and connectivity.
+            The entire
+            platform is provided in an accessible, open source solution, with enterprise-caliber support and services
+            available.
+        </description>
+    </item>
+    <item>
+        <link>https://geonetwork-opensource.org/
+        </link>
+        <image>geonetwork.jpg
+        </image>
+        <title>GeoNetwork</title>
+        <description>
+            GeoNetwork opensource is a standards based, Free and Open Source catalog application to manage spatially
+            referenced
+            resources through the web. It provides powerful metadata editing and search functions as well as an embedded
+            interactive web map viewer.
+        </description>
+    </item>
+    <item>
+        <link>https://docs.codehaus.org/display/GEOS/Home
+        </link>
+        <image>geoserver.gif
+        </image>
+        <title>GeoServer</title>
+        <description>
+            GeoServer is an Open Source server that connects your information to the Geospatial Web. With GeoServer you
+            can
+            publish and edit data using open standards. Your information is made available in a large variety of formats
+            as
+            maps/images or actual geospatial data. GeoServer's transactional capabilities offer robust support for
+            shared
+            editing. GeoServer's focus is ease of use and support for standards, in order to serve as 'glue' for the
+            geospatial
+            web, connecting from legacy databases to many diverse clients.
+        </description>
+    </item>
+    <item>
+        <link>https://geronimo.apache.org
+        </link>
+        <image>geronimo-logo.png
+        </image>
+        <title>Apache Geronimo</title>
+        <description>
+            Apache Geronimo is a new effort coordinated by the Apache Software Foundation to make a J2EE certified
+            container.
+            Jetty is being used as the default web container.
+        </description>
+    </item>
+    <item>
+        <link>https://www.gigaspaces.com/
+        </link>
+        <image>gigaspaces.gif
+        </image>
+        <title>GigaSpaces</title>
+        <description>
+            Nearly every application today has a web interface. XAP 6.6 embeds the Jetty servlet container, which means
+            you
+            enjoy XAP's performance, scalability, and resiliency even for your existing web applications.
+        </description>
+    </item>
+    <item>
+        <link>https://www.gngsms.net/
+        </link>
+        <image>gngsms.png
+        </image>
+        <title>Give N' Go</title>
+        <description>
+            GnGSmS aims to simplify the creation of dynamic SMS applications, rapid development of these application is
+            the
+            ultimate goal. With the scenario builder, SMS based scenarios can be created and activated immediately, No
+            programming skills is required! With Simple knowledge of SQL, you can build database driven SMS
+            applications.
+            Although GnGSmS was created with the end user in mind, but as a programmer I was always keen to make it
+            simple and
+            straightforward to extend.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/appengine/
+        </link>
+        <image>appengine.jpg
+        </image>
+        <title>Google AppEngine</title>
+        <description>
+            Run your web apps on Google's infrastructure.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/webtoolkit/
+        </link>
+        <image>gwt.png
+        </image>
+        <title>Google Web Toolkit (GWT)</title>
+        <description>
+            Writing web apps today is a tedious and error-prone process. Developers can spend 90% of their time working
+            around
+            browser quirks. In addition, building, reusing, and maintaining large JavaScript code bases and AJAX
+            components can
+            be difficult and fragile. Google Web Toolkit (GWT) eases this burden by allowing developers to quickly build
+            and
+            maintain complex yet highly performant JavaScript front-end applications in the Java programming language.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/p/google-refine/
+        </link>
+        <image>google-refine.png
+        </image>
+        <title>Google Refine</title>
+        <description>
+            Google Refine is a power tool for working with messy data, cleaning it up, transforming it from one format
+            into
+            another, extending it with web services, and linking it to databases like Freebase.
+        </description>
+    </item>
+    <item>
+        <link>https://grails.org/
+        </link>
+        <image>grails_logo.jpg
+        </image>
+        <title>Grails</title>
+        <description>
+            Grails aims to bring the "coding by convention" paradigm to Groovy . It's an open-source web application
+            framework
+            that leverages the Groovy language and complements Java Web development. You can use Grails as a standalone
+            development environment that hides all configuration details or integrate your Java business logic. Grails
+            aims to
+            make development as simple as possible and hence should appeal to a wide range of developers not just those
+            from the
+            Java community.
+        </description>
+    </item>
+    <item>
+        <link>https://lucene.apache.org/hadoop/about.html
+        </link>
+        <image>hadoop-logo.jpg
+        </image>
+        <title>Hadoop</title>
+        <description>
+            Hadoop is a framework for running applications on large clusters of commodity hardware. The Hadoop framework
+            transparently provides applications both reliability and data motion. Hadoop implements a computational
+            paradigm
+            titled map/reduce, where the application is divided into many small fragments of work, each of which may be
+            executed
+            or reexecuted on any node in the cluster. In addition, it provides a distributed file system that stores
+            data on the
+            compute nodes, providing very high aggregate bandwidth across the cluster. Both map/reduce and the
+            distributed file
+            system are designed so that node failures are automatically handled by the framework.
+        </description>
+    </item>
+    <item>
+        <link>https://www.globalgraphics.com/software/harlequin_rip/jdf_rip.html
+        </link>
+        <image>harlequin.gif
+        </image>
+        <title>Harlequin</title>
+        <description>
+            The JDF Enabler for Global Graphic's Harlequin RIPs (Eclipse Release) features an
+            intuitive Web-based GUI that allows multiple users to check on the status
+            of JDF (Job Definition Format) jobs and view progress, along with administrator level access to
+            set up HTTP JMF channels and hotfolders. The Web-based GUI and HTTP-based JMF
+            job submission are implemented with a Jetty HTTP server, embedded within the JDF
+            Enabler application.
+        </description>
+    </item>
+    <item>
+        <link>https://helma.org/
+        </link>
+        <image>helmalogo.gif
+        </image>
+        <title>Helma</title>
+        <description>
+            Helma (also called Helma object publisher, or Hop for short) is a scriptable open source web application
+            server
+            written in Java.
+        </description>
+    </item>
+    <item>
+        <link>https://www.heroku.com/
+        </link>
+        <image>heroku.png
+        </image>
+        <title>Heroku</title>
+        <description>
+            Run any web or background process with any web framework or worker type. Get direct, granular control over
+            your
+            app's workloads. Scale distributed processes effortlessly with a single command. Easily scale to millions of
+            users.
+        </description>
+    </item>
+    <item>
+        <link>https://historio.us/
+        </link>
+        <image>historious.png
+        </image>
+        <title>Historious</title>
+        <description>
+            Have you ever read an interesting article online and then wanted to come back to it days later but couldn't
+            find it
+            any more? Bookmarks are not very effective because the sheer number and variety of websites we visit makes
+            bookmarking a logistic nightmare.historious is here to help with that exact situation. It is basically a
+            search
+            engine for sites you like. Add (we call it "historify") a site using our bookmarklet (it works with all
+            browsers,
+            even your phone's!), our browser extensions or manually, then come back to the site and search your
+            historified
+            sites just by entering some keywords!
+        </description>
+    </item>
+    <item>
+        <link>https://hiveboard.sourceforge.net/website/web/index.html</link>
+        <title>HiveBoard</title>
+        <description>
+            HiveBoard is online shared whiteboard conferencing system. HiveBoard is developed in Java and is open
+            source. It has
+            a server application based on Jetty Servlet Container (in embedded mode) and a rich client application that
+            connects
+            to the server and can access shared whiteboards. The use of Jetty embedded server has enabled a quick (5')
+            and easy
+            setup of the HiveBoard server.
+        </description>
+    </item>
+    <item>
+        <link>https://devresource.hp.com/drc/topics/OVI.jsp
+        </link>
+        <image>hp_logo.gif
+        </image>
+        <title>HP OpenView Interconnect Tools</title>
+        <description>
+            HP OpenView Interconnect Tools for Developers (OVI) provides an easy-to-use, consistent, and stable gateway
+            for
+            integrating with HP OpenView applications. Because OVI is based on industry-standard technologies like Java,
+            XML,
+            HTTP, SOAP, JMS, and TCP sockets, it enables OpenView data to be obtained in a simplified,
+            platform-independent
+            fashion. All data is exchanged in standard XML document format. OVI gives systems integrators, enterprise
+            application integrators, and independent software vendors a single, consistent way to exchange data with HP
+            OpenView. OVI can be downloaded from https://devresource.hp.com/drc/topics/OVI.jsp
+        </description>
+    </item>
+    <item>
+        <link>https://support.openview.hp.com/self_healing.jsp
+        </link>
+        <image>hp_logo.gif
+        </image>
+        <title>HP Openview Self-Healing</title>
+        <description>
+            HP OpenView Self-Healing Services automates the support process by monitoring and reporting on HP’s
+            management suite
+            across the customer/HP connection in order
+            to assist both the customer and HP with problem diagnosis.
+        </description>
+    </item>
+    <item>
+        <link>https://www.hydroleaf.com
+        </link>
+        <image>hydroleaf.gif
+        </image>
+        <title>Hydroleaf</title>
+        <description>
+            Hydroleaf.com is a hydroponics resource for professional &amp; recreational growers / gardeners, retailing
+            hydroponic kits &amp; systems, grow lights, nutrients &amp; all equipment and expertise required for indoor
+            gardens
+            and hydroponic greenhouses.
+        </description>
+    </item>
+    <item>
+        <link>https://www.hybridserverpages.com/
+        </link>
+        <image>HJLogo.gif
+        </image>
+        <title>HybridServerPages</title>
+        <description>
+            HybridJava is a Java™ -based component-oriented MVC technology for programming dynamic web content.
+        </description>
+    </item>
+    <item>
+        <link>https://www.i2p2.de/index.html
+        </link>
+        <image>i2plogo.png
+        </image>
+        <title>I2P</title>
+        <description>
+            I2P is an anonymizing network, offering a simple layer that identity-sensitive applications can use to
+            securely
+            communicate. All data is wrapped with several layers of encryption, and the network is both distributed and
+            dynamic,
+            with no trusted parties.
+        </description>
+    </item>
+    <item>
+        <link>https://iberagents.ib-ia.com/
+        </link>
+        <image>iberagents.png
+        </image>
+        <title>IberAgents</title>
+        <description>
+            The IberAgents platform is an open-source framework for component development in Java.
+            It has facilities for distributed computing using web services, persistence to database and files, and
+            interaction via the Web; thus providing an end-to-end solution for data management. IberAgents
+            uses Jetty as its internal servlet engine for its ability to be embedded fully configured in code.
+        </description>
+    </item>
+    <item>
+        <link>https://www.icefaces.org
+        </link>
+        <image>icefaces-logo.jpg
+        </image>
+        <title>ICEFaces</title>
+        <description>
+            ICEfaces is an integrated Ajax application framework that enables Java EE application developers to easily
+            create
+            and deploy thin-client rich Internet applications (RIA) in pure Java. ICEfaces is a fully featured product
+            that
+            enterprise developers can use to develop new or existing Java EE applications at no cost.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ign.com/
+        </link>
+        <image>ignlogo.gif
+        </image>
+        <title>IGN</title>
+        <description>
+            IGN Entertainment (Nasdaq: IGNX), through its flagship network IGN.com, is the Internet's leading
+            information and
+            entertainment destination for
+            teen and young adult gamers. IGN has established a leadership position delivering quality content and
+            services to
+            gaming enthusiasts and
+            providing business customers with access to this valuable audience.
+        </description>
+    </item>
+    <item>
+        <link>https://www.dynix.com/products/hip/
+        </link>
+        <image>dynix.jpg
+        </image>
+        <title>Horizon Information Portal</title>
+        <description>
+            Horizon Information Portal, the new standard in user access, will satisfy the demands and exceed the
+            expectations of
+            even the most sophisticated library users. With it, your users can access everything your library has to
+            offer from
+            anywhere in the world, whether through an internal network, an Internet connection, or a wireless PDA.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/p/i-jetty
+        </link>
+        <image>ijetty_logo.png
+        </image>
+        <title>iJetty</title>
+        <description>
+            Jetty running on Android mobile device platform.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ispaces.com/
+        </link>
+        <image>iSpaces.png
+        </image>
+        <title>iSpaces</title>
+        <description>
+            iSpaces is a virtual desktop where the state of your user interface is saved to the cloud meaning you can
+            access
+            your interface, as you left it, from any computer.
+        </description>
+    </item>
+    <item>
+        <link>https://jelastic.com/jetty-hosting
+        </link>
+        <image>jelastic.png
+        </image>
+        <title>Jelastic</title>
+        <description>
+            Jelastic is the next generation Java and PHP cloud hosting platform that can run and scale ANY Java or PHP
+            application with no code changes required.
+        </description>
+    </item>
+    <item>
+        <link>https://j3unit.sourceforge.net
+        </link>
+        <image>j3unit.jpg
+        </image>
+        <title>J3Unit</title>
+        <description>
+            J3Unit is an object-oriented unit testing framework for JavaScript. J3Unit runs JavaScript tests directly in
+            the web
+            browser and can be automated using JUnit and Jetty. J3Unit builds on previous work by JSUnit and
+            Script.aculo.us to
+            provide a better way to automate JavaScript unit tests. Object-oriented JavaScript unit tests are written
+            using the
+            Script.aculo.us Test.Unit.Runner object, which is in turn built upon the prototype JavaScript library.
+        </description>
+    </item>
+    <item>
+        <link>https://jalbum.net
+        </link>
+        <image>jalbum.png
+        </image>
+        <title>JAlbum</title>
+        <description>
+            Drop folders containing image and movie files onto JAlbum. JAlbum will create thumbnails of your images and
+            display
+            them in index pages in HTML. You can also have JAlbum produce slide shows of your images for easy
+            navigation. The
+            apperance of the generated albums can be fully configured through the use of skins. The whole album is then
+            uploaded
+            to an FTP server by JAlbum or shared straight from your hard disk with JAlbum's integrated web server
+            (Jetty).
+        </description>
+    </item>
+    <item>
+        <link>https://www.jamonapi.com/
+        </link>
+        <image>jamon.jpg
+        </image>
+        <title>JAMon</title>
+        <description>
+            The Java Application Monitor (JAMon) is a free, simple, high performance, thread safe, Java API that allows
+            developers to easily monitor production applications. JAMon was developed primarily for monitoring J2EE
+            applications, however it can be used in any JDK environment. JAMon can be used in Servlets, JSP's, EJB's and
+            Java
+            Beans. JAMon is particularly useful in multithreaded software like a database engine.
+        </description>
+    </item>
+    <item>
+        <link>https://sourceforge.net/items/jboss
+        </link>
+        <image>jboss-logo.gif
+        </image>
+        <title>JBoss</title>
+        <description>
+            JBoss is an Open Source, standards-compliant, application server implemented in 100% Pure Java and
+            distributed for
+            free.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ronri-kobo.com/English/JbyJ.html
+        </link>
+        <image>JbyJ1.gif
+        </image>
+        <title>JbyJ</title>
+        <description>
+            JbyJ is a plug-in that supplies 4D with following abilities: (1) JbyJ allows 4D to connect to other 4D in a
+            network
+            and call its item methods. (2) JbyJ allows Java programs (JSP, servlet, applet, application and so on) to
+            connect
+            to 4D in a network and call its item methods.
+        </description>
+    </item>
+    <item>
+        <link>https://jakarta.apache.org/commons/sandbox/jelly/
+        </link>
+        <image>jelly.gif
+        </image>
+        <title>Jelly</title>
+        <description>
+            <em>Jelly</em>
+            is a tool for turning XML into executable code. So Jelly is a Java and XML based scripting and processing
+            engine.&nbsp;
+        </description>
+    </item>
+    <item>
+        <link>https://www.huihoo.org/jfox
+        </link>
+        <image>jfox.jpg
+        </image>
+        <title>JFox</title>
+        <description>
+            JFox is an Open Source, standards-compliant, J2EE based application server implemented in 100% Pure Java, It
+            comes
+            from China Enterprise Open Source Community. (www.huihoo.org)
+        </description>
+    </item>
+    <item>
+        <link>https://eclipse.org/jgit/
+        </link>
+        <image>egit2.png
+        </image>
+        <title>JGit</title>
+        <description>
+            JGit is an EDL (new-style BSD) licensed, lightweight, pure Java library implementing the Git version control
+            system.
+        </description>
+    </item>
+    <item>
+        <link>https://jimagedb.sourceforge.net/
+        </link>
+        <image>JImageDB50.png
+        </image>
+        <title>JImageDB</title>
+        <description>
+            JImageDB is a system of applications for creating, displaying, and maintaining a categorized,
+            keyword-searchable
+            database of images.
+        </description>
+    </item>
+    <item>
+        <link>https://www.atlassian.com/software/jira/docs/servers/jetty.jsp
+        </link>
+        <image>jira_splash.gif
+        </image>
+        <title>Atlassian - JIRA</title>
+        <description>
+            JIRA is a J2EE-based, issue tracking and item management application
+            developed to make this process easier for your team.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jmanage.org/
+        </link>
+        <image>jmanage.gif
+        </image>
+        <title>jManage</title>
+        <description>
+            jManage is an open source application management platform, which provides a centralized console for managing
+            application clusters and distributed-application environments. jManage platform provides advanced features
+            like
+            Dashboards, Alerts, Graphs, Connectors, Security, SNMP support and more.
+        </description>
+    </item>
+    <item>
+        <link>https://www.objectweb.org/jonas/
+        </link>
+        <image>jonas.jpg
+        </image>
+        <title>JOnAS</title>
+        <description>
+            <strong>JOnAS</strong>
+            is the Open Source implementation by
+            <a href="https://www.objectweb.org/">ObjectWeb</a>
+            of the J2EE
+            <sup>TM</sup>
+            <a href="https://java.sun.com/j2ee">specification</a>.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jopera.org/
+        </link>
+        <image>jopera.jpg
+        </image>
+        <title>JOpera</title>
+        <description>
+            JOpera targets developers of Service-Oriented Business Applications and provides them with tools for rapid
+            service
+            composition. It includes a visual modeling environment, a light-weight execution engine, and also powerful
+            debugging/refactoring tools which natively support the iterative nature of service composition.
+        </description>
+    </item>
+    <item>
+        <link>https://marsrover.nasa.gov/home/index.html
+        </link>
+        <image>mer.jpg
+        </image>
+        <title>JPL</title>
+        <description>
+            JPL uses Jetty for mission operations planning on a number of items, not the least of which is the Mars
+            Rover
+            programme.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jpos.org
+        </link>
+        <image>jpos.jpg
+        </image>
+        <title>jPos</title>
+        <description>
+            jPOS is a Java[tm] platform based mission critical financial transaction library/framework that can be
+            customized
+            and extended in order to implement financial interchanges.
+        </description>
+    </item>
+    <item>
+        <link>https://jreceiver.sourceforge.net/index.html#acknowledgements
+        </link>
+        <image>jreceiver.gif
+        </image>
+        <title>JReceiver Audio Server</title>
+        <description>
+            JReceiver is a servlet-based audio server which features tightly integrated metadata indexing capabilities,
+            browser-based management, an XML-RPC interface and support for network-based MP3 players like the Rio
+            Receiver from
+            Sonic Blue.
+        </description>
+    </item>
+    <item>
+        <link>https://jruby.codehaus.org/
+        </link>
+        <image>jruby.png
+        </image>
+        <title>JRuby</title>
+        <description>
+            JRuby Rails integration gives you a rake plugin which allows you to package your app as a webapp and try it
+            out
+            using Jetty.
+        </description>
+    </item>
+    <item>
+        <link>https://code.google.com/p/js-test-driver/</link>
+        <title>JS Test Driver</title>
+        <description>
+            The goal of JsTestDriver is to build a JavaScript test runner which easily integrates with continuous builds
+            systems
+            and allows running tests on multiple browsers quickly to ease TDD style development.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jtrac.info/
+        </link>
+        <image>jtrac.png
+        </image>
+        <title>JTrac</title>
+        <description>
+            JTrac is an open source and highly customizable issue-tracking web-application written in Java.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jxta.org
+        </link>
+        <image>juxta.gif
+        </image>
+        <title>JXTA</title>
+        <description>
+            JXTA technology is a set of open protocols that allow any connected device on the network ranging from cell
+            phones
+            and wireless PDAs to PCs and servers to communicate and collaborate in a P2P manner.
+        </description>
+    </item>
+    <item>
+        <link>https://www.jzos.com
+        </link>
+        <image>jzos.gif
+        </image>
+        <title>JZOS</title>
+        <description>
+            The JZOS Java batch launcher and toolkit is a set of tools to simplify running Java on IBM mainframes under
+            z/OS or
+            OS/390.
+        </description>
+    </item>
+    <item>
+        <link>https://kettle.pentaho.org
+        </link>
+        <image>logo_kettle_lrg.png
+        </image>
+        <title>Kettle</title>
+        <description>
+            Kettle is a powerful tool designed to bridge the gap between business and ICT, turning your company's data
+            into
+            increased profits.
+        </description>
+    </item>
+    <item>
+        <link>https://kowari.sourceforge.net/
+        </link>
+        <image>kowari.gif
+        </image>
+        <title>kowari</title>
+        <description>
+            The Kowari Metastore(TM) is an Open Source, massively scalable, transaction-safe, purpose-built database for
+            the
+            storage and retrieval of metadata.
+        </description>
+    </item>
+    <item>
+        <link>https://kuali.org/rice/overview
+        </link>
+        <image>kuali-rice.png
+        </image>
+        <title>Kuali Rice</title>
+        <description>
+            The Kuali Rice software provides an enterprise class middleware suite of integrated products that allows for
+            applications to be built in an agile fashion. This enables developers to react to end-user business
+            requirements in
+            an efficient and productive manner, so that they can produce high quality business applications.
+        </description>
+    </item>
+    <item>
+        <link>https://www.lawson.com/
+        </link>
+        <image>lawson.jpg
+        </image>
+        <title>Lawson Enterprise Search</title>
+        <description>
+            Lawson Enterprise Search is a comprehensive enterprise search and retrieval (ESR) platform that has the
+            capability
+            to search both structured and unstructured data across Lawson applications, including the S3 enterprise
+            system
+            Lawson Business Intelligence, as well as locally stored end-user data.
+        </description>
+    </item>
+    <item>
+        <link>https://www.liferay.com/
+        </link>
+        <image>liferay-logo.png
+        </image>
+        <title>Liferay Portal</title>
+        <description>
+            Liferay is the world's leading open source portal platform. Now in its sixth year of development, Liferay
+            Portal is
+            JSR-168 compliant and runs on almost any major application server, database, and operating system, rendering
+            over
+            700 deployment combinations. With over 50 portlets prebundled and more than 20 community-contributed themes
+            available, Liferay Portal is unsurpassed in out-of-the-box functionality, bringing immediate usability and
+            accelerated development potential to a broad swath of portal-based internet application scenarios.
+        </description>
+    </item>
+    <item>
+        <link>https://liftweb.net/
+        </link>
+        <image>lift.png
+        </image>
+        <title>lift Web Framework</title>
+        <description>
+            lift is yet another web development framework. lift runs inside a Java web container and uses the Scala
+            programming
+            language for coding. lift stresses security, developer productivity, ease of deployment, ease of
+            maintainability,
+            performance, and compatibility with existing systems. lift borrows from the best of existing frameworks
+            including
+            Seaside's highly granular sessions and security, Rails fast flash-to-bang, Django's "more than just CRUD is
+            included", and Erlyweb's scalability for Comet-style applications.
+        </description>
+    </item>
+    <item>
+        <link>https://langagelinotte.free.fr/
+        </link>
+        <image>linotte_pixel.png
+        </image>
+        <title>Linotte</title>
+        <description>
+            Linotte is a very simple programming language which is inspired by French syntax. Linotte help beginner in
+            computer
+            science to discover imperative programming and functional programming. The vocabulary used is very simple
+            and easy
+            to learn, it makes this language accessible for children (a program is a book, display is a paint ...). You
+            can
+            create website with integrated server Jetty.
+        </description>
+    </item>
+    <item>
+        <link>https://www.lockss.org/
+        </link>
+        <image>lockss.gif
+        </image>
+        <title>LOCKSS</title>
+        <description>
+            The LOCKSS Program is an inexpensive, practical solution to digital preservation and access. The foundation
+            of a
+            library is its collections. If libraries fail to build digital collections they will cease to be libraries.
+            Without
+            libraries society loses one of its two memory organizations (the other being museums). If libraries don't
+            step up to
+            this responsibility they will, in effect, be creating a digital dark age for future generations. With a
+            publisher's
+            permission, the LOCKSS Program allows libraries to fulfill this societal obligation, easily and affordably
+            building
+            digital collections.
+        </description>
+    </item>
+    <item>
+        <link>https://www.logperspective.com
+        </link>
+        <image>logperspective.jpg
+        </image>
+        <title>LogPerspective</title>
+        <description>
+            LogPerspective simplifies analysis and problem tracking in modern applications by
+            providing consolidated view on log files. LogPerspective is completely independent from
+            log-producers. It studies log output generated by existing applications or scripts eliminating the
+            need for integration development.
+        </description>
+    </item>
+    <item>
+        <link>https://cwiki.apache.org/labs/magma.html
+        </link>
+        <image>magma.png
+        </image>
+        <title>Magma</title>
+        <description>
+            Magma provides an innovative, effective framework for delivering enterprise level Java web applications,
+            coding
+            faster and easier than before, while maximizing code reuse and integration possibilities.
+        </description>
+    </item>
+    <item>
+        <link>https://maven.apache.org
+        </link>
+        <image>maven.png
+        </image>
+        <title>Maven</title>
+        <description>
+            Maven is a software item management and comprehension tool. Based on the concept of a item object
+            model (POM),
+            Maven can manage a item's build, reporting and documentation from a central piece of information.
+        </description>
+    </item>
+    <item>
+        <link>https://www.mec-as2.org/products_mec_as2.php
+        </link>
+        <image>mecas2.gif
+        </image>
+        <title>m-e-c as2</title>
+        <description>
+            m-e-c as2 is a EDIINT AS2 implementation. It contains a comfortable logging- and configuration GUI that
+            helps you
+            managing your transactions. It supports asynchronous and synchronous MDN, digital signatures, encryption,
+            SSL.
+        </description>
+    </item>
+    <item>
+        <link>https://www.melati.org/index.html
+        </link>
+        <image>melati.jpg
+        </image>
+        <title>Melati</title>
+        <description>
+            Melati is a tool for building Java-programmed websites backed by a database or accessing a database over
+            HTTP.
+        </description>
+    </item>
+    <item>
+        <link>https://opensource.mendelson-e-c.com/
+        </link>
+        <image>mecas2.gif
+        </image>
+        <title>Mendelson OpenSource AS2</title>
+        <description>
+            Mendelson OpenSource AS2 is a EDIINT AS2 implementation. It contains a comfortable logging- and
+            configuration GUI
+            that helps you managing your transactions. It supports asynchronous and synchronous MDN, digital signatures,
+            encryption, SSL.
+        </description>
+    </item>
+    <item>
+        <link>https://studios.thoughtworks.com/mingle-item-intelligence
+        </link>
+        <image>mingle_header.jpg
+        </image>
+        <title>Mingle</title>
+        <description>
+            Mingle is a software application that helps you and your team manage Agile IT items. It supports software
+            delivery by providing the whole team with a single place to share all item output using a framework based
+            on over
+            7 years of ThoughtWorks' Agile experience. Mingle provides item intelligence for teams that need to make
+            real-time decisions based on Agile metrics collected from everyday activities.
+        </description>
+    </item>
+    <item>
+        <link>https://www.mirthcorp.com/
+        </link>
+        <image>mirthcorplogo.png
+        </image>
+        <title>Mirth</title>
+        <description>
+            The Mirth item – founded, incubated and supported commercially by the company – aims to transform health
+            information technology by making high-value information technology solutions available to the healthcare
+            community
+            on an open source basis. Our professional grade, service-backed open source offerings break through the cost
+            barriers to achieving more rapid health information technology dissemination, and enable our customers and
+            users to
+            create a safer and more effective healthcare delivery system.
+        </description>
+    </item>
+    <item>
+        <link>https://mms.10gen.com/
+        </link>
+        <image>mongo-10gen.png
+        </image>
+        <title>MongoDB Management Service (MMS)</title>
+        <description>
+            MongoDB Management Service (MMS) is a cloud-based suite of services for managing MongoDB deployments. MMS
+            provides
+            monitoring and backup capabilities, helping users optimize clusters, automate tasks and mitigate operational
+            risk.
+        </description>
+    </item>
+    <item>
+        <link>https://mop.fusesource.org/
+        </link>
+        <image>mop-logo.png
+        </image>
+        <title>Mop</title>
+        <description>
+            MOP is a small utility for executing Java programs which are stored as artifacts like jars or bundles in a
+            Maven
+            repository. MOP automatically deals with the following for you: transitive dependencies; downloading
+            artifacts from
+            remote repositories and caching them locally; setting up your classpath.
+        </description>
+    </item>
+    <item>
+        <link>https://www.mx4j.org
+        </link>
+        <image>mx4j.gif
+        </image>
+        <title>MX4J</title>
+        <description>
+            MX4J is a item to build an Open Source implementation of the Java(TM) Management Extensions (JMX) and of
+            the JMX
+            Remote API (JSR 160) specifications, and to build tools relating
+            to JMX
+        </description>
+    </item>
+    <item>
+        <link>https://www.nabble.com
+        </link>
+        <image>nabble.gif
+        </image>
+        <title>Nabble</title>
+        <description>
+            Free Hosted Public Forums. Our forums are truly public, democratic and absolutely free. Nabble's advanced
+            community
+            filtering gives you only the best content without the need for moderation. Find forums that interest you or
+            easily
+            start your own in minutes.
+        </description>
+    </item>
+    <item>
+        <link>https://www.nakedobjects.org/
+        </link>
+        <image>nakedObjects.png
+        </image>
+        <title>Naked Objects</title>
+        <description>
+            Naked Objects for Java is a full-stack open source application development framework, designed to let you
+            rapidly
+            develop domain-driven business applications.The framework is called Naked Objects because all you need to
+            develop
+            are your pojo domain objects - the Naked Objects framework auto-creates an object-oriented user interface
+            (OOUI),
+            either as a desktop app or as a webapp. You can also choose where and how to persist your domain objects.
+        </description>
+    </item>
+    <item>
+        <link>https://www.nds.com
+        </link>
+        <image>nds.gif
+        </image>
+        <title>NDS</title>
+        <description>
+            NDS, a majority owned subsidiary of News Corporation, supplies open end-to-end digital technology and
+            services to
+            digital pay-television platform operators and content providers.
+        </description>
+    </item>
+    <item>
+        <link>https://nexus.sonatype.org/
+        </link>
+        <image>nexus.png
+        </image>
+        <title>Nexus</title>
+        <description>
+            Nexus is a powerful and robust Maven repository manager, created to provide reliable access to artifacts
+            required
+            for development and provisioning. Maven's central repository has always served as a great convenience for
+            users of
+            Maven, but it has always been recommended to maintain your own repositories to ensure stability within your
+            organization. Nexus greatly simplifies the maintenance of your own internal repositories and access to
+            external
+            repositories. With Nexus you can completely control access to, and deployment of, every artifact in your
+            organization from a single location.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ngasi.com/
+        </link>
+        <image>ngasi.png
+        </image>
+        <title>NGASI</title>
+        <description>
+            NGASI AppServer Manager was designed with hosted environments in mind.NGASI AppServer Manager enables
+            Private JVM
+            JAVA Hosting on a shared server for multiple accounts.
+        </description>
+    </item>
+    <item>
+        <link>https://www.queuing.com/methodize.org/nntprss/
+        </link>
+        <image>nntprss.gif
+        </image>
+        <title>nntp//rss</title>
+        <description>
+            Bridging the worlds of NNTP clients and RSS feeds, nntp//rss is an application that will enable you to use
+            your
+            existing favorite NNTP newsreader to read your information channels.
+        </description>
+    </item>
+    <item>
+        <link>https://www.nuxeo.org/
+        </link>
+        <image>nuxeo.jpg
+        </image>
+        <title>Nuxeo</title>
+        <description>
+            Nuxeo delivers an open source document management application built with a complete, modular and extensible
+            open
+            source software platform for enterprise content management. Other packaged applications built with the
+            platform
+            provide solutions for digital asset management and case management.
+        </description>
+    </item>
+    <item>
+        <link>https://openadaptor3.openadaptor.org/
+        </link>
+        <image>openadaptor_logo.gif
+        </image>
+        <title>Openadaptor</title>
+        <description>
+            Openadaptor is an Open Source toolkit for Enterprise Application Integration. It provides software
+            components for
+            connecting to a variety of transports (e.g. JMS, RDBMS, SOAP, HTTP, Files) and components for working with
+            different
+            data representations (e.g. XML, JDBC result sets, fixed width and delimited string records). Its design lays
+            emphasis on ease-of-use, flexibility and minimal time required for assembling production quality adaptors.
+        </description>
+    </item>
+    <item>
+        <link>https://www.igniterealtime.org
+        </link>
+        <image>openfire_logo_wide.png
+        </image>
+        <title>Openfire</title>
+        <description>
+            Openfire, formerly called Wildfire, is a real time collaboration (RTC) server dual-licensed under the Open
+            Source
+            GPL and commercially. It uses the only widely adopted open protocol for instant messaging, XMPP (also called
+            Jabber). Openfire is incredibly easy to setup and administer, but offers rock-solid security and
+            performance.
+        </description>
+    </item>
+    <item>
+        <link>https://www.opennms.org/
+        </link>
+        <image>opennms.png
+        </image>
+        <title>OpenNMS</title>
+        <description>
+            OpenNMS is the world's first enterprise grade network management platform developed under the open source
+            model. It
+            consists of a community supported open-source item as well as a commercial services, training, and
+            support
+            organization.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ofbiz.org
+        </link>
+        <image>ofbiz.jpg
+        </image>
+        <title>Open For Business</title>
+        <description>
+            An open source enterprise automation software item. The goal of the item is to create an open source
+            application framework, application components, and suite of enterprise applications.
+        </description>
+    </item>
+    <item>
+        <link>https://oreports.sourceforge.net/</link>
+        <title>OpenReports</title>
+        <description>
+            OpenReports is a complete reporting solution that provides the ability for users to view dynamically created
+            PDF
+            reports in a browser.
+        </description>
+    </item>
+    <item>
+        <link>https://openshift.redhat.com/
+        </link>
+        <image>openshift-logo-medium.png
+        </image>
+        <title>OpenShift</title>
+        <description>
+            OpenShift is Red Hat's free, auto-scaling Platform as a Service (PaaS) for applications. As an application
+            platform
+            in the cloud, OpenShift manages the stack so you can focus on your code.
+        </description>
+    </item>
+    <item>
+        <link>https://www.lilacsoftware.com/orcahome.html
+        </link>
+        <image>orcass1.gif
+        </image>
+        <title>Orca</title>
+        <description>
+            Orca is a high performance client/server application for organizing and playing audio files (initially MP3
+            and Ogg
+            Vorbis).
+        </description>
+    </item>
+    <item>
+        <link>https://oscar-osgi.sourceforge.net/
+        </link>
+        <image>oscar.gif
+        </image>
+        <title>Oscar</title>
+        <description>
+            This bundle is an implementation of the OSGi HTTP Service, Version 1.1. It is built on top of a
+            slightly modified version of Jetty
+        </description>
+    </item>
+    <item>
+        <link>https://github.com/RootServices/otter</link>
+        <title>Otter</title>
+        <description>
+            Otter is a stateless micro web framework powered by Jetty. It uses async I/O, prefers to run in an embedded
+            servlet
+            container, has regex routing, includes built-in RESTful support, and has CSRF protection.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ozibug.com
+        </link>
+        <image>ozibug.gif
+        </image>
+        <title>Ozibug</title>
+        <description>
+            Ozibug is a platform-independent, web-based bug tracking system which can be installed and run straight out
+            of the
+            box on any Java servlet capable platform.
+        </description>
+    </item>
+    <item>
+        <link>https://www.opnet.com/solutions/application_performance/panorama.html
+        </link>
+        <image>panorama.gif
+        </image>
+        <title>Panorama</title>
+        <description>
+            OPNET Panorama(TM) delivers comprehensive performance management for critical Java and .NET applications
+            throughout
+            the application lifecycle, beginning with development and QA, and continuing through deployment and
+            operations.
+            Panorama continuously monitors thousands of system and application metrics within each server, across all
+            tiers, and
+            automatically spots performance anomalies with advanced deviation tracking. Panorama's unique correlation
+            technology
+            automatically detects patterns in metrics and events, identifying cause-and-effect relationships and
+            pinpointing
+            symptoms that might otherwise go undetected. With deep transaction tracing from within the Java Virtual
+            Machine
+            (JVM) and the .NET Common Language Runtime (CLR) virtual machine, Panorama provides method-level visibility
+            into
+            application code, enabling root-cause analysis and rapid problem remediation.
+        </description>
+    </item>
+    <item>
+        <link>https://forge.novell.com/modules/xfmod/item/?panther
+        </link>
+        <image>panther.jpg
+        </image>
+        <title>Panther</title>
+        <description>
+            Panther is a lightweight, modular Java application server, suitable for embedding in a web server. The
+            intention of
+            the item is not to duplicate all the functionality found in a J2EE app server, rather just some of the
+            most
+            commonly used features.
+        </description>
+    </item>
+    <item>
+        <link>https://wiki.ops4j.org/confluence/display/ops4j/Pax+Web
+        </link>
+        <image>paxweb-logo.gif
+        </image>
+        <title>Pax Web</title>
+        <description>
+            Pax Web is an implementation of OSGi R4 Http Service using Jetty 6.
+        </description>
+    </item>
+    <item>
+        <link>https://www.verit.de/products/index.html
+        </link>
+        <image>petalogo.gif
+        </image>
+        <title>PETA</title>
+        <description>
+            PETA is a platform for automated testing of software systems. These include service oriented architectures
+            (SOA),
+            n-tier/multi-tier architectures (J2EE, .NET), webservices, client/server applications and browser based web
+            applications. PETA can both be employed for functional testing purposes like regression-, integration- or
+            system
+            tests as well as non-functional load or stress tests.
+        </description>
+    </item>
+    <item>
+        <link>https://www.pixory.org
+        </link>
+        <image>pixory.jpg
+        </image>
+        <title>Pixory Personal Image Server</title>
+        <description>
+            Pixory allows you to store your photos on your own pc but to access, compose into albums, and share them
+            anywhere on
+            the internet.
+        </description>
+    </item>
+    <item>
+        <link>https://www.polarrose.com
+        </link>
+        <image>polarrose_logo.gif
+        </image>
+        <title>Polar Rose</title>
+        <description>
+            The web is increasingly becoming visually oriented, progressing from text to photos and other rich media.
+            Close to
+            10 million new photos are uploaded on a daily basis, a number which is doubling every eight to ten months.
+            Photos
+            tell many stories, but unlike text, the context of a photo is hard to search for unless explicitly
+            "translated" by a
+            human being. The photo web of today is like the text web before Altavista, Inktomi, and Google. Polar Rose
+            makes
+            photos searchable by analyzing their content and recognizing the people in them.
+        </description>
+    </item>
+    <item>
+        <link>https://www.item-drive.net/
+        </link>
+        <image>itemDriveLogo.jpg
+        </image>
+        <title>item Drive</title>
+        <description>
+            item Management Software - item Drive. Online, secure and fully customizable. It offers Gantt charts
+            calendaring and collaboration. Everything to drive your items to success!
+        </description>
+    </item>
+    <item>
+        <link>https://www.protekt.com/index.html
+        </link>
+        <image>protekt.png
+        </image>
+        <title>Protekt</title>
+        <description>
+            Protekt Encryption is an all Java
+            implementation of TLS version 1 (including backwards
+            compatibility with Netscape's SSL protocol version 3).
+        </description>
+    </item>
+    <item>
+        <link>https://jakarta.apache.org/avalon/phoenix/index.html
+        </link>
+        <image>phoenix.gif
+        </image>
+        <title>Phoenix</title>
+        <description>
+            Phoenix is a micro-kernel designed and implemented on top of the Avalon framework. It is both an API to
+            program to
+            and a reference implementation. The reference implementation provides a number of facilities to manage the
+            environment of Server Applications.
+        </description>
+    </item>
+    <item>
+        <link>https://www.primrose.org.uk
+        </link>
+        <image>primrose_logo.jpg
+        </image>
+        <title>Primrose</title>
+        <description>
+            Primrose is an open-source java database connection pool that is packed with features for developers and
+            sys-admins
+            that want exceptional control over how their applications interact with their database. A mature product,
+            Primrose
+            provides excellent configuration of pools, email-based notification of 'crisis pool events' as well as
+            dynamic
+            administration and monitoring of database interaction and SQL transactions via a JMX driven web-page.
+        </description>
+    </item>
+    <item>
+        <link>https://www.pulptunes.com/
+        </link>
+        <image>pulptunes.png
+        </image>
+        <title>PulpTunes</title>
+        <description>
+            PulpTunes is a web server (powered by Jetty) for the iTunes desktop app, letting you access your music
+            through the
+            Web. It runs on Windows, Mac, and any other platform like Linux, provided you have an iTunes-like XML
+            library
+            declaring the path of the music files.
+        </description>
+    </item>
+    <item>
+        <link>https://www.dse.se
+        </link>
+        <image>dse_pulsar.gif
+        </image>
+        <title>Pulsar</title>
+        <description>
+            Pulsar is a modularized web architecture, providing a complete framework and a rich toolbox for web
+            applications,
+            covering the phases of development, deployment and maintenance. Furthermore Pulsar provides a structure for
+            partitioning applications into the layers of business logic, user interface logic and user interface layout.
+            Pulsar
+            is in itself also a server/container in which the applications can execute. As a server Pulsar provides
+            commonly
+            needed functionality for Web Applications such as user management, permission management and application
+            monitoring.
+            Since version 1.8 Pulsar embeds Jetty as the preferred HTTP transport engine.
+        </description>
+    </item>
+    <item>
+        <link>https://www.riadiffusion.com/
+        </link>
+        <image>Push-logo.jpg
+        </image>
+        <title>Push Technology</title>
+        <description>
+            Diffusion is a bi-directional push engine developed by Push Technology to allow customers to stream highly
+            volatile
+            data to a web browser without the need to install any software on the end-users PC. Diffusion looked to
+            Jetty for
+            its XmlHttpRequest engine as well as its Web Server. As Diffusion offers a massively saleable Push
+            Technology for
+            web browsers, Jetty with it Continuations was chosen as a proven method.
+        </description>
+    </item>
+    <item>
+        <link>https://www.quantmethods.com/
+        </link>
+        <image>QMS.gif
+        </image>
+        <title>QuantMethods QMS</title>
+        <description>
+            QuantMethods QMS application contains modules for the most frequently taught mathematical models used in
+            quantitative decision making at an
+            introductory level including, but not limited to, linear programming, network, forecasting, inventory and
+            production, and dynamic programming models. The application is offered over the web on a subscription basis
+            and as a
+            standalone application that can be installed on Windows, Mac OS X, Linux, or other Unix based systems.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ifountain.com/rapidinsight
+        </link>
+        <image>rapidinsight_banner.png
+        </image>
+        <title>Rapid Insight</title>
+        <description>
+            RapidInsight is a flexible solution to rapidly implement active dashboards that present relevant information
+            from
+            disparate systems to users in near real-time. RapidInsight dashboards can be implemented in a fraction of
+            the time
+            and effort typically required to implement traditional solutions. RapidInsight is the perfect solution to
+            implement
+            interactive dashboards that are tailored to the needs of each user, providing a unified, consistent
+            interface to the
+            relevant information, collected from variety of disparate data sources rapidly.
+        </description>
+    </item>
+    <item>
+        <link>https://www.reddogsoftware.com/?p=Products
+        </link>
+        <image>reddog202.jpg
+        </image>
+        <title>ReadyPortal</title>
+        <description>
+            ReadyPortal is a comprehensive, turn-key Web presence solution that allows you to create a Web site at a
+            fraction of
+            the cost and effort required by traditional Web development. Available in both hosted and software packages,
+            ReadyPortal can fit easily into organizations of any size. Its user-friendly interface and template-based
+            publishing
+            system make your ReadyPortal site easy to maintain and evolve. Non-technical users as well as IT
+            professionals can
+            modify and update content, features and functionality any time, from anywhere Internet access is available.
+            This
+            enables you to keep your site fresh more easily than custom Web development, which requires more intimate
+            technical
+            expertise and often results in stagnant content.
+        </description>
+    </item>
+    <item>
+        <link>https://www.osflash.org/red5
+        </link>
+        <image>red5.gif
+        </image>
+        <title>Red5</title>
+        <description>
+            Red5 is a server that not only streams content to the Flash plugin, but it can push calls and information to
+            the
+            Flash client! It can also receive video/audio/data from a flash client and either save or rebroadcast that
+            content.
+        </description>
+    </item>
+    <item>
+        <link>https://redline.st/
+        </link>
+        <image>redline.png
+        </image>
+        <title>RedlineSmalltalk</title>
+        <description>
+            Redline is a thoroughly modern version of Smalltalk that runs on the Java Virtual Machine.
+        </description>
+    </item>
+    <item>
+        <link>https://restlet.org
+        </link>
+        <image>restlet.gif
+        </image>
+        <title>Restlet Framework</title>
+        <description>
+            Brings the simplicity and efficiency of the REST architectural style to Java developers. Includes a
+            connector
+            powered by Jetty. Provided by Noelios Consulting (<a href="https://noelios.com">noelios.com</a>).
+        </description>
+    </item>
+    <item>
+        <link>https://www.rewoo.de/produkt.html
+        </link>
+        <image>rewoo.jpg
+        </image>
+        <title>REWOO Technologies</title>
+        <description>
+            REWOO Scope is a modern and easy to use web-based enterprise content management system. It supports
+            knowledge
+            workers and managers in making the right decisions based upon all relevant information. Some of its key
+            features are
+            excel-like built-in formulas, automatic management of user rights and the possibility to create simple
+            applications
+            on top of REWOO Scope without any programming skills.
+        </description>
+    </item>
+    <item>
+        <link>https://rife.dev.java.net/
+        </link>
+        <image>rife-logo.png
+        </image>
+        <title>RIFE</title>
+        <description>
+            RIFE offers an alternative approach to web application development and design. It builds upon the Java
+            platform, but
+            offers all required tools and APIs to implement and perform all common website related tasks in a fast,
+            intuitive,
+            consistent and innovative manner.
+        </description>
+    </item>
+    <item>
+        <link>https://rubygems.org/gems/rjack-jetty
+        </link>
+        <image>rjackjetty.png
+        </image>
+        <title>rjack-jetty</title>
+        <description>
+            A gem packaging of the Jetty Web Server for JRuby: Provides jetty, jetty-util, servlet-api, and
+            jetty-rewrite-handler
+            jars. A Jetty::ServerFactory for simple programmatic server setup in ruby. A set of Jetty::TestServlets
+            containing a
+            SnoopServlet and PerfTestServlet (implemented in Java). A jetty-service bin script for easy testing from the
+            command
+            line. Note that JSP support is provided separately in the companion
+            jetty-jsphttps://rjack.rubyforge.org/jetty-jsp/ gem.
+        </description>
+    </item>
+    <item>
+        <link>https://www.romaframework.org/
+        </link>
+        <image>roma.gif
+        </image>
+        <title>Roma Framework</title>
+        <description>
+            Roma is an Open Source initiative to make Java application development easy. The approach is totally DDD:
+            let's
+            think to the domain of your application and Roma will make the rest: persistence (database), presentation
+            (HTML +
+            Ajax), logging, reporting, user management, sessions, workflow, scheduler, etc. Roma is a Meta Framework
+            titlely a
+            tool that aims to remove dependencies between your application code and frameworks and tools you use. This
+            allows
+            you to change the technology at zero cost without any changes to your application code. Roma is also a MDA
+            implementation since takes its concepts and philosophy but it's totally based on POJOs with no need to learn
+            other
+            micro languages and complex standards.
+        </description>
+    </item>
+    <item>
+        <link>https://www.rostrvm.com/?jetty
+        </link>
+        <image>rostrvmweblogo.gif
+        </image>
+        <title>rostrvm</title>
+        <description>
+            Rostrvm Solutions Limited is a software company. We design, develop and support the rostrvm suite of
+            applications
+            that make call centre technologies and contact management processes work efficiently and effectively. Jetty
+            is
+            embedded in the rostrvm product and provides access to web based real-time management information reports.
+            It is
+            also used to drive call centre agent wallboards that provide high impact operational data.
+        </description>
+    </item>
+    <item>
+        <link>https://www-uk.hpl.hp.com/people/afs/Joseki/doc/JosekiSever.html</link>
+        <title>RDF Server</title>
+        <description>
+            The Joseki server provides a way of publishes RDF data and providing access via RDQL.&nbsp;
+        </description>
+    </item>
+    <item>
+        <link>https://www.dracoware.com/rsp.php
+        </link>
+        <image>rsp.gif
+        </image>
+        <title>RSP Network Monitor</title>
+        <description>
+            RSP is a network monitoring solution which allows IT teams to collaboratively solve problems. RSP does this
+            by
+            utilizing an incident-tracking interface, allowing team members to better coordinate their efforts at
+            solving
+            problems, and to record their solutions. RSP also contains a number of other useful features such as remote
+            configuration through the web interface, security with SSL, and builtin analysis and graphing tools.
+        </description>
+    </item>
+    <item>
+        <link>https://www.blazeworks.biz
+        </link>
+        <image>LogoSabercat.gif
+        </image>
+        <title>Sabercat</title>
+        <description>
+            A UDDI web services registry for private environments.
+        </description>
+    </item>
+    <item>
+        <link>https://www.sagetv.com/
+        </link>
+        <image>sagetv.jpg
+        </image>
+        <title>SageTV</title>
+        <description>
+            SageTV is an industry-leading software technology that allows users to create and operate complete media
+            centers
+            from an existing PC.
+        </description>
+    </item>
+    <item>
+        <link>https://www.seatrafcell.com/
+        </link>
+        <image>seatrafcell.jpg
+        </image>
+        <title>SeaTrafCell</title>
+        <description>
+            SeaTrafCell displays traffic information from the puget sound area (Seattle) on Java (J2ME) enabled
+            cellphones.
+        </description>
+    </item>
+    <item>
+        <link>https://www.openqa.org/selenium-rc/</link>
+        <image>
+        </image>
+        <title>Selenium-RC</title>
+        <description>
+            Selenium Remote Control is a test tool that allows you to write automated web application UI tests in any
+            programming language against any HTTP website using any mainstream JavaScript-enabled browser.
+        </description>
+    </item>
+    <item>
+        <link>https://servicemix.apache.org/home.html
+        </link>
+        <image>servicemix.png
+        </image>
+        <title>ServiceMix</title>
+        <description>
+            Apache ServiceMix is an open source ESB (Enterprise Service Bus) that combines the functionality of a
+            Service
+            Oriented Architecture (SOA) and an Event Driven Architecture (EDA) to create an agile, enterprise ESB.
+            Apache
+            ServiceMix is an open source distributed ESB built from the ground up on the Java Business Integration (JBI)
+            specification JSR 208 and released under the Apache license. The goal of JBI is to allow components and
+            services to
+            be integrated in a vendor independent way, allowing users and vendors to plug and play. Apache ServiceMix
+            uses Jetty
+            in servicemix-http component (client and server).
+        </description>
+    </item>
+    <item>
+        <link>https://www.servlets.com
+        </link>
+        <image>servlets.jpg
+        </image>
+        <title>Servlets.com</title>
+        <description>
+            Popular portal site for all things servlet programming related.
+        </description>
+    </item>
+    <item>
+        <link>https://www.source-code.biz/ServletViewer/</link>
+        <image>
+        </image>
+        <title>Servlet Viewer</title>
+        <description>
+            ServletViewer is a Java program that can load a Java servlet and display its output. It uses an embedded
+            HTTP server
+            (Jetty) and an embedded web browser (SWT Browser widget). ServletViewer can be used to run a Java servlet
+            web
+            application as a stand-alone program on the local computer.
+        </description>
+    </item>
+    <item>
+        <link>https://incubator.apache.org/shindig/
+        </link>
+        <image>shindig.png
+        </image>
+        <title>Shindig</title>
+        <description>
+            Shindig is an OpenSocial container and helps you to start hosting OpenSocial apps quickly by providing the
+            code to
+            render gadgets, proxy requests, and handle REST and RPC requests. Shindig's goal is to allow new sites to
+            start
+            hosting social apps in under an hour's worth of work.
+        </description>
+    </item>
+    <item>
+        <link>https://www.simplecenter.org/
+        </link>
+        <image>simple_center.jpg
+        </image>
+        <title>SimpleCenter</title>
+        <description>
+            SimpleCenter is the future of digital media management ... an opensource alternative for acquiring,
+            organizing,
+            experiencing, distributing and sharing your music, photos, movies, podcasts and more.
+        </description>
+    </item>
+    <item>
+        <link>https://www.datarepresentations.com/products/enterprise/standard/index.jsp
+        </link>
+        <image>enterpriseLiteLogo.gif
+        </image>
+        <title>Simplicity Enterprise</title>
+        <description>
+            Simplicity Enterprise rapid application development tool allows you to aggregate data from many sources in
+            an
+            intuitive graphical interface, and transform that very same data into robust web applications in minutes.
+        </description>
+    </item>
+    <item>
+        <link>https://www.smartbase.sk/
+        </link>
+        <image>smartbase_logo.png
+        </image>
+        <title>SmartBase</title>
+        <description>
+            SmartBase is a knowledge base servant archiving, sorting and searching knowledge. The system allows
+            searching
+            content of PDF, DOC, XLS, PPT and many others of file types. A demo application is available at
+            https://demo.smartbase.sk.
+        </description>
+    </item>
+    <item>
+        <link>https://www.smartfoxserver.com/
+        </link>
+        <image>smartfox.png
+        </image>
+        <title>SmartFoxServer</title>
+        <description>
+            SmartFoxServer is a comprehensive and powerful platform for rapidly developing multiuser applications and
+            games with
+            Macromedia Flash MX, MX 2004, 8, Flex 2 and Flash CS3. It was developed with simplicity in mind, allowing
+            developers
+            to quickly create any type of multiplayer interactions, from basic chat applications to the most complex
+            real-time
+            games. SmartFoxServer comes with a rich set of features, one of the best sets of documentations with many
+            source
+            examples, powerful administration tools and an active online support forum.
+        </description>
+    </item>
+    <item>
+        <link>https://snipsnap.org
+        </link>
+        <image>snipsnap-logo.gif
+        </image>
+        <title>SnipSnap</title>
+        <description>
+            SnipSnap is a free and easy to install Weblog and Wiki Software written in Java.
+        </description>
+    </item>
+    <item>
+        <link>https://www.softwaredemo.com/
+        </link>
+        <image>softwaredemo.png
+        </image>
+        <title>SoftwareDEMO</title>
+        <description>
+            SoftwareDEMO is a cloud platform that enables desktop based software to be provided as a cloud service. It
+            does not
+            only include hosting and runtime environment but also user management and billing for software vendors.
+            SoftwareDEMO
+            uses Jetty as an embedded servlet container for its connector application SWD Agent.
+        </description>
+    </item>
+    <item>
+        <link>https://www.sonicsoftware.com/
+        </link>
+        <image>sonic_logo_popup1.gif
+        </image>
+        <title>Sonic MQ</title>
+        <description>
+            SonicMQ&#174; is the industry's most reliable message server, delivering unsurpassed scalability, extensive
+            connectivity, and comprehensive security for business-critical communication across the extended enterprise.
+        </description>
+    </item>
+    <item>
+        <link>https://www.spiderline.com/
+        </link>
+        <image>spiderline.gif
+        </image>
+        <title>Spiderline</title>
+        <description>
+            Spiderline(TM) is a fully customizable hosted search engine service offering lightning fast searches of
+            intranet or
+            individual/business websites. Spiderline has been providing services to individuals, small businesses and
+            governmental agencies since 1999.
+        </description>
+    </item>
+    <item>
+        <link>https://spindle.sourceforge.net/
+        </link>
+        <image>spindle.jpg
+        </image>
+        <title>Spindle</title>
+        <description>
+            Eclipse plugins for running Tapestry and Jetty.
+        </description>
+    </item>
+    <item>
+        <link>https://www.springframework.org/
+        </link>
+        <image>springframework.jpg
+        </image>
+        <title>Spring Framework</title>
+        <description>
+            The spring framework is an application framework supporting JEE(tm) style applications. Spring supports
+            Jetty as a
+            HTTP service in their Spring Dynamic Modules for OSGi(tm) Service Platforms, or jetty can be simply embedded
+            in the
+            spring framework directly or as an xbean.
+        </description>
+    </item>
+    <item>
+        <link>https://www.stratiforms.com/index.html
+        </link>
+        <image>stratlogoCap.gif
+        </image>
+        <title>StratiForms</title>
+        <description>
+            StratiForms allows you to create an eForms solution for your business. Itis a Java Servlet container web
+            application
+            using Java Server Pages (jsp), Java Servlets, and complex Java Objects.
+        </description>
+    </item>
+    <item>
+        <link>https://www.structuredsoft.com
+        </link>
+        <image>structuredj.jpg
+        </image>
+        <title>StructuredJ</title>
+        <description>
+            StructuredJ&#174; is the industry's most powerful 'procedural' Java-based Web application scripting system,
+            delivering unsurpassed productivity and simplicity to J2EE development for developers making the move to
+            Java.
+        </description>
+    </item>
+    <item>
+        <link>https://subsonic.sourceforge.net/
+        </link>
+        <image>subsonic.png
+        </image>
+        <title>Subsonic</title>
+        <description>
+            Subsonic is a free, web-based media streamer, providing ubiquitous access to your music. Use it to share
+            your music
+            with friends, or to listen to your own music while at work. You can stream to multiple players
+            simultaneously, for
+            instance to one player in your kitchen and another in your living room.
+        </description>
+    </item>
+    <item>
+        <link>https://www.sunnyvale.it/
+        </link>
+        <image>sunnyvale.jpg
+        </image>
+        <title>Sunnyvale ALA</title>
+        <description>
+            Sunnyvale releases A.L.A., the Adapter-Logic Application that aims to be the smallest, fast, scalable and
+            cheap
+            integration framework acting as glue in an heterogeneous application environment and allowing different
+            platform to
+            talk together. Built by pluggable front-end/back-end components and based only on open standards, Sunnyvale
+            A.L.A.
+            is Java powered and benefits from Jetty in its SOAP Controller servlet. "Jetty gives A.L.A. the possibility
+            to
+            expose an HTTP/SOAP interface to the external world without the constraint of an heavy and expensive
+            Application
+            Server behind" says Denis Maggiorotto, the A.L.A. designer and Sunnyvale C.E.O. "Jetty is embeddable, fast
+            and
+            consumes scarce computational resources; thanks to it A.L.A. is taking the place of many other application
+            adapters."
+        </description>
+    </item>
+    <item>
+        <link>https://www.systinet.com/products/overview
+        </link>
+        <image>systinet.gif
+        </image>
+        <title>Systinet WASP</title>
+        <description>
+            Systinet's products enable, publish, discover, govern and manage SOA business services, and make it easy to
+            build
+            secure and reliable Web services with Java and C++ applications.
+        </description>
+    </item>
+    <item>
+        <link>https://www.tangosol.com/
+        </link>
+        <image>tangosol-flat-inline.gif
+        </image>
+        <title>Tangosol Coherence</title>
+        <description>
+            Tangosol Coherence&#8482; enables clustered in-memory object sharing, caching and management among multiple
+            instances of Java applications with unparalleled scalable performance, availability, and reliability.
+            Tangosol
+            Coherence*Web&#8482; brings the benefits of Coherence to HTTP Session management in applications deployed on
+            Jetty
+            without requiring any code changes. Installed on a deployable Jetty application, Coherence*Web assures the
+            highest
+            HTTP Session reliability and availability by removing all single points of failure, provides linear
+            scalability up
+            to hundreds of servers, and delivers extreme performance, even with huge HTTP Sessions.
+        </description>
+    </item>
+    <item>
+        <link>https://jakarta.apache.org/tapestry
+        </link>
+        <image>tapestry.png
+        </image>
+        <title>Tapestry</title>
+        <description>
+            Tapestry is a powerful, open-source, all-Java framework for creating leading edge web applications in Java.
+            Tapestry
+            is an alternative to scripting environments such as JavaServer Pages or Velocity. Tapestry goes far further,
+            providing a complete framework for creating extremely dynamic applications with minimal amounts of coding.
+        </description>
+    </item>
+    <item>
+        <link>https://www.tipp24.de
+        </link>
+        <image>tipp24_logo.jpg
+        </image>
+        <title>Tipp24</title>
+        <description>
+            About Tipp24 AG: Tipp24 was established in 1999 and is now the market leader for lottery products in the
+            Internet on
+            the basis of billings. The company has succeeded in achieving impressive growth rates right from the start.
+            Almost
+            all state lottery products are supplied. It only takes a few mouse clicks to buy a lottery ticket - round
+            the clock,
+            quickly and anonymously. The ticket receipt is kept safely, winners are notified about their prizes
+            automatically by
+            text message and e-mail and prizes are credited automatically. No extra charge is made for this service.
+            Subsidiaries of Tipp24 (<a href="https://www.tipp24.de">https://www.tipp24.de</a>) are Ventura24 in Spain
+            (<a
+                href="https://www.ventura24.es">https://www.ventura24.es</a>) and Puntogioco24 (<a
+                href="https://www.puntogioco24.it">https://www.puntogioco24.it</a>) in Italy.
+        </description>
+    </item>
+    <item>
+        <link>https://www.tivoli.com/
+        </link>
+        <image>netview.gif
+        </image>
+        <title>IBM Tivoli NetView</title>
+        <description>
+            IBM Tivoli NetView discovers TCP/IP networks, displays network topologies, correlates and manages events and
+            SNMP
+            traps, monitors network health, and gathers performance data.
+        </description>
+    </item>
+    <item>
+        <link>https://topfox.co.uk/
+        </link>
+        <image>TopFox.gif
+        </image>
+        <title>Top Fox Competitions</title>
+        <description>
+            TopFox is a white-label competition network and co-registration technology, powering over 30 top UK web
+            properties
+            competition areas and has a million+ active members.
+        </description>
+    </item>
+    <item>
+        <link>https://www.trackstudio.com/
+        </link>
+        <image>trackstudio.gif
+        </image>
+        <title>Track Studio</title>
+        <description>
+            TrackStudio is one of the most powerful issue tracking systems based on Java. The high performance rates and
+            scalability, support of nearly all servlet containers and DBMSs as well as the affordable price make this
+            system a
+            perfect choice for many companies.
+        </description>
+    </item>
+    <item>
+        <link>https://www.ws02.com
+        </link>
+        <image>tungsten_logo.jpg
+        </image>
+        <title>Tungsten</title>
+        <description>
+            WSO2 Tungsten is an application server for Web services, fully open source and licensed under the Apache
+            Software
+            License. With its built in high-performance Web server, full support for XML, SOAP, WSDL, and support for
+            reliable,
+            secure communications, Tungsten makes it simple and effective to create, consume and manage Web services.
+        </description>
+    </item>
+    <item>
+        <link>https://www.vmware.com/
+        </link>
+        <image>vmware.png
+        </image>
+        <title>vmware</title>
+        <description>
+            Simplify management of VMware vSphere by automating patches and updates. VMware vCenter Update Manager makes
+            it easy
+            to manage tracking and patching of VMware vSphere hosts, as well as select Windows virtual machines.
+        </description>
+    </item>
+    <item>
+        <link>https://www.vodafone360.com/en/web/home/index
+        </link>
+        <image>Vodafone.png
+        </image>
+        <title>Vodafone</title>
+        <description>
+            360 is a new internet service for your mobile, PC and Mac. It brings your phone, email, chat and social
+            network
+            contacts together in one place. Communicate with your friends, see their status updates, share your photos
+            and
+            favourite places – from your phone, PC or Mac.
+            Jetty is a critical part of the Vodafone 360 infrastructure. Jetty Continuations give us an edge in
+            performance for
+            COMET and long-polling applications with thousands of concurrently connected users. Jetty's simplicity and
+            reliability has been a productivity gain throughout the item - Phil Jeffrey Principle Development
+            Manager,
+            Vodafone 360
+        </description>
+    </item>
+    <item>
+        <link>https://wadi.codehaus.org/
+        </link>
+        <image>wadi.gif
+        </image>
+        <title>WADI</title>
+        <description>
+            WADI is an acronym of 'Web Application Distribution Infrastructure'. WADI's aim is to resolve many of the
+            problems
+            of dealing with state in the clustered J2EE Web Tier. This involves HttpSession replication, migration and
+            relocation.
+        </description>
+    </item>
+    <item>
+        <link>https://www.themidnightcoders.com/weborb
+        </link>
+        <image>mc-logo.gif
+        </image>
+        <title>WebORB</title>
+        <description>
+            WebORB is a development platform and a runtime environment for Rich Internet Applications. Supported types
+            of rich
+            clients include AJAX and Flash Remoting. WebORB provides a connectivity framework between client
+            applications and a
+            variety of server-side components including POJOs, EJB, XML web services and ColdFusion. Product features
+            include
+            zero-configuration deployment, code-access security, object activation, dynamic type adaptation and many
+            more. Live
+            examples are available at: https://www.themidnightcoders.com/examples
+        </description>
+    </item>
+    <item>
+        <link>https://words.jspell.com/
+        </link>
+        <image>wordexplorer_logo.png
+        </image>
+        <title>Word Explorer</title>
+        <description>
+            Word Explorer is a word game word finder, anagram solver and visual dictionary. Use Word Explorer to lookup
+            words in
+            English, find scrabble words, search for suffixes, prefixes and more. Word Explorer uses a responsive design
+            and is
+            compatible with desktop and mobile devices.
+        </description>
+    </item>
+    <item>
+        <link>https://www.wikileaksforum.net/topic/super-easy-wikileaks-mirror-server
+        </link>
+        <image>wikileaks.png
+        </image>
+        <title>WikiLeaks</title>
+        <description>
+            This is a java executable that contains both the WL website and a webserver in less than 30Mbytes.On any
+            computer it
+            will start a WIKILEAKS website and will serve HTTP and HTTPS protocols.This should make it easier for
+            anybody to
+            have its own mirror. Users can redirect the ports to give access from the internet or simply browse it in
+            their own
+            computers.
+        </description>
+    </item>
+    <item>
+        <link>https://wings.mercatis.de/
+        </link>
+        <image>wings.gif
+        </image>
+        <title>wingS</title>
+        <description>
+            In a nutshell, wingS is a web application framework based on Java Servlets, resembling the Swing API with
+            its MVC
+            paradigm and providing a versatile template mechanism enabling you to separate logic and design
+        </description>
+    </item>
+    <item>
+        <link>https://xgql.sourceforge.net/
+        </link>
+        <image>Xgql_logo.jpg
+        </image>
+        <title>XGQL</title>
+        <description>
+            XGQL is a middleware allowing to access and format data from heterogeneous data sources using an XML
+            formalism. It
+            intends to offer a simple unified way to access, modify, transform and generate XML streams from XML
+            datasources or
+            relational DB. XGQL is available in several modes. One of them is the SWAS <a
+                href="https://sourceforge.net/item/showfiles.php?group_id=154418">SWAS</a>. It consists in a Jetty
+            Server
+            running the XGQL servlet.
+        </description>
+    </item>
+    <item>
+        <link>https://docs.xp-dev.com/
+        </link>
+        <image>xpdev.png
+        </image>
+        <title>XP-Dev</title>
+        <description>
+            XP-Dev.com provides free and commercial Subversion Hosting integrated with item Tracking for all types of
+            items - open and even closed source items.
+        </description>
+    </item>
+    <item>
+        <link>https://www.xpolog.com
+        </link>
+        <image>xpologo.gif
+        </image>
+        <title>XPO Log</title>
+        <description>
+            XpoLog is a debug server. Enable data view and analysis over any log and configuration file. You can tail
+            view
+            changing files, transform the files to a table, and customize it. Merge a number of log files for multitier
+            system
+            debugging. Filter the data by a variety of rules. Zip and export files by e-mail or as a plain text. One
+            server can
+            be configured to reference many files on different machines.
+        </description>
+    </item>
+    <item>
+        <link>https://www.z2-environment.eu/
+        </link>
+        <image>z2.png
+        </image>
+        <title>Z2-Environment</title>
+        <description>
+            The z2-Environment is an infrastructure to develop, configure, and run standard Java solutions requiring no
+            build
+            infrastructure nor deployment procedures. Z2 greatly simplifies team development, support as well as
+            distributed
+            operations of Java solutions. The z2-Environment uses Jetty as its Web Container.
+        </description>
+    </item>
+    <item>
+        <link>https://www.zedbuildsandbugs.com/
+        </link>
+        <image>hericus-logo.png
+        </image>
+        <title>Zed Builds and Bugs</title>
+        <description>
+            Zed Builds And Bugs Manager integrates 4 common development tools: continuous integration builds, bug
+            tracking,
+            discussion forums, and wiki collaboration into a single easy to use web application. It is free for small
+            development teams, and ready to scale to the requirements of your item.
+        </description>
+    </item>
+    <item>
+        <link>https://www.zimbra.com/products/desktop.html
+        </link>
+        <image>zimbra_desktop.gif
+        </image>
+        <title>Zimbra Desktop</title>
+        <description>
+            Zimbra Desktop is the next generation leap forward for Web 2.0 applications- now you can have Zimbra's
+            Ajax-based
+            collaboration experience online and offline. That means when you are out of the office without a connection
+            (say, in
+            a plane, train, or automobile), you can keep working without missing a beat. Write email, add new
+            appointments, edit
+            documents and when you re-connect changes will be automatically synced to the Zimbra Server.
+        </description>
+    </item>
+</items>

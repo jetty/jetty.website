@@ -12,7 +12,7 @@ include::partial$jetty-downloads.adoc[]
 endif::[]
 |===
 
-NOTE: Release notes are in the [.path]_VERSION.txt_ file included with the distribution and on the link:https://github.com/jetty/jetty.project/releases[GitHub Releases] page for the Jetty project.
+NOTE: Release notes are in the [.path]_VERSION.txt_ file included with the distribution and on the https://github.com/jetty/jetty.project/releases[GitHub Releases] page for the Jetty project.
 
 Release notes are also made available on the jetty-announce@eclipse.org mailing list.
 

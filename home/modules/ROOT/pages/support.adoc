@@ -43,8 +43,8 @@ While not necessarily a support channel for solving a specific user problem, the
 
 When you file a GitHub Issue in the Eclipse Jetty project, several labels are available, and we would like to encourage you to use them appropriately.
 
-link:https://github.com/eclipse/jetty.project[Issues at Github]
+* link:https://github.com/eclipse/jetty.project[Issues at Github]
 
 We have additionally identified and labeled many issues that may be appropriate for users of different levels of expertise who might want to contribute to Jetty but not have a specific goal or issue in mind.
 
-link:https://github.com/eclipse/jetty.project/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22[Help Wanted]
+* link:https://github.com/eclipse/jetty.project/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22[Help Wanted]

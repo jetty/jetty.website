@@ -5,4 +5,3 @@ Eclipse Jetty's success isn't just about lines of code and technical prowess; it
 So, if you're looking for a welcoming community where your contributions are valued and your voice is heard, look no further than Eclipse Jetty. Join the conversation, share your expertise, and become part of the engine that powers countless websites and applications around the globe.
 
 Together, the Jetty community is more than just a collection of individuals; it's a driving force for innovation, ensuring that Jetty remains a cornerstone of the open-source web for years.
-

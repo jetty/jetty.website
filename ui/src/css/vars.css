@@ -37,7 +37,8 @@
   --scrollbar-thumb-color: var(--color-gray-10);
   --scrollbar_hover-thumb-color: var(--color-gray-30);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  /* old --navbar-background: var(--color-jet-80); */
+  --navbar-background: var(#5f86b1);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-white);
@@ -119,7 +120,7 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-jet-80);
+  --footer-background: var(#5f86b1);
   --footer-font-color: var(--color-gray-15);
   --footer-link-font-color: var(--color-white);
   /* dimensions and positioning */

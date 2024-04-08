@@ -1,26 +1,37 @@
 # to build site quickly, run:
 #
-#  npx antora antora-playbook.yml
+#  mvn antora:antora
+#
+# which is equivalent to:
+#
+#  npx antora --clean --fetch antora-playbook.yml
 #
 # to activate the diagram generator (Kroki), run:
 #
-#  npx --package antora --package asciidoctor-kroki antora antora-playbook.yml
+#  mvn antora:antora@kroki
 #
-# to run the full production build, start by installing all the required dependencies:
+# which is equivalent to:
+#
+#  npx --package antora --package asciidoctor-kroki antora --extension register-asciidoctor-kroki antora-playbook.yml
+#
+# to run the full production build, run:
+#
+#  mvn antora:antora@full
+#
+# which is equivalent to:
 #
 #  npm i --package-lock false
-#
-# then run:
-#
-#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads-extension antora-playbook.yml
+#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level error --stacktrace antora-playbook.yml
 antora:
   extensions:
-  - ./lib/register-asciidoctor-kroki-extension.js
   - ./lib/component-url-prefix-extension.js
-  - id: jetty-downloads-extension
+  - id: jetty-downloads
     require: ./lib/jetty-downloads-extension.js
     enabled: false
     last_eol_version: 11
+  - id: register-asciidoctor-kroki
+    require: ./lib/register-asciidoctor-kroki-extension.js
+    enabled: false
 site:
   title: Eclipse Jetty
   url: https://jetty.org
@@ -48,4 +59,4 @@ ui:
     url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
     snapshot: true
 output:
-  dir: ./_site
+  dir: target/site

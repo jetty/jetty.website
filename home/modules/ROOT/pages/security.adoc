@@ -202,28 +202,28 @@ For more information on how we handle security issues, please refer to our https
 |6/25/2018
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12536[CVE-2018-12536]
 |High
-|See https://cwe.mitre.org/data/definitions/209.html[CWE-202]
+|See  https://cwe.mitre.org/data/definitions/209.html[CWE-202]
 |< = 9.4.10
 |9.2.25, 9.3.24, 9.4.11
 
 |6/25/2018
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7658[CVE-2017-7658]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
 |< = 9.4.10
 |9.2.25, 9.3.24, 9.4.11
 
 |6/25/2018
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7657[CVE-2017-7657]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
 |< = 9.4.10
 |9.2.25, 9.3.24, 9.4.11
 
 |6/25/2018
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7656[CVE-2017-7656]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
-|See https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
+|See  https://cwe.mitre.org/data/definitions/444.html[CWE-444]
 |< = 9.4.10
 |9.2.25, 9.3.24, 9.4.11
 

@@ -18,7 +18,7 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
-    /* jetty colors */
+  /* jetty colors */
   --color-jetty-orange: #fc390d;
   --color-jetty-blue: #5f86b1;
 
@@ -156,4 +156,5 @@
   --color-net-id: var(--color-jetty-blue);
   --color-text-light: var(--color-white);
   --color-card-border: var(--color-jetty-blue);
+  --card-max-lines: 5;
 }

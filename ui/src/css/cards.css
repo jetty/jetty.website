@@ -58,8 +58,6 @@
 }
 
 .card-block .overflow {
-  --max-lines: 5;
-
-  max-height: calc(1.4rem * var(--max-lines));
+  max-height: calc(1.4rem * var(--card-max-lines));
   overflow: hidden;
 }

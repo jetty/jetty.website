@@ -18,6 +18,10 @@
   --color-jet-70: #222;
   --color-jet-80: #191919;
   --color-black: #000;
+    /* jetty colors */
+  --color-jetty-orange: #fc390d;
+  --color-jetty-blue: #5f86b1;
+
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
   --body-font-size: 1.0625em; /* 17px */
@@ -146,11 +150,10 @@
   --z-index-page-version-menu: 3;
   --z-index-navbar: 4;
 
-  /* webtide blogs */
-  --color-card-shadow: orange;
-  --color-focused: blue;
-  --color-net-id: orange;
-  --color-text-light: white;
-  --color-card-border: black;
-  --color-jetty-blue: #5f86b1;
+  /* blog cards */
+  --color-card-shadow: var(--color-jetty-blue);
+  --color-focused: var(--color-jetty-blue);
+  --color-net-id: var(--color-jetty-blue);
+  --color-text-light: var(--color-white);
+  --color-card-border: var(--color-jetty-blue);
 }

@@ -61,7 +61,6 @@
             <configuration>
               <environmentVariables>
                 <ANTORA_CACHE_DIR>${basedir}/.cache/antora</ANTORA_CACHE_DIR>
-                <npm_config_audit>false</npm_config_audit>
               </environmentVariables>
               <additionalOptions>
                 <option>extension[] @antora/collector-extension</option>

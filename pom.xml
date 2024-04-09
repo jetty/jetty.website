@@ -25,6 +25,7 @@
   </licenses>
   <properties>
     <antora.plugin.version>1.0.0-alpha.2</antora.plugin.version>
+    <node.version>18.20.1</node.version>
   </properties>
   <build>
     <plugins>
@@ -33,7 +34,6 @@
         <artifactId>antora-maven-plugin</artifactId>
         <version>${antora.plugin.version}</version>
         <configuration>
-          <nodeVersion>18</nodeVersion>
           <options>
             <option>clean</option>
             <option>fetch</option>

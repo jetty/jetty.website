@@ -11,6 +11,28 @@ The UI bundle produced from this project is designed to be used with Antora.
 The bundle includes the HTML templates (layouts, partials, and helpers), CSS, JavaScript, fonts, and site-wide images.
 The rest of the material for the site is provided by various content repositories.
 
+== Usage
+
+To bundle the UI with Maven, use:
+
+ $ mvn process-resources
+
+On the first run, this command will also install Node.js and the project dependencies (npm packages).
+
+If you want to run a specific Gulp task, use:
+
+ $ mvn process-resources -Dtask=preview
+
+If no task is specified, the default task (bundle) is run.
+
+To bypass the initialize step (after the first run) and run the Gulp task directly, use:
+
+ $ mvn frontend:npx@gulp -Dtask=preview
+
+To print a list of available Gulp tasks, run:
+
+ $ mvn frontend:npx@gulp -Dtask=--tasks
+
 == Copyright and License
 
 === Software

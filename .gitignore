@@ -1,6 +1,6 @@
 /.cache/
-/_site/
 /node_modules/
+/target/
 /package-lock.json
 
 /target/

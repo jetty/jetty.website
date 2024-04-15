@@ -24,6 +24,8 @@ antora:
 site:
   title: Eclipse Jetty
   url: https://jetty.org
+  keys:
+    google_analytics: G-VS4ZRD6HVM
 content:
   sources:
   - url: .

@@ -1,0 +1,21 @@
+# PACKAGES antora@testing gitlab:antora/antora-asciidoctor-extensions
+site:
+  title: Eclipse Jetty Documentation (Branch Preview)
+  start_page: jetty::index.adoc
+content:
+  sources:
+  - url: ./../..
+    branches: HEAD
+    start_path: documentation/jetty
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+  extensions:
+  - antora-asciidoctor-extensions/absolute-path-include-processor
+ui:
+  bundle:
+    url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
+    snapshot: true

@@ -6,3 +6,44 @@ It will eventually be contributed and moved to https://github.com/jetty/website.
 The staged site is available at the following URL:
 
 * https://webtide.github.io/jetty.website/
+
+== Prerequisites
+
+The site is built using Antora.
+This directory contains a Maven project that uses the Antora Maven plugin.
+This plugin allows you to run Antora through Maven.
+The only prerequisite is that you have Maven installed on your machine.
+
+You do not need to have Node.js or npm installed.
+You also don't need to run `npm install`.
+The Antora Maven plugin handles all this.
+
+== Usage
+
+To build the site minimally, use:
+
+ $ mvn antora
+
+Antora will print the location of the site in the log.
+
+On the first run, this command will set up Node.js (in [.path]_target/node_) and install the project dependencies (npm packages) (into [.paht]_node_modules_).
+
+You can pass options directly to Antora by defining user properties that start with `antora.option.`.
+For example, you can enable the jetty-downloads extension as follows:
+
+ $ mvn antora -Dantora.option.extension[1]=jetty-download
+
+Antora is configured to fetch the remote repositories on each run.
+If you want to work offline (after the first run), you can unset the `fetch` option:
+
+ $ mvn antora -Dantora.option.fetch?=false
+
+You can accomplish the same thing by enabling the `cached` execution profile.
+
+ $ mvn antora:antora@cached
+
+If you want to run the full production build, enable the `full` execution profile.
+
+ $ mvn antora:antora@full
+
+//To learn more about how to use the Antora Maven plugin, refer to the docs.

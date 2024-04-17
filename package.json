@@ -6,6 +6,7 @@
     "antora": "latest",
     "@antora/collector-extension": "latest",
     "@antora/lunr-extension": "latest",
+    "antora-asciidoctor-extensions": "gitlab:antora/antora-asciidoctor-extensions",
     "asciidoctor-kroki": "latest",
     "@octokit/rest": "~20.0"
   },

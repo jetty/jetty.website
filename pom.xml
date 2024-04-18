@@ -68,7 +68,7 @@
                 <option>extension[] @antora/lunr-extension</option>
                 <option>extension[] jetty-downloads</option>
                 <option>extension[] register-asciidoctor-kroki</option>
-                <option>log-failure-level error</option>
+                <option>log-failure-level warn</option>
                 <option>stacktrace</option>
               </additionalOptions>
             </configuration>

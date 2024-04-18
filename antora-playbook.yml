@@ -21,7 +21,7 @@
 # which is equivalent to:
 #
 #  npm i --package-lock false
-#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level error --stacktrace antora-playbook.yml
+#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level warn --stacktrace antora-playbook.yml
 antora:
   extensions:
   - ./lib/component-url-prefix-extension.js

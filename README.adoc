@@ -20,13 +20,22 @@ The Antora Maven plugin handles all this.
 
 == Usage
 
-To build the site minimally, use:
+To build the site quickly, use:
 
  $ mvn antora
 
-Antora will print the location of the site in the log.
+Antora will print the location of the generated site in the Maven log.
 
-On the first run, this command will set up Node.js (in [.path]_target/node_) and install the project dependencies (npm packages) (into [.paht]_node_modules_).
+On the first run, this command will set up Node.js (in [.path]_target/node_) and install the project dependencies (npm packages) (into [.path]_node_modules_).
+
+[NOTE]
+====
+The previous command is roughly equivalent to the following low-level `npx` command:
+
+ $ npx antora --clean --fetch antora-playbook.yml
+
+In order to use `npx` directly, you must have Node.js preinstalled.
+====
 
 You can pass options directly to Antora by defining user properties that start with `antora.option.`.
 For example, you can enable the jetty-downloads extension as follows:
@@ -34,16 +43,27 @@ For example, you can enable the jetty-downloads extension as follows:
  $ mvn antora -Dantora.option.extension[1]=jetty-download
 
 Antora is configured to fetch the remote repositories on each run.
-If you want to work offline (after the first run), you can unset the `fetch` option:
+If you want to work offline after the first run, you can unset the `fetch` option:
 
  $ mvn antora -Dantora.option.fetch?=false
 
-You can accomplish the same thing by enabling the `cached` execution profile.
+You can accomplish the same thing by enabling the `cached` execution profile, which overrides options passed to Antora.
 
  $ mvn antora:antora@cached
+
+To activate the diagram generator (Kroki), enable the `kroki` execution profile.
+
+ $ mvn antora:antora@kroki
 
 If you want to run the full production build, enable the `full` execution profile.
 
  $ mvn antora:antora@full
+
+The full production build is equivalent to the following `npm` and `npx` command:
+
+ $ npm i --package-lock false
+   ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level warn --stacktrace antora-playbook.yml
+
+The Maven plugin also prints the `npx` command before running it for informational purposes and to help you debug the configuration.
 
 //To learn more about how to use the Antora Maven plugin, refer to the docs.

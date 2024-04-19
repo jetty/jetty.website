@@ -1,27 +1,4 @@
-# to build site quickly, run:
-#
-#  mvn antora
-#
-# which is equivalent to:
-#
-#  npx antora --clean --fetch antora-playbook.yml
-#
-# to activate the diagram generator (Kroki), run:
-#
-#  mvn antora:antora@kroki
-#
-# which is equivalent to:
-#
-#  npx --package antora --package asciidoctor-kroki antora --extension register-asciidoctor-kroki antora-playbook.yml
-#
-# to run the full production build, run:
-#
-#  mvn antora:antora@full
-#
-# which is equivalent to:
-#
-#  npm i --package-lock false
-#  ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level warn --stacktrace antora-playbook.yml
+# refer to README.adoc to learn how to build the site
 antora:
   extensions:
   - ./lib/component-url-prefix-extension.js

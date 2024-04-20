@@ -48,9 +48,8 @@ jobs:
       env:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it
         ANTORA_CACHE_DIR: ${{ github.workspace }}/.cache/antora
-        MAVEN_OPTS: '-Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss'
         npm_config_audit: false
-      run: mvn -B -e -V -ntp antora:antora@full
+      run: mvn -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
       with:

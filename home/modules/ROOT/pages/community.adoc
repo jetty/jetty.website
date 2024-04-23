@@ -1,7 +1,20 @@
 = Community
 
-Eclipse Jetty's success isn't just about lines of code and technical prowess; it's fueled by the vibrant community that beats at its core. This diverse group of developers, from seasoned veterans to curious newcomers, share a passion for open-source software and a commitment to pushing the boundaries of web technology.
+== Community Dynamics
 
-So, if you're looking for a welcoming community where your contributions are valued and your voice is heard, look no further than Eclipse Jetty. Join the conversation, share your expertise, and become part of the engine that powers countless websites and applications around the globe.
+The Eclipse Jetty community is a melting pot of talent, comprising developers, testers, documentation writers, and users. Collaboration is at the heart of everything they do, with the primary communication channels being mailing lists,  frequently on the StackOverflow 'jetty' tag, and the GitHub issue tracker for Jetty. These channels serve as hubs for sharing ideas, troubleshooting issues, and coordinating development efforts.
 
-Together, the Jetty community is more than just a collection of individuals; it's a driving force for innovation, ensuring that Jetty remains a cornerstone of the open-source web for years.
+One of the defining characteristics of the Jetty community is its inclusivity. Whether you're a seasoned Java developer or a newcomer eager to learn, there's a place for you in the Jetty community. Beginners are welcomed with open arms, encouraged to ask questions, and guided by experienced members who are passionate about nurturing the next generation of contributors.
+
+== Continuous Innovation
+
+The Jetty project is known for its commitment to innovation and agility. New features and enhancements are introduced regularly, thanks to the collaborative efforts of the community. Whether it's support for the latest Java specifications, improvements in performance and scalability, or integrations with cutting-edge technologies, Jetty stays ahead of the curve by embracing change and embracing feedback from users and contributors.
+
+In addition to core development, the Jetty community fosters a vibrant ecosystem of extensions, plugins, and integrations. From WebSocket support, HTTP/2 and HTTP/3 implementations to integration with popular frameworks like Spring and Apache Camel, Jetty's extensibility makes it a versatile platform for a wide range of use cases.
+
+== Community Engagement
+
+The Jetty community is more than just a group of developers working on a shared codebase; it's a tight-knit community bound by a shared passion for technology and collaboration. Regular meetups, conferences, and hackathons provide opportunities for members to connect in person, share insights, and forge lasting friendships.
+
+Furthermore, the Jetty community is committed to giving back to the broader open-source ecosystem. Whether through code contributions, bug fixes, or documentation updates, Jetty developers actively participate in projects beyond their own, embodying the spirit of cooperation and mutual support that defines the open-source movement.
+

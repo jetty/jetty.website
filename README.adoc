@@ -62,7 +62,7 @@ If you want to run the full production build, enable the `full` execution profil
 The full production build is equivalent to the following `npm` and `npx` command:
 
  $ npm i --package-lock false
-   ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --log-failure-level warn --stacktrace antora-playbook.yml
+   ANTORA_CACHE_DIR=$PWD/.cache/antora npx --offline antora --clean --fetch --extension @antora/collector-extension --extension @antora/lunr-extension --extension jetty-downloads --extension register-asciidoctor-kroki --extension ./lib/router-extension.js --log-failure-level warn --stacktrace antora-playbook.yml
 
 The Maven plugin also prints the `npx` command before running it for informational purposes and to help you debug the configuration.
 

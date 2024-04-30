@@ -11,6 +11,7 @@
 @media screen and (min-width: 1024px) {
   main {
     flex: auto;
+    justify-content: center;
     min-width: 0; /* min-width: 0 required for flexbox to constrain overflowing elements */
   }
 

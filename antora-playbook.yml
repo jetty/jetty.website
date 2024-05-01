@@ -9,6 +9,11 @@ antora:
   - id: register-asciidoctor-kroki
     require: ./lib/register-asciidoctor-kroki-extension.js
     enabled: false
+runtime:
+  log:
+    destination:
+      append: false
+    level: info
 site:
   title: Eclipse Jetty
   url: https://jetty.org

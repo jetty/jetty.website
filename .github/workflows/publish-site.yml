@@ -33,23 +33,13 @@ jobs:
       with:
         distribution: temurin
         java-version: '21'
-    - name: Install Maven
-      uses: stCarolas/setup-maven@v5
-      with:
-        maven-version: 3.9.6
-    - name: Cache Maven repository
-      uses: actions/cache@v4
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-maven-${{ hashFiles('antora-playbook.yml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+        cache: maven
     - name: Generate Site
       env:
         # must set ANTORA_CACHE_DIR so Maven will put jetty home where Antora Collector won't delete it
         ANTORA_CACHE_DIR: ${{ github.workspace }}/.cache/antora
         npm_config_audit: false
-      run: mvn -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full
+      run: ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
       with:

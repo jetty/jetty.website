@@ -26,6 +26,10 @@ To build the site quickly, use:
 
 Antora will print the location of the generated site in the Maven log.
 
+To ensure everyone is using the same environment, you may want to use the Maven wrapper, `mvnw` to invoke Maven instead:
+
+ $ ./mvnw antora
+
 On the first run, this command will set up Node.js (in [.path]_target/node_) and install the project dependencies (npm packages) (into [.path]_node_modules_).
 
 [NOTE]

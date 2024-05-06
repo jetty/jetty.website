@@ -111,13 +111,13 @@ function build_site() {
   echo " - building site";
   echo "   - this may take up to 10 minutes";
   echo "   - Follow: tail -f $LOG_FILE";
-  #mvn antora &>>"$LOG_FILE";
-  #local mvn_status=$?;
+  mvn antora &>>"$LOG_FILE";
+  local mvn_status=$?;
 
-  #if [[ mvn_status -ne 0 ]]; then
-  #  echo " - error building site";
-  #  exit 1;
-  #fi
+  if [[ mvn_status -ne 0 ]]; then
+    echo " - error building site";
+    exit 1;
+  fi
 
   if [[ ! -f "$$BUILT_SITE_DIR/index.html" ]]; then
     echo " - successfully built website";

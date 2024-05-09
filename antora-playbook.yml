@@ -41,7 +41,7 @@ asciidoc:
   - ./lib/absolute-path-include-processor.js
 ui:
   bundle:
-    url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
+    url: https://github.com/jetty/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
     snapshot: true
 output:
   dir: target/site

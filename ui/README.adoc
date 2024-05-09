@@ -5,7 +5,7 @@
 :current-release: ui-prod-latest
 
 This project produces the UI for the Jetty website and documentation.
-The UI consists of both the visual theme and the user interactions for the site.
+The UI consists of the visual theme and the user interactions for the site.
 
 The UI bundle produced from this project is designed to be used with Antora.
 The bundle includes the HTML templates (layouts, partials, and helpers), CSS, JavaScript, fonts, and site-wide images.

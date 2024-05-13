@@ -1,4 +1,4 @@
-# PACKAGES antora@testing gitlab:antora/antora-asciidoctor-extensions
+# PACKAGES antora@testing gitlab:antora/antora-asciidoctor-extensions asciidoctor-kroki
 site:
   title: Eclipse Jetty Documentation (Branch Preview)
   start_page: jetty::index.adoc
@@ -15,6 +15,7 @@ asciidoc:
     page-pagination: ''
   extensions:
   - antora-asciidoctor-extensions/absolute-path-include-processor
+  - asciidoctor-kroki
 ui:
   bundle:
     url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip

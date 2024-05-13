@@ -17,5 +17,5 @@ asciidoc:
   - antora-asciidoctor-extensions/absolute-path-include-processor
 ui:
   bundle:
-    url: https://github.com/webtide/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
+    url: https://github.com/jetty/jetty.website/releases/download/ui-prod-latest/ui-bundle.zip
     snapshot: true

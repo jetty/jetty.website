@@ -6,6 +6,8 @@ on:
 concurrency:
   group: github-pages
   cancel-in-progress: false
+permissions:
+  contents: write
 jobs:
   activate:
     runs-on: ubuntu-latest
@@ -28,6 +30,4 @@ jobs:
       run: npm ci
     - name: Tag and release
       working-directory: ./ui
-      env:
-        GITHUB_API_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       run: npx gulp release

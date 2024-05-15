@@ -30,4 +30,6 @@ jobs:
       run: npm ci
     - name: Tag and release
       working-directory: ./ui
+      env:
+        GITHUB_API_TOKEN: ${{ env.GITHUB_TOKEN }}
       run: npx gulp release

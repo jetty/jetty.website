@@ -31,5 +31,5 @@ jobs:
     - name: Tag and release
       working-directory: ./ui
       env:
-        GH_TOKEN: ${{ env.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npx gulp release

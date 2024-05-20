@@ -65,7 +65,7 @@
               </environmentVariables>
               <additionalOptions>
                 <option>extension[] @antora/collector-extension</option>
-                <option>extension[] @antora/lunr-extension</option>
+                <option>extension[] lunr</option>
                 <option>extension[] jetty-downloads</option>
                 <option>extension[] register-asciidoctor-kroki</option>
                 <option>extension[] ./lib/router-extension.js</option>

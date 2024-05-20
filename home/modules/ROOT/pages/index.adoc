@@ -5,6 +5,13 @@ image::jetty-logo.svg[]
 
 Eclipse Jetty provides a highly scalable and memory-efficient web server and servlet container, supporting many protocols such as HTTP/3,2,1 and WebSocket. Furthermore, the project offers integrations with many other technologies, such as OSGi, JMX, JNDI, JAAS, etc. These components are open source and are freely available for commercial use and distribution under both the EPL2 and Apache2 licenses.
 
+== Blog Entries
+
+.Jetty Blogs
+feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
+
+The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm boasts a robust codebase and a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
+
 == Why you should use Jetty?
 
 .Features
@@ -38,12 +45,7 @@ Jetty has been used in various projects and products in development and producti
 
 Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the link:docs/[Documentation] page.
 
-== Blog Entries
 
-.Jetty Blogs
-feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
-
-The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm boasts a robust codebase and a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
 
 == About Jetty
 === Where has Jetty called home?

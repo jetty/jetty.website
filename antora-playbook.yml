@@ -24,8 +24,8 @@ content:
   - url: .
     branches: HEAD
     start_paths: [home, docs-home, contribution-guide]
-  - url: https://github.com/opendevise/jetty.project
-    branches: jetty-{12,11,10}.0.x-for-antora
+  - url: https://github.com/jetty/jetty.project
+    branches: jetty-{12,11,10}.0.x
     start_path: documentation/jetty
 asciidoc:
   attributes:

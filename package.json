@@ -10,6 +10,10 @@
     "asciidoctor-kroki": "latest",
     "@octokit/rest": "~20.0"
   },
+  "main": "./lib/index.js",
+  "exports": {
+    "./jetty-block": "./lib/jetty-block.js"
+  },
   "overrides": {
     "vinyl-fs": {
       "glob-stream": "~7.0"

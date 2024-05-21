@@ -17,6 +17,7 @@
   main > .content {
     display: flex;
     /* justify-content: center; */
+    --doc-max-width--desktop: 80%;
   }
 
   aside.toc.embedded {

@@ -25,6 +25,7 @@ function set_global_variables() {
   MIN_MAVEN_VERION=3.9.4
   SCRIPT_OUTPUT_DIR="$(pwd)/target";
   BUILT_SITE_DIR=$(pwd)/target/site;
+  UI_BUNDLE_FILE="$(pwd)/ui/build/ui-bundle.zip"
   LOG_FILE="$SCRIPT_OUTPUT_DIR/jetty-website.log";
 }
 
@@ -50,7 +51,7 @@ function check_environment() {
   fi
 
   # check maven
-  local maven_version=$(mvn -version 2>&1 | head -n1 | sed -r 's/.*Maven ([0-9.]*).([0-9]*).([0-9]*).*$/\1\2\3/');
+  local maven_version=$(./mvnw -version 2>&1 | head -n1 | sed -r 's/.*Maven ([0-9.]*).([0-9]*).([0-9]*).*$/\1\2\3/');
   
   if [[ $maven_version < $MIN_MAVEN_VERSION ]]; then
     echo "Error: mvn version must be $MIN_MAVEN_VERSION+";
@@ -105,13 +106,55 @@ function copy_files() {
 
 }
 
+function init_site() {
+  echo "$FUNCNAME";
+
+  echo " - building site";
+  echo "   - this may take up to 10 minutes";
+  echo "   - Follow: tail -f $LOG_FILE";
+  ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
+  local mvn_status=$?;
+
+  if [[ mvn_status -ne 0 ]]; then
+    echo " - error building site";
+    exit 1;
+  fi
+
+}
+
+function build_ui() {
+  echo "$FUNCNAME";
+
+  echo " - building ui";
+  echo "   - this may take up 5 minutes";
+  echo "   - Follow: tail -f $LOG_FILE";
+
+  cd ui;  
+  ../mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss process-resources &>>"$LOG_FILE";  
+  local mvn_status=$?;
+  cd ..;
+
+  if [[ mvn_status -ne 0 ]]; then
+    echo " - error building ui";
+    exit 1;
+  fi
+
+  if [[ ! -f "$UI_BUNDLE_FILE" ]]; then
+    echo " - successfully built website";
+  else
+    echo " - error building website, no index.html";
+    exit 1;
+  fi
+
+}
+
 function build_site() {
   echo "$FUNCNAME";
 
   echo " - building site";
   echo "   - this may take up to 10 minutes";
   echo "   - Follow: tail -f $LOG_FILE";
-  mvn antora &>>"$LOG_FILE";
+  ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
   local mvn_status=$?;
 
   if [[ mvn_status -ne 0 ]]; then
@@ -166,6 +209,7 @@ function main() {
   if [[ $directive == "stage" ]]; then
     check_environment;
     set_environment;
+    #build_ui;
     build_site;
     deploy_site "$STAGE_DIR";
     exit 0;

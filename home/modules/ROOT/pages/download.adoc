@@ -18,13 +18,11 @@ Release notes are also made available on the jetty-announce@eclipse.org mailing 
 
 == What Version Do I Use?
 
-Jetty 12 is the only community-supported version of Jetty and has many improvements over previous releases.
+Jetty 12 is currently the community-supported version of Jetty. This means that Jetty 12 is the actively developed and supported version of Jetty for the open-source community. Issues filed for Jetty 12 at the GitHub repository are actively triaged and we work to resolve and release fixes for these releases.
 
-While many people continue to use older versions of Jetty like 11/10/9 for a variety of reasons, we recommend using Jetty 12
+While many people continue to use older versions of Jetty like 11/10/9 for a variety of reasons including requirements for specific Java versions, we recommend using Jetty 12. Professional support is available for releases marked as End of Community Support (EOCS) and we encourage you to check out the Professional Services offered.
 
-Jetty 12 is the only version that will receive support to the open-source community. It represents the version of Jetty that we will actively maintain and improve over the next few years.
-
-January 1st, 2024 marks the end of community support for the Jetty 11 and older releases.
+January 1st, 2024 marked the end of community support for the Jetty 10 and 11 releases.
 
 == Version History
 

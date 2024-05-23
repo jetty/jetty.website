@@ -18,8 +18,9 @@ function set_global_variables() {
   ##
   ## Update these settings accordingly
   ##
-  STAGE_DIR=$(pwd)/target/stage
-  RELEASE_DIR=$(pwd)/target/release
+  SUDO_USER=www-data
+  STAGE_DIR=$(pwd)/target/stage;
+  RELEASE_DIR=$(pwd)/target/release;
 
   MIN_JAVA_VERSION=17
   MIN_MAVEN_VERION=3.9.4
@@ -32,6 +33,7 @@ function set_global_variables() {
 function print_settings() {
   echo "Staging Directory: $STAGE_DIR";
   echo "Release Directory: $RELEASE_DIR";
+  echo "SUDO_USER: $SUDO_USER";
   echo "Log File: $LOG_FILE";
 }
 
@@ -101,16 +103,20 @@ function copy_files() {
   local from_dir=$1;
   local to_dir=$2;
 
-  echo "    - copying files from $from_dir to $to_dir";
-  rsync -avh $from_dir $to_dir &>> $LOG_FILE;
-
+  if [ ! -z "$SUDO_USER" ]; then 
+    echo "    - copying files from $from_dir to $to_dir as user $SUDO_USER";
+    sudo -u $SUDO_USER rsync -avh $from_dir $to_dir &>> $LOG_FILE;
+  else 
+    echo "    - copying files from $from_dir to $to_dir";
+    rsync -avh $from_dir $to_dir &>> $LOG_FILE;
+  fi
 }
 
 function init_site() {
   echo "$FUNCNAME";
 
   echo " - building site";
-  echo "   - this may take up to 10 minutes";
+  echo "   - this may take up to 10+ minutes";
   echo "   - Follow: tail -f $LOG_FILE";
   ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
   local mvn_status=$?;
@@ -210,7 +216,7 @@ function main() {
     check_environment;
     set_environment;
     #build_ui;
-    build_site;
+    #build_site;
     deploy_site "$STAGE_DIR";
     exit 0;
   fi

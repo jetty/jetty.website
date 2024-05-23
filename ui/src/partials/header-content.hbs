@@ -20,7 +20,15 @@
         {{/if}}
         <a class="navbar-item" href="{{{relativize (resolvePageURL 'docs::index.adoc')}}}">Documentation</a>
         <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::support.adoc')}}}">Support</a>
-        <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::community.adoc')}}}">Community</a>
+        <!--a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::community.adoc')}}}">Community</a-->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Links</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/jetty/jetty.project">Source Code</a>
+            <a class="navbar-item" href="https://github.com/jetty/jetty.project/issues">Issues</a>
+            <a class="navbar-item" href="{{{relativize (resolvePageURL 'docs:contribution-guide:index.adoc')}}}">Contributing</a>
+          </div>
+        </div>
         <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::security.adoc')}}}">Security</a>
         <a class="navbar-item" href="{{{relativize (resolvePageURL 'ROOT::download.adoc')}}}">Download</a>
       </div>

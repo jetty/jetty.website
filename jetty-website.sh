@@ -110,6 +110,13 @@ function copy_files() {
     echo "    - copying files from $from_dir to $to_dir";
     rsync -avh $from_dir $to_dir &>> $LOG_FILE;
   fi
+  local rsync_status=$?;
+
+  if [[ rsync_status -ne 0 ]]; then
+    echo " - error deploying site";
+    exit 1;
+  fi
+
 }
 
 function init_site() {
@@ -216,7 +223,7 @@ function main() {
     check_environment;
     set_environment;
     #build_ui;
-    #build_site;
+    build_site;
     deploy_site "$STAGE_DIR";
     exit 0;
   fi

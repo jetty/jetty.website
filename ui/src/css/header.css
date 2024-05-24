@@ -297,7 +297,8 @@ body {
     border-radius: 0 0 0.25rem 0.25rem;
     display: none;
     top: 100%;
-    left: 0;
+    /* left: 0; Original */
+    right: 0; /* lets the Links dropdown render fully onscreen */
     min-width: 100%;
     position: absolute;
   }

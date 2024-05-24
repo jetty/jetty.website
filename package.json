@@ -3,8 +3,8 @@
   "description": "The Antora playbook repository for the Eclipse Jetty website.",
   "private": true,
   "devDependencies": {
-    "antora": "latest",
-    "@antora/collector-extension": "latest",
+    "antora": "testing",
+    "@antora/collector-extension": "1.0.0-alpha.4",
     "@antora/lunr-extension": "latest",
     "antora-asciidoctor-extensions": "gitlab:antora/antora-asciidoctor-extensions",
     "asciidoctor-kroki": "latest",
@@ -15,6 +15,9 @@
     "./jetty-block": "./lib/jetty-block.js"
   },
   "overrides": {
+    "glob": {
+      "inflight": "https://github.com/isaacs/inflight-DEPRECATED-DO-NOT-USE#v1.0.6"
+    },
     "vinyl-fs": {
       "glob-stream": "~7.0"
     }

@@ -12,39 +12,11 @@ feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
 
 The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm boasts a robust codebase and a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
 
-== Why you should use Jetty?
-
-.Features
-|===
-|Features |Jetty Powered
-
-|Full-featured and standards-based
-|Large clusters, such as Presto
-
-|Open Source and Commercially Supported
-|Cloud computing, such as Google AppEngine
-
-|Flexible and extensible
-|Saas, such as Yahoo! and Zimbra
-
-|Easily Embeddable
-|Tools like Eclipse IDE
-
-|Fully Asynchronous
-|
-
-|Enterprise Scalable
-|
-|===
-
-
-
 
 == Where is Jetty used?
 Jetty has been used in various projects and products in development and production for over 20 years. Developers have long loved Jetty due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion-dollar companies, lurks in many cloud services, and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places where Jetty has appeared.
 
 Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the link:docs/[Documentation] page.
-
 
 
 == About Jetty

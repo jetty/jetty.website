@@ -1,4 +1,4 @@
-# PACKAGES antora@testing gitlab:antora/antora-asciidoctor-extensions asciidoctor-kroki
+# PACKAGES antora@testing @antora/collector-extension gitlab:antora/antora-asciidoctor-extensions asciidoctor-kroki
 site:
   title: Eclipse Jetty Documentation (Branch Preview)
   start_page: jetty::index.adoc

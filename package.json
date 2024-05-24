@@ -11,6 +11,9 @@
     "@octokit/rest": "~20.0"
   },
   "overrides": {
+    "glob": {
+      "inflight": "https://github.com/isaacs/inflight-DEPRECATED-DO-NOT-USE#v1.0.6"
+    },
     "vinyl-fs": {
       "glob-stream": "~7.0"
     }

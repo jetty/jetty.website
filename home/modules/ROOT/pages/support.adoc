@@ -34,7 +34,7 @@ Mailing lists are an excellent way to interact with the community and have the b
 * Archives - http://dev.eclipse.org/mhonarc/lists/jetty-announce/
 
 === StackOverflow
-From a simple support perspective, it is hard to beat [StackOverflow](http://stackoverflow.com/) when interacting with a Jetty community. Numerous users have asked and been answered on the platform by other users and developers alike.
+From a simple support perspective, it is hard to beat http://stackoverflow.com/[StackOverflow] when interacting with a Jetty community. Numerous users have asked and been answered on the platform by other users and developers alike.
 
 Check out the general https://stackoverflow.com/questions/tagged/jetty[jetty] tag!
 

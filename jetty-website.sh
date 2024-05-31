@@ -14,7 +14,6 @@ function usage() {
 }
 
 function set_global_variables() {
-
   ##
   ## Update these settings accordingly
   ##
@@ -22,6 +21,7 @@ function set_global_variables() {
   STAGE_DIR=$(pwd)/target/stage;
   RELEASE_DIR=$(pwd)/target/release;
 
+  export CI=true
   MIN_JAVA_VERSION=17
   MIN_MAVEN_VERION=3.9.4
   SCRIPT_OUTPUT_DIR="$(pwd)/target";

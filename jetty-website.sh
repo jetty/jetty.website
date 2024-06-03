@@ -28,6 +28,8 @@ function set_global_variables() {
   BUILT_SITE_DIR=$(pwd)/target/site;
   UI_BUNDLE_FILE="$(pwd)/ui/build/ui-bundle.zip"
   LOG_FILE="$SCRIPT_OUTPUT_DIR/jetty-website.log";
+
+  url="https://olamy.github.io/jetty.website/"
 }
 
 function print_settings() {
@@ -195,6 +197,11 @@ function deploy_site() {
     exit 1;
   fi
 
+  if [[ $deploy_dir == "mvn" ]]; then
+    ./mvnw -B -e -V scm-publish:publish-scm
+    exit 0;
+  fi
+
   if [[ ! -d "$deploy_dir" ]]; then
     echo " - creating deployment directory"
     mkdir -p $deploy_dir;
@@ -224,7 +231,7 @@ function main() {
     set_environment;
     #build_ui;
     build_site;
-    deploy_site "$STAGE_DIR";
+    deploy_site "mvn"; # "$STAGE_DIR";
     exit 0;
   fi
 

@@ -13,6 +13,12 @@
     <name>Webtide</name>
     <url>https://webtide.com</url>
   </organization>
+  <distributionManagement>
+    <site>
+      <id>github</id>
+      <url>scm:git:git@github.com:olamy/jetty.website.git</url>
+    </site>
+  </distributionManagement>
   <licenses>
     <license>
       <name>Eclipse Public License - Version 2.0</name>
@@ -28,6 +34,19 @@
     <node.version>18.20.1</node.version>
   </properties>
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>3.2.1</version>
+          <configuration>
+            <scmBranch>gh-pages</scmBranch>
+            <content>${project.build.directory}/site</content>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.antora</groupId>

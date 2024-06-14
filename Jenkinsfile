@@ -10,7 +10,7 @@ pipeline {
       steps {
         timeout( time: 120, unit: 'MINUTES' ) {
           withMaven( maven: 'maven3', jdk: 'jdk17' ) {
-            sh "bash ./jetty-website.sh stage"
+            sh "bash ./jetty-website.sh --follow-log --directive stage"
           }
         }
       }

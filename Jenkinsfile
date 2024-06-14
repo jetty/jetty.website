@@ -16,6 +16,13 @@ pipeline {
                    "PATH+MAVEN=${env.JAVA_HOME}/bin:${tool 'maven3'}/bin",
                    "MAVEN_OPTS=-Xms2g -Xmx4g -Djava.awt.headless=true"]) {
             sh "bash ./jetty-website.sh --follow-log --user-sudo jenkins --directive stage -u ''"
+            publishHTML (target : [allowMissing: false,
+                                   alwaysLinkToLastBuild: true,
+                                   keepAll: true,
+                                   reportDir: 'target/stage',
+                                   reportFiles: 'index.html',
+                                   reportName: 'Jetty site',
+                                   reportTitles: 'Jetty site'])
           }
         }
       }

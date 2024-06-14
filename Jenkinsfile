@@ -3,7 +3,10 @@
 pipeline {
   agent any
   // save some io during the build
-  options { durabilityHint( 'PERFORMANCE_OPTIMIZED' ) }
+  options {
+    durabilityHint( 'PERFORMANCE_OPTIMIZED' )
+    buildDiscarder logRotator( numToKeepStr: '15' )
+  }
   stages {
     stage( "Build Website" ) {
       agent { node { label 'linux' } }

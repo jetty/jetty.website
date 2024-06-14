@@ -42,7 +42,7 @@ function check_environment() {
   local java_version=$(java -version 2>&1 | head -n1 | sed -r 's/.*version "([0-9]*).*$/\1/');
 
   if [[ $java_version < $MIN_JAVA_VERSION ]]; then
-    echo "Error: java version must be $MIN_JAVA_VERSION+";
+    echo "Error: java version $java_version must be $MIN_JAVA_VERSION+";
   fi
 
   # check maven

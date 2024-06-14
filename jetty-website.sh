@@ -11,6 +11,7 @@ function usage() {
   echo "    -s,--stage-dir: directory to stage build website"
   echo "    -r,--release-dir: directory to release build website"
   echo "    -f,--follow-log: to have logs in the console"
+  echo "    -u,--user-sudo: User to use for sudo copy"
   echo "    -d,--directive: directive to use"
   echo "          settings : print configured settings";
   echo "          stage : stage the latest version of the website for review";
@@ -28,6 +29,7 @@ function print_settings() {
   echo "Release Directory: $RELEASE_DIR";
   echo "SUDO_USER: $SUDO_USER";
   echo "Log File: $LOG_FILE";
+  echo "follow logs: $FOLLOW_LOGS"
 }
 
 function check_environment() {
@@ -90,10 +92,10 @@ function copy_files() {
 
   if [ ! -z "$SUDO_USER" ]; then 
     echo "    - copying files from $from_dir to $to_dir as user $SUDO_USER";
-    sudo -u $SUDO_USER rsync -avh $from_dir $to_dir &>> $LOG_FILE;
+    run_cmd "sudo -u $SUDO_USER rsync -avh $from_dir $to_dir"
   else 
     echo "    - copying files from $from_dir to $to_dir";
-    rsync -avh $from_dir $to_dir &>> $LOG_FILE;
+    run_cmd "rsync -avh $from_dir $to_dir"
   fi
   local rsync_status=$?;
 
@@ -109,9 +111,8 @@ function init_site() {
 
   echo " - building site";
   echo "   - this may take up to 10+ minutes";
-  echo "   - Follow: tail -f $LOG_FILE";
 
-  ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
+  run_cmd "./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full";
   local mvn_status=$?;
 
   if [[ mvn_status -ne 0 ]]; then
@@ -129,7 +130,7 @@ function build_ui() {
   echo "   - Follow: tail -f $LOG_FILE";
 
   cd ui;  
-  ../mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss process-resources &>>"$LOG_FILE";  
+  run_cmd "./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss process-resources"
   local mvn_status=$?;
   cd ..;
 
@@ -153,13 +154,7 @@ function build_site() {
   echo " - building site";
   echo "   - this may take up to 10 minutes";
 
-  if [[ "$FOLLOW_LOGS" == "true" ]]; then
-    ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full;
-  else
-    echo "   - Follow: tail -f $LOG_FILE";
-    ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
-  fi
-
+  run_cmd "./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full"
   local mvn_status=$?;
 
   if [[ mvn_status -ne 0 ]]; then
@@ -199,16 +194,18 @@ function deploy_site() {
   echo " - site deployed";
 }
 
+function run_cmd() {
+  if [[ "$FOLLOW_LOGS" == "true" ]]; then
+    eval "$1";
+  else
+    echo "   - Follow: tail -f $LOG_FILE";
+    eval "$1 &>> $LOG_FILE";
+  fi
+}
+
 function main() {
 
-
   local directive=$DIRECTIVE
-
-  echo "$FUNCNAME in $0";
-
-
-
-  #local directive=$1;
 
   if [[ $directive == "settings" ]]; then
     check_environment;
@@ -261,14 +258,15 @@ function set_global_variables() {
   BUILT_SITE_DIR=$(pwd)/target/site;
   UI_BUNDLE_FILE="$(pwd)/ui/build/ui-bundle.zip"
   LOG_FILE="$SCRIPT_OUTPUT_DIR/jetty-website.log";
+  FOLLOW_LOGS=false
 }
 
 set_environment
 
 # Parse command-line options
 # Option strings
-SHORT=s:r:fd:h
-LONG=stage-dir,release-dir:,follow-log,directive:,help
+SHORT=s:r:fd:hu:
+LONG=stage-dir,release-dir:,follow-log,directive:,help,user-sudo:
 # read the options
 OPTS=$(getopt --options $SHORT --long $LONG --name "$0" -- "$@")
 if [ $? != 0 ] ; then echo "Failed to parse options...exiting." >&2 ; exit 1 ; fi
@@ -292,13 +290,17 @@ while true; do
           shift
           ;;
       -d | --directive )
-        DIRECTIVE=$2
-        shift 2
-        ;;
+          DIRECTIVE=$2
+          shift 2
+          ;;
+      -u | --user-sudo )
+          SUDO_USER=$2
+          shift 2
+          ;;
       -- )
-        shift
-        break
-        ;;
+          shift
+          break
+          ;;
   esac
 done
 

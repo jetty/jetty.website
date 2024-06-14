@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#set -x
 
 #
 # This script will grow over time to support a proper staged site leveraging local ui build. 
@@ -6,28 +7,20 @@
  
 function usage() {
   echo "Usage: ";
-  echo " ./jetty-website.sh [command]";
-  echo "   settings : print configured settings";
-  echo "   stage : stage the latest version of the website for review";
-  echo "   release : deploy the latest version of the website";
+  echo " ./jetty-website.sh [options]";
+  echo "    -s,--stage-dir: directory to stage build website"
+  echo "    -r,--release-dir: directory to release build website"
+  echo "    -f,--follow-log: to have logs in the console"
+  echo "    -d,--directive: directive to use"
+  echo "          settings : print configured settings";
+  echo "          stage : stage the latest version of the website for review";
+  echo "          release : deploy the latest version of the website";
+  echo "    -h,--help: display help information"
   echo "";
-}
 
-function set_global_variables() {
-  ##
-  ## Update these settings accordingly
-  ##
-  SUDO_USER=www-data
-  STAGE_DIR=$(pwd)/target/stage;
-  RELEASE_DIR=$(pwd)/target/release;
+  SHORT=s:r:fd:h
+  LONG=stage-dir,release-dir:,follow-log,directive:,help
 
-  export CI=true
-  MIN_JAVA_VERSION=17
-  MIN_MAVEN_VERION=3.9.4
-  SCRIPT_OUTPUT_DIR="$(pwd)/target";
-  BUILT_SITE_DIR=$(pwd)/target/site;
-  UI_BUNDLE_FILE="$(pwd)/ui/build/ui-bundle.zip"
-  LOG_FILE="$SCRIPT_OUTPUT_DIR/jetty-website.log";
 }
 
 function print_settings() {
@@ -58,14 +51,6 @@ function check_environment() {
   if [[ $maven_version < $MIN_MAVEN_VERSION ]]; then
     echo "Error: mvn version must be $MIN_MAVEN_VERSION+";
   fi
-}
-
-function set_environment() {
-  echo "$FUNCNAME";
-
-  set_global_variables;
-  set_log_file;
-
 }
 
 function set_log_file() {
@@ -125,6 +110,7 @@ function init_site() {
   echo " - building site";
   echo "   - this may take up to 10+ minutes";
   echo "   - Follow: tail -f $LOG_FILE";
+
   ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
   local mvn_status=$?;
 
@@ -166,8 +152,14 @@ function build_site() {
 
   echo " - building site";
   echo "   - this may take up to 10 minutes";
-  echo "   - Follow: tail -f $LOG_FILE";
-  ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
+
+  if [[ "$FOLLOW_LOGS" == "true" ]]; then
+    ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full;
+  else
+    echo "   - Follow: tail -f $LOG_FILE";
+    ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full &>>"$LOG_FILE";
+  fi
+
   local mvn_status=$?;
 
   if [[ mvn_status -ne 0 ]]; then
@@ -207,21 +199,25 @@ function deploy_site() {
   echo " - site deployed";
 }
 
-
 function main() {
+
+
+  local directive=$DIRECTIVE
+
   echo "$FUNCNAME in $0";
-  local directive=$1;
+
+
+
+  #local directive=$1;
 
   if [[ $directive == "settings" ]]; then
     check_environment;
-    set_environment;
     print_settings;
     exit 0;
   fi
 
   if [[ $directive == "stage" ]]; then
     check_environment;
-    set_environment;
     #build_ui;
     build_site;
     deploy_site "$STAGE_DIR";
@@ -230,7 +226,6 @@ function main() {
 
   if [[ $directive == "release" ]]; then
     check_environment;
-    set_environment;
     build_site;
     deploy_site "$RELEASE_DIR";
 
@@ -242,4 +237,74 @@ function main() {
   exit 0;
 }
 
-main $1;
+
+function set_environment() {
+  echo "$FUNCNAME";
+
+  set_global_variables;
+  set_log_file;
+}
+
+
+function set_global_variables() {
+  ##
+  ## Update these settings accordingly
+  ##
+  SUDO_USER=www-data
+  STAGE_DIR=$(pwd)/target/stage;
+  RELEASE_DIR=$(pwd)/target/release;
+
+  export CI=true
+  MIN_JAVA_VERSION=17
+  MIN_MAVEN_VERION=3.9.4
+  SCRIPT_OUTPUT_DIR="$(pwd)/target";
+  BUILT_SITE_DIR=$(pwd)/target/site;
+  UI_BUNDLE_FILE="$(pwd)/ui/build/ui-bundle.zip"
+  LOG_FILE="$SCRIPT_OUTPUT_DIR/jetty-website.log";
+}
+
+set_environment
+
+# Parse command-line options
+# Option strings
+SHORT=s:r:fd:h
+LONG=stage-dir,release-dir:,follow-log,directive:,help
+# read the options
+OPTS=$(getopt --options $SHORT --long $LONG --name "$0" -- "$@")
+if [ $? != 0 ] ; then echo "Failed to parse options...exiting." >&2 ; exit 1 ; fi
+eval set -- "$OPTS"
+while true; do
+  case "$1" in
+      -s | --stage-dir )
+          STAGE_DIR=$2
+          shift 2
+          ;;
+      -r | --release-dir )
+          RELEASE_DIR=$2
+          shift 2
+          ;;
+      -f | --follow-log )
+          FOLLOW_LOGS=true
+          shift
+          ;;
+      -h | --help )
+          HELP=true
+          shift
+          ;;
+      -d | --directive )
+        DIRECTIVE=$2
+        shift 2
+        ;;
+      -- )
+        shift
+        break
+        ;;
+  esac
+done
+
+if [[ "$HELP" == "true" ]]; then
+  usage
+  exit 0
+fi
+
+main;

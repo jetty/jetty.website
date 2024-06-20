@@ -92,10 +92,10 @@ function copy_files() {
 
   if [ ! -z "$SUDO_USER" ]; then 
     echo "    - copying files from $from_dir to $to_dir as user $SUDO_USER";
-    run_cmd "sudo -u $SUDO_USER rsync -avh $from_dir $to_dir"
+    run_cmd "sudo -u $SUDO_USER rsync -avh --delete --checksum $from_dir $to_dir"
   else 
     echo "    - copying files from $from_dir to $to_dir";
-    run_cmd "rsync -avh $from_dir $to_dir"
+    run_cmd "rsync -avh --delete --checksum $from_dir $to_dir"
   fi
   local rsync_status=$?;
 

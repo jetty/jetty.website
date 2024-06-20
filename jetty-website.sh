@@ -106,6 +106,21 @@ function copy_files() {
 
 }
 
+function compress_files() {
+  local directory=$1;
+  echo "$FUNCNAME";
+
+  for extension in ${COMPRESS_EXTENSIONS[@]}; do
+    #echo "processing $extension";
+    find $directory -type f -name $extension -print0 | while IFS= read -r -d '' file; do
+      #echo "compressing $file";
+      if [[ ! -e $file.gz ]]; then
+        gzip -9 -k $file;
+      fi
+    done
+  done
+}
+
 function init_site() {
   echo "$FUNCNAME";
 
@@ -217,6 +232,7 @@ function main() {
     check_environment;
     #build_ui;
     build_site;
+    compress_files "target/site/_" #TODO choose dir better
     deploy_site "$STAGE_DIR";
     exit 0;
   fi
@@ -224,9 +240,15 @@ function main() {
   if [[ $directive == "release" ]]; then
     check_environment;
     build_site;
+    compress_files "target/site/_"
     deploy_site "$RELEASE_DIR";
 
     exit 0;
+  fi
+
+  if [[ $directive == "compress" ]]; then
+    check_environment;
+    compress_files "target/site/_";
   fi
 
   # print usage
@@ -250,6 +272,7 @@ function set_global_variables() {
   SUDO_USER=www-data
   STAGE_DIR=$(pwd)/target/stage;
   RELEASE_DIR=$(pwd)/target/release;
+  COMPRESS_EXTENSIONS=("*.woff" "*.woff2" "*.js" "*.css" "*.svg");
 
   export CI=true
   MIN_JAVA_VERSION=17

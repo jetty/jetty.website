@@ -264,15 +264,18 @@ function set_environment() {
   set_log_file;
 }
 
-
 function set_global_variables() {
   ##
-  ## Update these settings accordingly
+  ## Update these settings accordingly, read from cfg file if exists
   ##
-  SUDO_USER=www-data
-  STAGE_DIR=$(pwd)/target/stage;
-  RELEASE_DIR=$(pwd)/target/release;
-  COMPRESS_EXTENSIONS=("*.woff" "*.woff2" "*.js" "*.css" "*.svg");
+  if [[ -e jetty-website.cfg ]]; then
+        source ./jetty-website.cfg
+  else
+    SUDO_USER=www-data
+    STAGE_DIR=$(pwd)/target/stage;
+    RELEASE_DIR=$(pwd)/target/release;
+    COMPRESS_EXTENSIONS=("*.woff" "*.woff2" "*.js" "*.css" "*.svg");
+  fi
 
   export CI=true
   MIN_JAVA_VERSION=17

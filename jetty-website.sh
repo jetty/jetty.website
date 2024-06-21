@@ -14,8 +14,9 @@ function usage() {
   echo "    -u,--user-sudo: User to use for sudo copy"
   echo "    -d,--directive: directive to use"
   echo "          settings : print configured settings";
-  echo "          stage : stage the latest version of the website for review";
-  echo "          release : deploy the latest version of the website";
+  echo "          stage : build and stage the latest version of the website for review";
+  echo "          release : build and deploy the latest version of the website";
+  echo "          promote-from-stage : copy stage files to release sans build"
   echo "    -h,--help: display help information"
   echo "";
 
@@ -246,9 +247,9 @@ function main() {
     exit 0;
   fi
 
-  if [[ $directive == "compress" ]]; then
+  if [[ $directive == "promote-from-stage" ]]; then
     check_environment;
-    compress_files "target/site/_";
+    copy_files $STAGE_DIR $RELEASE_DIR;
   fi
 
   # print usage

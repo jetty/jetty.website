@@ -14,7 +14,7 @@ function usage() {
   echo "    -u,--user-sudo: User to use for sudo copy"
   echo "    -d,--directive: directive to use"
   echo "          settings : print configured settings";
-  echo "          stage : build and stage the latest version of the website for review";
+  echo "          stage : build and stage the latest version of the website";
   echo "          release : build and deploy the latest version of the website";
   echo "          promote-from-stage : copy stage files to release sans build"
   echo "    -h,--help: display help information"
@@ -28,6 +28,8 @@ function usage() {
 function print_settings() {
   echo "Staging Directory: $STAGE_DIR";
   echo "Release Directory: $RELEASE_DIR";
+  echo "Compress Directories: $COMPRESS_PATHS";
+  echo "Compress Extensions : $COMPRESS_EXTENSIONS";
   echo "SUDO_USER: $SUDO_USER";
   echo "Log File: $LOG_FILE";
   echo "follow logs: $FOLLOW_LOGS"
@@ -108,16 +110,14 @@ function copy_files() {
 }
 
 function compress_files() {
-  local directory=$1;
   echo "$FUNCNAME";
-
-  for extension in ${COMPRESS_EXTENSIONS[@]}; do
-    #echo "processing $extension";
-    find $directory -type f -name $extension -print0 | while IFS= read -r -d '' file; do
-      #echo "compressing $file";
-      if [[ ! -e $file.gz ]]; then
-        gzip -9 -k $file;
-      fi
+  
+  for directory in ${COMPRESS_PATHS[@]}; do
+    for extension in ${COMPRESS_EXTENSIONS[@]}; do
+      find $directory -type f -name $extension -print0 | while IFS= read -r -d '' file; do
+        # always overwrite the file in case the source file changed and the build was not cleared
+        gzip -f -9 -k $file;
+      done
     done
   done
 }
@@ -190,8 +190,8 @@ function build_site() {
 function deploy_site() {
   echo "$FUNCNAME";
 
-  local site_dir=$BUILT_SITE_DIR;
-  local deploy_dir=$1;
+  local site_dir=$1;
+  local deploy_dir=$2;
 
   if [[ ! -d "$site_dir" ]]; then
     echo " - error, no files to deploy in $site_dir";
@@ -203,7 +203,7 @@ function deploy_site() {
     mkdir -p $deploy_dir;
   fi
 
-  echo " - deploying site to $deploy_dir";
+  echo " - deploying $site_dir to $deploy_dir";
 
   copy_files "$BUILT_SITE_DIR/" $deploy_dir;
 
@@ -234,7 +234,7 @@ function main() {
     #build_ui;
     build_site;
     compress_files "target/site/_" #TODO choose dir better
-    deploy_site "$STAGE_DIR";
+    deploy_site "$BUILT_SITE_DIR" "$STAGE_DIR";
     exit 0;
   fi
 
@@ -242,14 +242,14 @@ function main() {
     check_environment;
     build_site;
     compress_files "target/site/_"
-    deploy_site "$RELEASE_DIR";
+    deploy_site "$BUILT_SITE_DIR" "$RELEASE_DIR";
 
     exit 0;
   fi
 
   if [[ $directive == "promote-from-stage" ]]; then
     check_environment;
-    copy_files $STAGE_DIR $RELEASE_DIR;
+    deploy_site "$STAGE_DIR" "$RELEASE_DIR";
   fi
 
   # print usage
@@ -275,6 +275,7 @@ function set_global_variables() {
     SUDO_USER=www-data
     STAGE_DIR=$(pwd)/target/stage;
     RELEASE_DIR=$(pwd)/target/release;
+    COMPRESS_PATHS=("_");
     COMPRESS_EXTENSIONS=("*.woff" "*.woff2" "*.js" "*.css" "*.svg");
   fi
 

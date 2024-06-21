@@ -1,5 +1,12 @@
 = Community
 
+== Tools
+
+The Eclipse Jetty project is largely developed using the fantastic IntelliJ editor with licenses provided by the JetBrains https://www.jetbrains.com/community/opensource/[open-source community] program.
+
+image::jettybrains.svg[alt=JetBrains Logo,width=50%]
+
+
 == Community Dynamics
 
 The Eclipse Jetty community is a melting pot of talent, comprising developers, testers, documentation writers, and users. Collaboration is at the heart of everything they do, with the primary communication channels being mailing lists,  frequently on the StackOverflow 'jetty' tag, and the GitHub issue tracker for Jetty. These channels serve as hubs for sharing ideas, troubleshooting issues, and coordinating development efforts.

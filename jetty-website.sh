@@ -250,6 +250,8 @@ function main() {
   if [[ $directive == "promote-from-stage" ]]; then
     check_environment;
     deploy_site "$STAGE_DIR" "$RELEASE_DIR";
+
+    exit 0;
   fi
 
   # print usage

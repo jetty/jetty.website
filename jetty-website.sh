@@ -233,7 +233,7 @@ function main() {
     check_environment;
     #build_ui;
     build_site;
-    compress_files "target/site/_" #TODO choose dir better
+    compress_files;
     deploy_site "$BUILT_SITE_DIR" "$STAGE_DIR";
     exit 0;
   fi
@@ -241,7 +241,7 @@ function main() {
   if [[ $directive == "release" ]]; then
     check_environment;
     build_site;
-    compress_files "target/site/_"
+    compress_files;
     deploy_site "$BUILT_SITE_DIR" "$RELEASE_DIR";
 
     exit 0;

@@ -4,7 +4,7 @@
 
 The Eclipse Jetty project is largely developed using the fantastic IntelliJ editor with licenses provided by the JetBrains https://www.jetbrains.com/community/opensource/[open-source community] program.
 
-image::jettybrains.svg[alt=JetBrains Logo,width=50%]
+image::jetbrains.svg[alt=JetBrains Logo,width=50%]
 
 
 == Community Dynamics

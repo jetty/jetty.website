@@ -28,5 +28,33 @@ pipeline {
       }
     }
   }
+  post {
+    failure {
+      slackNotif()
+    }
+    unstable {
+      slackNotif()
+    }
+    fixed {
+      slackNotif()
+    }
+  }
 }
+
+def slackNotif() {
+  script {
+    try {
+      //BUILD_USER = currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
+      // by ${BUILD_USER}
+      COLOR_MAP = ['SUCCESS': 'good', 'FAILURE': 'danger', 'UNSTABLE': 'danger', 'ABORTED': 'danger']
+      slackSend channel: '#jenkins',
+              color: COLOR_MAP[currentBuild.currentResult],
+              message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} - ${env.BUILD_URL}"
+    } catch (Exception e) {
+      e.printStackTrace()
+      echo "skip failure slack notification: " + e.getMessage()
+    }
+  }
+}
+
 // vim: et:ts=2:sw=2:ft=groovy

@@ -60,9 +60,6 @@
           <execution>
             <id>full</id>
             <configuration>
-              <environmentVariables>
-                <ANTORA_CACHE_DIR>${basedir}/.cache/antora</ANTORA_CACHE_DIR>
-              </environmentVariables>
               <additionalOptions>
                 <option>extension[] @antora/collector-extension</option>
                 <option>extension[] lunr</option>

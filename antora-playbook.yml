@@ -13,6 +13,9 @@ antora:
     require: '@antora/lunr-extension'
     enabled: false
     index_latest_only: true
+  - id: '@antora/collector-extension'
+    require: '@antora/collector-extension'
+    keep_worktrees: until:exit # Jetty Home is created in the temporary worktree, so retain until Antora exits
 runtime:
   log:
     destination:

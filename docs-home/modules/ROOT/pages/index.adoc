@@ -1,28 +1,24 @@
 = Jetty Documentation
 
-The documentation for the latest Jetty releases can be found on this site.
-Documentation for earlier releases are available in Maven Central.
+Jetty Documentation is split by major versions. Follow the links below for the version of Jetty you are using. Documentation for earlier releases is available in Maven Central.
 
 |===
-|Release Version | Guides | Resources
+|Release Version | Documentation Root | Resources
 
 s|Jetty 12
-|xref:12@jetty:operations-guide:index.adoc[] +
-xref:12@jetty:programming-guide:index.adoc[]
+|xref:12@jetty:ROOT:index.adoc[]
 
 |https://javadoc.jetty.org/jetty-12/index.html[api] /
 https://github.com/eclipse/jetty.project/tree/jetty-12.0.x[source]
 
 s|Jetty 11
-|xref:11@jetty:operations-guide:index.adoc[] +
-xref:11@jetty:programming-guide:index.adoc[]
+|xref:11@jetty:ROOT:index.adoc[] 
 
 |https://javadoc.jetty.org/jetty-11/index.html[api] /
 https://github.com/eclipse/jetty.project/tree/jetty-11.0.x[source]
 
 s|Jetty 10
-|xref:10@jetty:operations-guide:index.adoc[] +
-xref:10@jetty:programming-guide:index.adoc[]
+|xref:10@jetty:ROOT:index.adoc[]
 
 |https://javadoc.jetty.org/jetty-10/index.html[api] /
 https://github.com/eclipse/jetty.project/tree/jetty-10.0.x[source]

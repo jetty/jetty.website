@@ -20,7 +20,7 @@ While not every contribution will be accepted, our commitment is to work with in
 [[cg-patches-git-config]]
 == Configuring `git`
 
-The email in your git commits must match the email you used to link:cg-eca[sign the Eclipse Contributor Agreement].
+The email in your git commits must match the email you used to xref:eca/index.adoc[sign the Eclipse Contributor Agreement].
 As such, you'll likely want to configure `user.email` in git accordingly.
 See link:https://help.github.com/articles/setting-your-email-in-git[this guide] on GitHub for details on how to do so.
 

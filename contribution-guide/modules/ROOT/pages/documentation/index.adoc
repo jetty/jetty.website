@@ -51,7 +51,7 @@ If you _are_ interested in learning the ins and outs of AsciiDoc, the https://do
 
 TODO UPDATE FOR ANTORA
 
-In addition to using Maven to link:cg-build[build the Jetty codebase], we use it to build our docs.
+In addition to using Maven to xref:build/index.adoc[build the Jetty codebase], we use it to build our docs.
 During a build, Maven converts AsciiDoc-formatted docs into the HTML pages that you are reading right now.
 
 https://asciidoctor.org/[Asciidoctor] is the tool that actually performs this compilation step.
@@ -63,7 +63,7 @@ Maven integrates with Asciidoctor via the https://docs.asciidoctor.org/maven-too
 TODO UPDATE FOR ANTORA
 
 
-Since Jetty's docs are maintained in `git` alongside the rest of the Jetty codebase, you'll need to link:cg-source[check out a local copy] of the code to contribute to the docs.
+Since Jetty's docs are maintained in `git` alongside the rest of the Jetty codebase, you'll need to xref:source/index.adoc[check out a local copy] of the code to contribute to the docs.
 
 The docs are maintained as a separate module within Jetty, which means you can build the docs separately from the rest of the project.
 To do so, run `mvn clean install` from the `documentation/jetty-documentation` subdirectory.

@@ -4,7 +4,7 @@
   "private": true,
   "devDependencies": {
     "antora": "testing",
-    "@antora/collector-extension": "1.0.0-beta.1",
+    "@antora/collector-extension": "~1.0",
     "@antora/lunr-extension": "latest",
     "antora-asciidoctor-extensions": "gitlab:antora/antora-asciidoctor-extensions",
     "asciidoctor-kroki": "latest",

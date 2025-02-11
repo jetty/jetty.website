@@ -36,7 +36,7 @@ Targets developers and writers who want to make contributions to the Jetty proje
 [[cg-documentation-toolchain]]
 == The documentation toolchain
 Jetty follows a https://www.writethedocs.org/guide/docs-as-code/["docs as code"] philosophy, meaning *we use the same tools to write and build our code and docs*.
-As such, the docs are maintained directly within the Jetty codebase at https://github.com/eclipse/jetty.project/tree/jetty-12.0.x/documentation/jetty-documentation/src/main/asciidoc[`documentation/jetty-documentation/src/main/asciidoc/`].
+As such, the docs are maintained directly within the Jetty codebase at https://github.com/eclipse/jetty.project/tree/jetty-12.0.x/documentation/jetty/[`documentation/jetty/`].
 
 [[cg-documentation-asciidoc]]
 == AsciiDoc
@@ -47,40 +47,48 @@ Although Jetty takes advantage of many of these features, you don't need to be a
 If you _are_ interested in learning the ins and outs of AsciiDoc, the https://docs.asciidoctor.org/asciidoc/latest/[official language documentation] is a good place to start.
 
 [[cg-documentation-asciidoctor]]
-== Maven and Asciidoctor
-
-TODO UPDATE FOR ANTORA
+== Maven and Antora
 
 In addition to using Maven to xref:build/index.adoc[build the Jetty codebase], we use it to build our docs.
 During a build, Maven converts AsciiDoc-formatted docs into the HTML pages that you are reading right now.
 
-https://asciidoctor.org/[Asciidoctor] is the tool that actually performs this compilation step.
-Maven integrates with Asciidoctor via the https://docs.asciidoctor.org/maven-tools/latest/[`asciidoctor-maven-plugin`].
+https://antora.org/[Antora] is the tool that actually performs this compilation step.
+Maven integrates with Antora via the https://docs.antora.org/maven-plugin/latest/[`antora-maven-plugin`].
 
 [[cg-documentation-build]]
 == Building the docs
 
-TODO UPDATE FOR ANTORA
-
-
 Since Jetty's docs are maintained in `git` alongside the rest of the Jetty codebase, you'll need to xref:source/index.adoc[check out a local copy] of the code to contribute to the docs.
 
-The docs are maintained as a separate module within Jetty, which means you can build the docs separately from the rest of the project.
-To do so, run `mvn clean install` from the `documentation/jetty-documentation` subdirectory.
+In order to build the documentation locally, you first need to prepare a jetty-home directory by running the following command from the top-level folder of the Jetty project:
 
 [source, shell]
 ----
-$ cd jetty.project/documentation
-$ mvn install
+$ mvn install -Dcollector -Pfast -am -pl documentation/jetty
+----
+
+The docs are maintained as a separate module within Jetty, which means you can build the docs separately from the rest of the project.
+Then you can use the following command from `documentation/jetty` to prepare and run Antora using a preview profile:
+ 
+[source, shell]
+----
+$ cd documentation/jetty
+$ mvn antora -N
 <...snip...>
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.272 s
-[INFO] Finished at: 2018-04-09T13:06:10-05:00
-[INFO] Final Memory: 74M/247M
+[INFO] Total time:  01:11 min
+[INFO] Finished at: 2025-02-05T15:30:09+08:00
 [INFO] ------------------------------------------------------------------------
 ----
+
+If you don't run the first command, the Antora build will still succeed, but you will get warnings about missing includes for files taken from jetty-home.
+
+The `antora:antora` goal, which the `antora` lifecycle invokes, takes advantage of the playbook provider feature so the playbook for this branch can be centrally managed in the playbook repository.
+
+Note that this preview profile does not run the jetty blocks, so you will only see the configuration for those runs in the preview site.
+If you want to build the full site, use the build in the playbook repository.
 
 [NOTE]
 ==
@@ -88,33 +96,27 @@ You'll see a lot of files getting downloaded during the build process.
 This is Maven setting up the execution environment, which it uses to generate the docs.
 ==
 
-When the build completes, you can view the generated docs in your preferred web browser by opening file:///path/to/jetty.project/documentation/jetty-documentation/target/html/index.html on your local filesystem.
+When the build completes, you can view the generated docs in your preferred web browser by opening file:///path/to/jetty.project/documentation/jetty/target/site/index.html on your local filesystem.
 
 [[cg-documentation-build-structure]]
 == Documentation project structure
 
-TODO UPDATE FOR ANTORA
-
-
-The documentation root is https://github.com/eclipse/jetty.project/tree/jetty-10.0.x/documentation/jetty-documentation[`documentation/jetty-documentation/`].
+The documentation root is https://github.com/jetty/jetty.project/tree/jetty-12.0.x/documentation/jetty[`documentation/jetty/`].
 Within this root directory are some files and subdirectories of note:
 
-https://github.com/eclipse/jetty.project/tree/jetty-10.0.x/documentation/jetty-documentation/src/main/asciidoc[`src/main/asciidoc`]::
+https://github.com/jetty/jetty.project/tree/jetty-12.0.x/documentation/jetty/modules[`modules`]::
 The primary root for all documentation content.
 
-https://github.com/eclipse/jetty.project/tree/jetty-10.0.x/documentation/jetty-documentation/src/main/asciidoc/config.adoc[`src/main/asciidoc/config.adoc`]::
-This file contains metadata and global variables shared across all the xref:cg-documentation-guides[documentation guides].
-This configuration is used by Asciidoctor to correctly render the final docs.
+https://github.com/jetty/jetty.project/blob/jetty-12.0.x/documentation/jetty/antora.yml[`antora.yml`]::
+This file serves as a component descriptor for generating documentation.
 
-`src/main/asciidoc/*-guide`::
+https://github.com/jetty/jetty.project/tree/jetty-12.0.x/documentation/jetty/modules/ROOT[`modules/ROOT`]::
+The main documentation page for Jetty.
+
+`modules/*-guide`::
 Secondary root directories for each individual xref:cg-documentation-guides[documentation guide].
 
-`src/main/asciidoc/*-guide/index.adoc`::
-Asciidoctor's "point of entry" for each guide.
-Content is pulled into the guide via the `include::` directives in these index files.
-Also, guide-specific metadata and variables that wouldn't belong in the root `config.adoc` can also be defined here.
-
-`target/<format>`::
+`target/site/<format>`::
 The final build destination for any docs generated by Maven.
 By default, docs are generated into `target/html`, but other formats (e.g., `pdf` and `epub`) are available.
 This directory is not checked into `git`.
@@ -144,7 +146,7 @@ AsciiDoc treats a single line breaks just like a space, so it will render ventil
 [[cg-documentation-versions-multiple]]
 === Documenting multiple versions at once
 
-TODO UPDATE FOR ANTORA AND FORTHCOMING EE11
+TODO UPDATE FOR FORTHCOMING EE11
 
 Jetty 12 features many parallel modules with similar names and functionality, but which target different versions of Jakarta EE.
 For instance, the `ee8-deploy`, `ee9-deploy`, and `ee10-deploy` modules all behave similarly, except they target Jakarta EE8, EE9, and EE10, respectively.

@@ -67,10 +67,10 @@ $ ulimit -n [new_value]
 
 [TIP]
 .Flagging flaky tests
-==
+====
 Not all test cases are as timing independent as they should be, which can result in intermittent test failures.
 You can help us track these flaky tests by opening an https://github.com/eclipse/jetty.project/issues[issue] when you come across one.
-==
+====
 
 [[cg-build-cache]]
 == Maven Build Cache
@@ -102,8 +102,9 @@ Here are the available configuration flags:
 `-Djunit.jupiter.execution.parallel.config.fixed.parallelism=[NUMBER]`:: Configures the number of tests to be executed in parallel.
 
 [NOTE]
-==
+====
 Certain tests cannot be run in parallel because they access or modify  `static` fields, and are tagged in the codebase with this annotation:
+====
 
 [source, java]
 ----

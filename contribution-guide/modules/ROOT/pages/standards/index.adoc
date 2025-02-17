@@ -126,8 +126,8 @@ catch (Throwable t)
 ----
 
 [TIP]
-==
+====
 By default, Jetty's logger outputs a full stacktrace whether you call it like `LOG.warn("Something happened", t)` or `LOG.warn("Something happened {}", t)`.
 
 If you only want the log message but not the stack trace, you need to do call `.toString()` on the caught exception, e.g., `LOG.warn("Something happened {}", t.toString())`.
-==
+====

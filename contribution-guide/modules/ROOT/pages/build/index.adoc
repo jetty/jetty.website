@@ -23,13 +23,13 @@ To successfully build the project, you will also need a recent version of the ht
 Here are the minimum Maven and JDK version build requirements for each actively maintained branch.
 
 .Build versioning requirements by branch
-|==
+|===
 | Branch | Maven Version | Minimum JDK | Recommended JDK
 
 | jetty-12.0.x | Maven 3.9.2+  | OpenJDK 17+ | OpenJDK 19
 | jetty-11.0.x | Maven 3.8.6+  | OpenJDK 11+ | OpenJDK 17
 | jetty-10.0.x | Maven 3.8.6+  | OpenJDK 11+ | OpenJDK 17
-|==
+|===
 
 To build the Jetty documentation, OpenJDK 19+ is required due to the use of the virtual thread APIs.
 
@@ -67,10 +67,10 @@ $ ulimit -n [new_value]
 
 [TIP]
 .Flagging flaky tests
-==
+====
 Not all test cases are as timing independent as they should be, which can result in intermittent test failures.
 You can help us track these flaky tests by opening an https://github.com/eclipse/jetty.project/issues[issue] when you come across one.
-==
+====
 
 [[cg-build-cache]]
 == Maven Build Cache
@@ -102,8 +102,9 @@ Here are the available configuration flags:
 `-Djunit.jupiter.execution.parallel.config.fixed.parallelism=[NUMBER]`:: Configures the number of tests to be executed in parallel.
 
 [NOTE]
-==
+====
 Certain tests cannot be run in parallel because they access or modify  `static` fields, and are tagged in the codebase with this annotation:
+====
 
 [source, java]
 ----
@@ -125,7 +126,7 @@ Maven will run these tests in isolation even when parallel execution is explicit
 Once the build is complete, you can find the built Jetty Maven artifacts in your Maven local repository, along with the following locations of note:
 
 [cols="1a,2a,2a"]
-|==
+|===
 | Branch(es)     | Location | Description
 
 | all            | `jetty-home/target/jetty-home-<ver>.tar.gz`  | The Jetty Home distribution
@@ -134,4 +135,4 @@ Once the build is complete, you can find the built Jetty Maven artifacts in your
 | `jetty-12.0.x` | `jetty-ee8/jetty-ee8-runner/target/jetty-ee8-runner-<ver>.jar`    | The Jetty Runner distribution for EE8/Servlet 4 (`javax.servlet`) webapps
 | `jetty-11.0.x` | `jetty-runner/target/jetty-runner-<ver>.jar` | The Jetty Runner distribution for EE9/Servlet 5 (`jakarta.servlet`) webapps
 | `jetty-10.0.x` | `jetty-runner/target/jetty-runner-<ver>.jar` | The Jetty Runner distribution for EE8/Servlet 4 (`javax.servlet`) webapps
-|==
+|===

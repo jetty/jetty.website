@@ -91,10 +91,10 @@ Note that this preview profile does not run the jetty blocks, so you will only s
 If you want to build the full site, use the build in the playbook repository.
 
 [NOTE]
-==
+====
 You'll see a lot of files getting downloaded during the build process.
 This is Maven setting up the execution environment, which it uses to generate the docs.
-==
+====
 
 When the build completes, you can view the generated docs in your preferred web browser by opening file:///path/to/jetty.project/documentation/jetty/target/site/index.html on your local filesystem.
 
@@ -136,9 +136,9 @@ This practice is known variously as https://writetheasciidocs.netlify.app/ventil
 This practice makes for more readable file diffs, and also makes it easier to comment out individual lines or to move sentences around.
 
 [TIP]
-==
+====
 AsciiDoc treats a single line breaks just like a space, so it will render ventilated prose naturally.
-==
+====
 
 [[cg-documentation-versions]]
 == Documenting versions
@@ -157,10 +157,10 @@ For instance, you can quickly refer to all three of the aforementioned modules a
 Another approach is to write your docs targeting one specific module, and tell the reader what substitution(s) they would need to make to target a different module.
 
 [NOTE]
-==
+====
 When targeting a specific version in your docs for demonstration purposes, you should prefer to use the most recent version number.
 For the example above, this would mean targeting `{ee-current}-deploy`.
-==
+====
 
 Consolidating parallel references saves readers from having to sift through repetitive material, and helps us avoid maintaining multiple versions of nearly identical docs.
 
@@ -177,9 +177,9 @@ $ java -jar $JETTY_HOME/start.jar --add-modules={ee-current}-deploy
 This will work when copy-pasted into the command line.
 
 [NOTE]
-==
+====
 You may want to remind the reader to change the `10` in the command to their preferred target version -- although doing so isn't strictly necessary for a simple example like above.
-==
+====
 
 [[cg-documentation-license]]
 == License blocks
@@ -214,14 +214,14 @@ We rely heavily on https://docs.asciidoctor.org/asciidoc/latest/sections/custom-
 At minimum, every chapter and top-level section should have its own custom ID; however, best practice is to give each subsection its own custom ID, too.
 
 [NOTE]
-==
+====
 Custom IDs share a single global namespace, which means they must be unique across all documentation guides.
 To help deal with this constraint, we used different ID prefixes in each guide:
 
 * Operations Guide: `og-`
 * Programming Guide: `pg-`
 * Contribution Guide: `cg-`
-==
+====
 
 [[cg-documentation-asciidoc-conventions-images]]
 == Images
@@ -249,27 +249,27 @@ Asciidoc supports five levels of admonition:
 Each admonition's visual appearance and typical usage situation are as follows:
 
 [NOTE]
-==
+====
 A note about the previous case to be aware of.
-==
+====
 
 [IMPORTANT]
-==
+====
 Important notes are marked with an icon.
-==
+====
 
 [TIP]
-==
+====
 Tips that make your life easier.
-==
+====
 
 [CAUTION]
-==
+====
 Places where you have to be careful what you are doing.
-==
+====
 
 [WARNING]
-==
+====
 Where extreme care has to be taken.
 Data corruption or other nasty things may occur if these warnings are ignored.
-==
+====

@@ -189,17 +189,17 @@ routers:
     og-jndi-link: jndi/index.adoc#link
     og-jndi-xml: jndi/index.adoc#xml
     og-jndi-scope: jndi/index.adoc#scope
-    og-jaas: jaas/index.adoc
-    og-jaas-configuration: jaas/index.adoc#configuration
-    og-jaas-module: jaas/index.adoc#module
-    og-jaas-webapp: jaas/index.adoc#webapp
-    og-jaas-loginconf: jaas/index.adoc#loginconf
-    og-jaas-loginmodules: jaas/index.adoc#loginmodules
-    og-password: jaas/index.adoc#og-password
-    og-jaspi: jaspi/index.adoc
-    og-jaspi-configuration: jaspi/index.adoc#configuration
-    og-jaspi-module: jaspi/index.adoc#module
-    og-jaspi-xml: jaspi/index.adoc#xml
+    og-jaas: security/jaas-support.adoc
+    og-jaas-configuration: security/jaas-support.adoc#configuration
+    og-jaas-module: security/jaas-support.adoc#module
+    og-jaas-webapp: security/jaas-support.adoc#webapp
+    og-jaas-loginconf: security/jaas-support.adoc#loginconf
+    og-jaas-loginmodules: security/jaas-support.adoc#loginmodules
+    og-password: security/jaas-support.adoc#og-password
+    og-jaspi: security/jaspi-support.adoc
+    og-jaspi-configuration: security/jaspi-support.adoc#configuration
+    og-jaspi-module: security/jaspi-support.adoc#module
+    og-jaspi-xml: security/jaspi-support.adoc#xml
     og-jmx: jmx/index.adoc
     og-jmx-local: jmx/index.adoc#local
     og-jmx-remote: jmx/index.adoc#remote

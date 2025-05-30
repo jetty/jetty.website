@@ -1,51 +1,259 @@
-= The Eclipse Jetty Project
-:noindex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroWell Clinic</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background: #f9faff;
+      color: #333;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
-image::jetty-logo.svg[alt=Jetty Logo,width=50%]
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
 
-Eclipse Jetty provides a highly scalable and memory-efficient web server and servlet container, supporting many protocols such as HTTP/3,2,1 and WebSocket. Furthermore, the project offers integrations with many other technologies, such as OSGi, JMX, JNDI, JAAS, etc. These components are open source and are freely available for commercial use and distribution under both the EPL2 and Apache2 licenses.
+    /* Header */
+    header {
+      background: #005f73;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    header nav a {
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #caf0f8;
+      transition: color 0.3s ease;
+    }
+    header nav a:hover {
+      color: #90e0ef;
+    }
 
-== Blog Entries
+    /* Sections */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #023047;
+      letter-spacing: 1px;
+    }
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+    }
 
-.Jetty Blogs
-feed::https://webtide.com/blog/feed/[id=jetty-feed,max=6]
+    /* Services List */
+    .services-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .service-item {
+      background: #e0fbfc;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+    .service-item h3 {
+      margin-bottom: 15px;
+      color: #05668d;
+    }
 
-The Eclipse Jetty project, a powerhouse in the open-source web server and servlet container realm boasts a robust codebase and a wealth of knowledge readily available through its official blogs. These blogs serve as a vibrant hub for developers of all levels, offering insights, technical deep-dives, and practical guidance on navigating the world of Jetty.
+    /* Contact Form */
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #caf0f8;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #023047;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      border: 2px solid #90e0ef;
+      border-radius: 6px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #0077cc;
+      outline: none;
+    }
+    form button {
+      background: #0077cc;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #005f99;
+    }
 
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background: #023047;
+      color: #caf0f8;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
 
-== Where is Jetty used?
-Jetty has been used in various projects and products in development and production for over 20 years. Developers have long loved Jetty due to its history of being easily embedded in devices, tools, frameworks, application servers, and modern cloud services. Jetty serves the primary applications for billion-dollar companies, lurks in many cloud services, and has been involved in missions to Mars and on devices floating in the oceans of Earth. We are continuously astounded at the places where Jetty has appeared.
+    /* Responsive */
+    @media (max-width: 768px) {
+      .services-list {
+        flex-direction: column;
+        gap: 20px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
 
-Many documentation resources are available, including an operations guide and a programmer's guide, all accessible from the link:docs/[Documentation] page.
+  <header>
+    <div class="container">
+      <h1>NeuroWell Clinic</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About NeuroWell Clinic</h2>
+        <p>
+          Welcome to <strong>NeuroWell Clinic</strong>, your trusted center for compassionate counselling, psychotherapy, and specialized education. We are dedicated to supporting mental health and developmental growth for individuals of all ages in a safe, nurturing environment.
+        </p>
+        <p>
+          Our mission is to empower you and your family through personalized care that promotes healing, learning, and resilience. Whether you seek emotional support or specialized education for your child, NeuroWell is here to guide you every step of the way.
+        </p>
+      </div>
+    </section>
 
-== About Jetty
-=== Where has Jetty called home?
-The Jetty project has found its home in many places over the last 20+ years.
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <div class="service-item">
+            <h3>Counselling & Psychotherapy</h3>
+            <p>Professional support for anxiety, depression, trauma, relationship challenges, and more. Our therapists use evidence-based approaches tailored to your unique needs.</p>
+          </div>
+          <div class="service-item">
+            <h3>Special Needs School</h3>
+            <p>Individualized education and therapeutic interventions for children with diverse learning and developmental challenges, fostering confidence and academic success.</p>
+          </div>
+          <div class="service-item">
+            <h3>Family Support</h3>
+            <p>Collaborative care involving families to ensure holistic well-being and sustained progress for every client and student.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-==== Eclipse and Github
-In 2009, the Jetty project moved its core components to be a project of the Eclipse Foundation to improve the IP processes and broaden the licensing and community of the project. Beginning with Jetty 9, the project was moved to the Eclipse Foundation. Additionally, in 2016, the project moved the canonical source and issue repository to Github.
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="#" method="post" onsubmit="return handleSubmit(event)">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
 
-==== Codehaus
-In 2005, the jetty project moved to The Codehaus for its hosting services and open-source community. In 2009, after the core components of Jetty moved to Eclipse, the Jetty @ codehaus project continued to provide integrations, extensions, and packaging of Jetty.
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required />
 
-==== Sourceforge
-From 2000 to 2005, the Jetty project was hosted at sourceforge.net, where versions 3.x, 4.x and 5.x were produced.
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
 
-=== Who has funded the development of Jetty?
-The development of the Jetty project has been fully funded over the years through close collaboration with many wonderful clients. Professional Support has been organized through the entities mentioned below over the years.
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-==== Webtide
-In 2015, the development of Jetty was once more taken over by Webtide when the developers split away from Intalio, taking full ownership of the company behind the open-source project. Webtide is now 100% developer-owned and operated and fully funds the ongoing development of the Jetty project through services and support for the open-source releases of the Jetty project.
+  <footer>
+    <p>© 2025 NeuroWell Clinic. All rights reserved.</p>
+  </footer>
 
-==== Intalio
-The role of the development of Jetty was taken over in 2009 by Intalio, Inc., who acquired both Webtide and Mort Bay. Intalio was a company that offered both products and services based on open-source software. They employed many jetty developers and contributors in addition to other open-source and closed-source platforms.
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Thank you for contacting NeuroWell Clinic. We will get back to you shortly.');
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+  </script>
 
-==== Webtide
-The role of leading the development of Jetty was taken over in 2006 by Webtide LLC, formed as a joint venture between Mort Bay and partners providing marketing, sales, and strategic assistance to the open-source project.
-
-==== Mort Bay
-The Java HTTP server that became Jetty was initially developed in 1995 by Greg Wilkins of Mort Bay Consulting as part of an issue-tracking application. Versions 1.x through to 6.1.x of Jetty were developed under org.mortbay packaging and Mort Bay still hold the central part of the copyright on the Jetty code base. Mort Bay directly hosted the jetty project until version 3.x and was the prime sponsor of development until 6.x.
-
-
-
+</body>
+</html>

@@ -45,7 +45,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |11 footnote:jpms[]
 |5.0
 |3.0
-|*EOL / Security Only https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
+|*EOL / Unsupported https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI, *JakartaEE Namespace* footnote:jakarta[]
 
 |10
@@ -54,7 +54,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |11 footnote:jpms[]
 |4.0
 |2.3
-|*EOL / Security Only https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
+|*EOL / Unsupported https://github.com/jetty/jetty.project/issues/10485[(Notice)]*
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI
 
 |9.4
@@ -63,7 +63,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |1.8
 |3.1
 |2.3
-|*EOL / Security Only https://github.com/jetty/jetty.project/issues/7958[(Notice)]*
+|*EOL / Unsupported https://github.com/jetty/jetty.project/issues/7958[(Notice)]*
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), WebSocket (RFC 6455, JSR 356), FastCGI
 
 |9.3

@@ -37,6 +37,7 @@ If you plan to work on a specific issue within Jetty, make sure to target the co
 .Active Jetty branches
 [cols="4"]
 |===
+| https://github.com/eclipse/jetty.project/tree/jetty-12.1.x[jetty-12.1.x] | Development (default branch) | Servlet 6.1 | Java 17+
 | https://github.com/eclipse/jetty.project/tree/jetty-12.0.x[jetty-12.0.x] | Development (default branch) | Servlet 6.0 | Java 17+
 | https://github.com/eclipse/jetty.project/tree/jetty-11.0.x[jetty-11.0.x] | Maintenance | Servlet 5.0 | Java 11+
 | https://github.com/eclipse/jetty.project/tree/jetty-10.0.x[jetty-10.0.x] | Maintenance | Servlet 4.0 | Java 11+

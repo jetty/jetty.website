@@ -7,7 +7,7 @@ Jetty Documentation is split by major versions. Follow the links below for the v
 
 s|xref:12.1@jetty:ROOT:index.adoc[]
 
-|https://javadoc.jetty.org/jetty-12-1/index.html[api] /
+|https://javadoc.jetty.org/jetty-12.1/index.html[api] /
 https://github.com/eclipse/jetty.project/tree/jetty-12.1.x[source]
 
 s|xref:12@jetty:ROOT:index.adoc[]

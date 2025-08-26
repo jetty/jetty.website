@@ -41,7 +41,7 @@ jobs:
         npm_config_audit: false
       run: ./mvnw -B -e -V -ntp -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=HH:mm:ss antora:antora@full
     - name: Upload Artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: target/site
     - name: Deploy Artifact to GitHub Pages

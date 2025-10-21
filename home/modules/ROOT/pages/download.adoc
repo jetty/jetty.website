@@ -49,7 +49,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), HTTP/3 (RFC 9114), WebSocket (RFC 6455, JSR 356), FastCGI, Jakarta EE8 thru EE10, *JakartaEE Namespace* footnote:jakarta[Due to Oracle's ownership of the "`Java`" trademark, usage of the javax.{asterisk} namespace has been restricted, and the jakarta.{asterisk} namespace was adopted by the Eclipse Foundation.], JavaEE Namespace footnote:javaee[Only for Java EE 8 (Servlet 4.0, JSP 2.3) support, using the javax.{asterisk} namespace.]
 
 |11
-|2020-
+|2020-2025
 |Eclipse
 |11 footnote:jpms[]
 |5.0
@@ -58,7 +58,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), HTTP/3 (RFC 9114), WebSocket (RFC 6455, JSR 356), FastCGI, Jakarta EE9, *JakartaEE Namespace* footnote:jakarta[]
 
 |10
-|2020-
+|2020-2025
 |Eclipse
 |11 footnote:jpms[]
 |4.0
@@ -67,7 +67,7 @@ January 1st, 2024 marked the end of community support for the Jetty 10 and 11 re
 |HTTP/1.1 (RFC 7230), HTTP/2 (RFC 7540), HTTP/3 (RFC 9114), WebSocket (RFC 6455, JSR 356), FastCGI, Jakarta EE8
 
 |9.4
-|2016-
+|2016-2025
 |Eclipse
 |1.8
 |3.1

@@ -4,11 +4,24 @@
 
 == Commercial Support
 
-Professional support is available for the open-source releases of the Eclipse Jetty project through https://webtide.com[Webtide]. Webtide fully funds the ongoing development of the open-source project through services and support from members of the Jetty community. As 100% developer-owned and operated, working with Webtide is the best way to support and ensure the future of the open-source Jetty project.
+Professional support is available for the open-source releases of the Eclipse Jetty project through https://webtide.com[Webtide]. Webtide fully funds the ongoing development of the open-source project through services and support from members of the Jetty community. As 100% developer-owned and operated, working with Webtide is the best way to support and ensure the future of the open-source Jetty project. Lifecycle Support through Webtide includes private access to EoL releases of Jetty.
 
-=== Talk with Webtide
+image::webtide.png[alt=HeroDevs Logo,width=50%, link=https://www.webtide.com]
+
 
 If you are interested in learning more about commercial support for Eclipse Jetty you can https://webtide.com/schedule[book an appointment] now with a Jetty committer.
+
+=== End of Life Binary Support Options
+
+There are two different approaches available for End of Life support for Jetty. In October 2025, Webtide announced partnerships with two different companies where users of Jetty would be able to obtain long term support for CVE resolutions of EoL versions of Jetty.
+
+Click to be taken directly to their respective product pages.
+
+image::herodevs.svg[alt=HeroDevs Logo,width=50%, link=https://www.herodevs.com/support/nes-for-jetty]
+
+image::tuxcare.svg[alt=TuxCare Logo,width=50%, link=https://tuxcare.com/endless-lifecycle-support/jetty-eol-support/]
+
+If you are using an EoL version of Jetty we encourage you to either update to a recent release of Jetty or pursue one of the options above.
 
 == Open Source Support
 

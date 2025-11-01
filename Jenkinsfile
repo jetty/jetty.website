@@ -1,7 +1,7 @@
 #!groovy
 
 pipeline {
-  agent any
+  agent none
   // save some io during the build
   options {
     durabilityHint( 'PERFORMANCE_OPTIMIZED' )
@@ -9,7 +9,7 @@ pipeline {
   }
   stages {
     stage( "Build Website" ) {
-      agent { node { label 'linux' } }
+      agent { node { label 'linux-light' } }
       steps {
         timeout( time: 120, unit: 'MINUTES' ) {
           withEnv(["JAVA_HOME=${tool 'jdk21'}",

@@ -14,7 +14,6 @@ For more information on how we handle security issues, please refer to our https
 
 == Jetty Security Reports
 
-
 [cols="1,2,1,1,1"]
 |===
 |Published|ID|Severity|Impacted Versions|Fixed Versions

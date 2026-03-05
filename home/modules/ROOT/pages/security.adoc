@@ -29,7 +29,7 @@ For more information on how we handle security issues, please refer to our https
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-11143[CVE-2025-11143]
 |Low
 |\<=9.4.58, \<=10.0.26, \<=11.0.26, \<=12.0.30, \<=12.1.4
-|12.0.31, 12.1.5 (9.4.59, 10.0.27, 11.0.27 see https://webtide.com/end-of-life-changes-to-eclipse-jetty-and-cometd/[details] for availability)
+|12.0.31, 12.1.5 (9.4.59, 10.0.27, 11.0.27 see https://webtide.com/end-of-life/[details] for availability)
 
 |Aug 20, 2025
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-5115[CVE-2025-5115]

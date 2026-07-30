@@ -25,3 +25,5 @@ The Jetty community is more than just a group of developers working on a shared 
 
 Furthermore, the Jetty community is committed to giving back to the broader open-source ecosystem. Whether through code contributions, bug fixes, or documentation updates, Jetty developers actively participate in projects beyond their own, embodying the spirit of cooperation and mutual support that defines the open-source movement.
 
+If you are interested in contributing to the Jetty project but are not sure where to start, check out the [Help Wanted](https://github.com/jetty/jetty.project/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22) tag in the project issue tracker!
+

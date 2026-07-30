@@ -16,6 +16,7 @@
 
 We wholeheartedly welcome contributions to Jetty.
 While not every contribution will be accepted, our commitment is to work with interested parties on the things they care about.
+If you are interested in contributing to Jetty but are unsure where to start, consult the [Help Wanted](https://github.com/jetty/jetty.project/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22) tag in the issue tracker.
 
 [[cg-patches-git-config]]
 == Configuring `git`

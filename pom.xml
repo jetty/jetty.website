@@ -25,7 +25,7 @@
   </licenses>
   <properties>
     <antora.plugin.version>1.0.0-alpha.5</antora.plugin.version>
-    <node.version>22.23.2</node.version>
+    <node.version>20.19.0</node.version>
   </properties>
   <build>
     <plugins>

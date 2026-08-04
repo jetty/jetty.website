@@ -7,7 +7,7 @@
     "@antora/collector-extension": "~1.0",
     "@antora/lunr-extension": "latest",
     "antora-asciidoctor-extensions": "gitlab:antora/antora-asciidoctor-extensions",
-    "asciidoctor-kroki": "latest",
+    "asciidoctor-kroki": "0.18.1",
     "@octokit/rest": "~20.0"
   },
   "main": "./lib/index.js",

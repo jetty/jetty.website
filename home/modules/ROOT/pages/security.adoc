@@ -18,6 +18,36 @@ For more information on how we handle security issues, please refer to our https
 |===
 |Published|ID|Severity|Impacted Versions|Fixed Versions
 
+|Jul 13, 2026
+|https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7708[CVE-2024-7708]
+|High
+|\<=10.0.22, \<=11.0.22
+|10.0.23, 11.0.23
+
+|Jul 13, 2026
+|https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-8384[CVE-2026-8384]
+|Med
+|\<=12.0.34, \<=12.1.8
+|12.0.35, 12.1.9
+
+|Jul 13, 2026
+|https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-6790[CVE-2026-6790]
+|Med
+|\<=9.4.60, \<=10.0.28, \<=11.0.28, \<=12.0.34, \<=12.1.8
+|12.0.35, 12.1.9 (9.4.61, 10.0.29, 11.0.29 see https://webtide.com/end-of-life/[details] for availability)
+
+|Jul 13, 2026
+|https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-10051[CVE-2026-10051]
+|Med
+|\<=12.0.35, \<=12.1.9
+|12.0.36, 12.1.10
+
+|Jul 13, 2026
+|https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-10050[CVE-2026-10050]
+|High
+|\<=9.4.62, \<=10.0.30, \<=11.0.30, \<=12.0.35, \<=12.1.9
+|12.0.36, 12.1.10 (9.4.63, 10.0.31, 11.0.31 see https://webtide.com/end-of-life/[details] for availability)
+
 |Apr 11, 2026
 |https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-5795[CVE-2026-5795]
 |High

@@ -6,16 +6,19 @@
 
 Professional support is available for the open-source releases of the Eclipse Jetty project through https://webtide.com[Webtide]. Webtide fully funds the ongoing development of the open-source project through services and support from members of the Jetty community. As 100% developer-owned and operated, working with Webtide is the best way to support and ensure the future of the open-source Jetty project. Lifecycle Support through Webtide includes private access to EoL releases of Jetty.
 
-image::webtide.png[alt=HeroDevs Logo,width=50%, link=https://www.webtide.com]
+image::webtide.png[alt=Webtide Logo,width=50%, link=https://www.webtide.com]
 
 
 If you are interested in learning more about commercial support for Eclipse Jetty you can https://webtide.com/schedule[book an appointment] now with a Jetty committer.
 
+[#eol-support]
 === End of Life Binary Support Options
 
-There are two different approaches available for End of Life support for Jetty. In October 2025, Webtide announced partnerships with two different companies where users of Jetty would be able to obtain long term support for CVE resolutions of EoL versions of Jetty.
+Starting January 1, 2026, releases for Jetty 9, Jetty 10 and Jetty 11 are no longer published to Maven Central. CVE fixes for these EoL versions of Jetty continue to be made, and the resulting binaries are available through the following options.
 
-Click to be taken directly to their respective product pages.
+https://webtide.com/harbor[Webtide Harbor] provides binary-only access to EoL releases of Jetty and CometD, built by the Jetty committers.
+
+In October 2025, Webtide also announced partnerships with two companies where users of Jetty can obtain long term support for CVE resolutions of EoL versions of Jetty. Click to be taken directly to their respective product pages.
 
 image::herodevs.svg[alt=HeroDevs Logo,width=50%, link=https://www.herodevs.com/support/nes-for-jetty]
 
